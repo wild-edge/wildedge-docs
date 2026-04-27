@@ -9,6 +9,8 @@ export default withMermaid(
 
     base: '/',
 
+    srcExclude: ['README.md'],
+
     outDir: '.vitepress/dist',
 
     locales: {
