@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Docs
-titleTemplate: Wild Edge Documentation
+title: Docs | WildEdge
+titleTemplate: WildEdge Documentation
 
 hero:
   name: WildEdge
