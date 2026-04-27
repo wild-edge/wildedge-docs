@@ -1,0 +1,25 @@
+.VPHome .VPFeatures .items .item:not(:first-child) {
+  opacity: 0.52;
+  filter: grayscale(0.18);
+}
+
+.VPHome .VPFeatures .items .item:not(:first-child) .title::after {
+  content: "Coming Soon";
+  display: inline-flex;
+  margin-left: 0.65rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.12);
+  color: #64748b;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.VPHome .VPFeatures .items .item:first-child {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.12);
+}
