@@ -5,7 +5,7 @@ titleTemplate: Dokumentacja Wild Edge
 
 hero:
   name: WildEdge
-  tagline: Połącz metryki ML, telemetrię sprzętu i wydajność modeli w jednym miejscu.
+  tagline: Obserwowalność dla inferencji ML na urządzeniu.
 
 features:
   - icon:

@@ -5,7 +5,7 @@ titleTemplate: Wild Edge Documentation
 
 hero:
   name: WildEdge
-  tagline: Unify your ML metrics, hardware telemetry, and model performance in a single place.
+  tagline: Observability for on-device ML inference.
 
 features:
   - icon:
