@@ -18,8 +18,3 @@
   text-transform: uppercase;
   vertical-align: middle;
 }
-
-.VPHome .VPFeatures .items .item:first-child {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.12);
-}
