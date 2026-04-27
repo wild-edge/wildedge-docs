@@ -5,7 +5,7 @@ titleTemplate: Dokumentacja Wild Edge
 
 hero:
   name: WildEdge
-  tagline: Połącz metryki ML, telemetrię sprzętu i wydajność modeli w jednym miejscu.
+  tagline: Obserwowalność dla inferencji ML na urządzeniu.
 
 features:
   - icon:
@@ -15,17 +15,17 @@ features:
     badge:
       type: tip
       text: Beta
-    details: Monitorowanie inferencji ML na urządzeniu dla Pythona. Śledzi opóźnienia, błędy i metadane modeli bez żadnych modyfikacji kodu.
     link: https://pypi.org/project/wildedge-sdk/
     linkText: wildedge-sdk na PyPI
   - icon:
       light: /icons/ios-light.svg
       dark: /icons/ios-dark.svg
-    title: iOS
+    title: iOS / macOS
     badge:
-      type: warning
-      text: Wkrótce
-    details: SDK w Swift dla CoreML, Metal Performance Shaders i Apple Neural Engine.
+      type: tip
+      text: Beta
+    link: https://cocoapods.org/pods/WildEdge
+    linkText: WildEdge on CocoaPods
   - icon:
       light: /icons/android-light.svg
       dark: /icons/android-dark.svg
@@ -33,23 +33,6 @@ features:
     badge:
       type: warning
       text: Wkrótce
-    details: SDK w Kotlinie i Javie do monitorowania modeli on-device na Androidzie.
-  - icon:
-      light: /icons/macos-light.svg
-      dark: /icons/macos-dark.svg
-    title: macOS
-    badge:
-      type: warning
-      text: Wkrótce
-    details: SDK w Swift dla metryk wydajności Apple Silicon i telemetrii ML.
-  - icon:
-      light: /icons/windows-light.svg
-      dark: /icons/windows-dark.svg
-    title: Windows
-    badge:
-      type: warning
-      text: Wkrótce
-    details: SDK w C# i .NET do monitorowania inferencji Windows ML.
   - icon:
       light: /icons/linux-light.svg
       dark: /icons/linux-dark.svg
@@ -57,8 +40,11 @@ features:
     badge:
       type: warning
       text: Wkrótce
-    details: SDK w C++ do monitorowania edge AI na serwerach Linux i sprzęcie wbudowanym.
 ---
+
+## Przewodniki integracji
+
+**Przewodniki integracji w drodze.** Szczegółowe instrukcje konfiguracji, przykłady kodu i poradniki dla poszczególnych platform są w przygotowaniu. W międzyczasie zapraszamy do przeglądania repozytoriów i przykładów integracji na [GitHubie](https://github.com/wild-edge).
 
 ## Referencja API
 
