@@ -1,9 +1,9 @@
-.VPHome .VPFeatures .items .item:not(:first-child) {
+.VPHome .VPFeatures .items .item:not(:has(a)) {
   opacity: 0.52;
   filter: grayscale(0.18);
 }
 
-.VPHome .VPFeatures .items .item:not(:first-child) .title::after {
+.VPHome .VPFeatures .items .item:not(:has(a)) .title::after {
   content: "Coming Soon";
   display: inline-flex;
   margin-left: 0.65rem;

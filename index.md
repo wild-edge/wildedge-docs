@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Docs
-titleTemplate: Wild Edge Documentation
+title: Docs | WildEdge
+titleTemplate: WildEdge Documentation
 
 hero:
   name: WildEdge
-  tagline: Unify your ML metrics, hardware telemetry, and model performance in a single place.
+  tagline: Observability for on-device ML inference.
 
 features:
   - icon:
@@ -15,17 +15,17 @@ features:
     badge:
       type: tip
       text: Beta
-    details: On-device ML inference monitoring for Python. Tracks latency, errors, and model metadata without any code modifications.
     link: https://pypi.org/project/wildedge-sdk/
     linkText: wildedge-sdk on PyPI
   - icon:
       light: /icons/ios-light.svg
       dark: /icons/ios-dark.svg
-    title: iOS
+    title: iOS / macOS
     badge:
-      type: warning
-      text: Coming Soon
-    details: Swift SDK for CoreML, Metal Performance Shaders, and Apple Neural Engine.
+      type: tip
+      text: Beta
+    link: https://cocoapods.org/pods/WildEdge
+    linkText: WildEdge on CocoaPods
   - icon:
       light: /icons/android-light.svg
       dark: /icons/android-dark.svg
@@ -33,23 +33,6 @@ features:
     badge:
       type: warning
       text: Coming Soon
-    details: Kotlin and Java SDK for Android on-device model monitoring.
-  - icon:
-      light: /icons/macos-light.svg
-      dark: /icons/macos-dark.svg
-    title: macOS
-    badge:
-      type: warning
-      text: Coming Soon
-    details: Swift SDK for Apple Silicon performance metrics and ML telemetry.
-  - icon:
-      light: /icons/windows-light.svg
-      dark: /icons/windows-dark.svg
-    title: Windows
-    badge:
-      type: warning
-      text: Coming Soon
-    details: C# and .NET SDK for Windows ML inference monitoring.
   - icon:
       light: /icons/linux-light.svg
       dark: /icons/linux-dark.svg
@@ -57,8 +40,11 @@ features:
     badge:
       type: warning
       text: Coming Soon
-    details: C++ SDK for edge AI monitoring on Linux servers and embedded hardware.
 ---
+
+## Integration Guides
+
+**Integration guides coming.** SDK-specific setup guides, code examples, and platform walkthroughs are on the way. Until then, browse our repositories and integration examples on [GitHub](https://github.com/wild-edge).
 
 ## API Reference
 
