@@ -16,7 +16,7 @@ features:
       type: tip
       text: Beta
     link: https://pypi.org/project/wildedge-sdk/
-    linkText: wildedge-sdk on PyPI
+    linkText: Get on PyPI
   - icon:
       light: /icons/ios-light.svg
       dark: /icons/ios-dark.svg
@@ -25,14 +25,13 @@ features:
       type: tip
       text: Beta
     link: https://cocoapods.org/pods/WildEdge
-    linkText: WildEdge on CocoaPods
+    linkText: Get on CocoaPods
   - icon:
       light: /icons/android-light.svg
       dark: /icons/android-dark.svg
     title: Android
-    badge:
-      type: warning
-      text: Coming Soon
+    link: https://central.sonatype.com/artifact/dev.wildedge/wildedge-android
+    linkText: Get on Maven Central
   - icon:
       light: /icons/linux-light.svg
       dark: /icons/linux-dark.svg
