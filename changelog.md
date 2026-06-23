@@ -85,4 +85,3 @@ description: What has changed recently
 **Python SDK [v0.1.0](https://pypi.org/project/wildedge-sdk/)** (Mar 17)
 
 - First release on PyPI. See the [setup guide](https://github.com/wild-edge/wildedge-python).
-</content>
