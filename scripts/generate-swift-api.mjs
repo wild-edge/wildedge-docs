@@ -116,7 +116,7 @@ function markdownFor(filename, declarations) {
 
 ${documentation}
 
-**Kind:** ${declaration.kind}  
+**Kind:** ${declaration.kind}<br>
 **Source:** [${sourcePath}:${declaration.line}](${lineUrl})
 
 \`\`\`swift
