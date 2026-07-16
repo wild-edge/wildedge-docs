@@ -25,6 +25,7 @@ export default withMermaid(
           nav: [
             { text: 'BLOG', link: 'https://blog.wildedge.dev' },
             { text: 'CHANGELOG', link: '/changelog' },
+            { text: 'SWIFT SDK', link: '/swift-api/' },
             { text: 'API DOCS', link: 'https://app.wildedge.dev/api/docs' },
             { text: 'GET STARTED', link: 'https://app.wildedge.dev/dashboard/signup' },
           ],
