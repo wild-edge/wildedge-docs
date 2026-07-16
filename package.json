@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev --port 5174",
-    "build": "vitepress build",
+    "build": "vitepress build && npm run build:swift-api",
+    "build:swift-api": "node scripts/generate-swift-api.mjs && sourcey build --output .vitepress/dist/swift-api && node scripts/publish-agent-docs.mjs",
+    "validate:swift-api": "node scripts/validate-swift-api.mjs",
     "preview": "vitepress preview --port 5174"
   },
   "devDependencies": {
+    "sourcey": "3.6.5",
     "vitepress": "^1.5.0",
     "vitepress-plugin-mermaid": "^2.0.17"
   }
