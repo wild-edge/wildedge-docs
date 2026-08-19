@@ -45,6 +45,12 @@ features:
 
 **Integration guides coming.** SDK-specific setup guides, code examples, and platform walkthroughs are on the way. Until then, browse our repositories and integration examples on [GitHub](https://github.com/wild-edge).
 
+## Remote MCP
+
+Connect your coding agent - such as Claude Code, Codex, or Gemini CLI - directly to your Wild Edge account through the remote MCP server.
+
+[Read more about Remote MCP](/mcp)
+
 ## API Reference
 
 Interactive Swagger docs are also available at [app.wildedge.dev/api/docs](https://app.wildedge.dev/api/docs).
