@@ -43,7 +43,9 @@ features:
 
 ## Integration Guides
 
-**Integration guides coming.** SDK-specific setup guides, code examples, and platform walkthroughs are on the way. Until then, browse our repositories and integration examples on [GitHub](https://github.com/wild-edge).
+- [Connect a local AI agent to Wild Edge with remote MCP](/mcp)
+
+SDK-specific setup guides, code examples, and platform walkthroughs are also on the way. Until then, browse our repositories and integration examples on [GitHub](https://github.com/wild-edge).
 
 ## API Reference
 
