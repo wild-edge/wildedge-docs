@@ -29,11 +29,15 @@ Create a personal MCP token, then add the Wild Edge remote server to your local 
 3. Select **Create token** and give the token a name that identifies the client, such as `Codex on MacBook`.
 4. Choose the least privilege the client needs:
    - **Read** can inspect the companies, projects, events, traces, dashboards, datasets, and integrations available to your account.
-   - **Read + Write** can also create projects and project keys, and perform the other write actions exposed by the MCP server.
+   - **Read + Write** can also create projects and project keys, and invite colleagues.
+
+   A small number of destructive tools, such as removing a company member, need an elevated delete permission that is granted by Wild Edge support rather than from your profile.
 
 ![MCP token dialog: creating a read and write token](./assets/mcp_token_creation_readwrite.png)
 
 5. Create the token and copy it immediately. The full token is shown only once.
+
+Tokens expire 90 days after they are created. Create a replacement before an expiry disconnects a client you depend on.
 
 ![MCP token screenshot: the one-time token display](./assets/mcp_token_created.png)
 
@@ -164,6 +168,7 @@ Use a **Read** token for investigation-only sessions. Grant **Read + Write** onl
 ## Troubleshooting
 
 - **Unauthorized or disconnected:** confirm that `WILDEDGE_MCP_TOKEN` is set in the same shell that starts the agent, and that the token has not expired or been deleted.
-- **A write action is unavailable:** edit the token in your Wild Edge profile and grant **Read + Write**, or create a separate write-enabled token.
+- **A write action is unavailable:** edit the token in your Wild Edge profile and grant **Read + Write**, or create a separate write-enabled token. A tool that needs the elevated delete permission stays unavailable even with **Read + Write**.
+- **Requests are being rejected under load:** each token is limited to 60 requests per minute. Give each client its own token rather than sharing one.
 - **The agent cannot see a company or project:** MCP access follows the permissions of the Wild Edge user who created the token.
 - **A token may have been compromised:** delete it immediately in **MCP access tokens**, create a replacement, and update only the affected client.
