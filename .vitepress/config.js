@@ -24,11 +24,20 @@ export default withMermaid(
           logo: '/wildedge-logo-text.svg',
           nav: [
             { text: 'BLOG', link: 'https://blog.wildedge.dev' },
-            { text: 'CHANGELOG', link: '/changelog' },
-            { text: 'REMOTE MCP', link: '/mcp' },
             { text: 'API DOCS', link: 'https://app.wildedge.dev/api/docs' },
             { text: 'GET STARTED', link: 'https://app.wildedge.dev/dashboard/signup' },
           ],
+          sidebar: [
+            {
+              text: 'Documentation',
+              items: [
+                { text: 'Remote MCP', link: '/mcp' },
+                { text: 'What we collect', link: '/what-we-collect' },
+                { text: 'Changelog', link: '/changelog' },
+              ],
+            },
+          ],
+          outline: [2, 3],
           socialLinks: [{ icon: 'github', link: 'https://github.com/wild-edge' }],
           editLink: {
             pattern: 'https://github.com/wild-edge/wildedge-docs/edit/main/:path',
@@ -52,10 +61,21 @@ export default withMermaid(
           logo: '/wildedge-logo-text.svg',
           nav: [
             { text: 'BLOG', link: 'https://blog.wildedge.dev' },
-            { text: 'DZIENNIK ZMIAN', link: '/pl/changelog' },
             { text: 'DOKUMENTACJA API', link: 'https://app.wildedge.dev/api/docs' },
             { text: 'ZACZNIJ', link: 'https://app.wildedge.dev/dashboard/signup' },
           ],
+          sidebar: [
+            {
+              text: 'Dokumentacja',
+              items: [
+                // Nietłumaczone jeszcze — linki prowadzą do wersji angielskiej.
+                { text: 'Zdalny MCP', link: '/mcp' },
+                { text: 'Co zbieramy', link: '/what-we-collect' },
+                { text: 'Dziennik zmian', link: '/pl/changelog' },
+              ],
+            },
+          ],
+          outline: [2, 3],
           socialLinks: [{ icon: 'github', link: 'https://github.com/wild-edge' }],
           editLink: {
             pattern: 'https://github.com/wild-edge/wildedge-docs/edit/main/:path',

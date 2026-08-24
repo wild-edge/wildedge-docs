@@ -51,6 +51,12 @@ Connect your coding agent - such as Claude Code, Codex, or Gemini CLI - directly
 
 [Read more about Remote MCP](/mcp)
 
+## What We Collect
+
+The SDK measures your inference calls - latency, tokens, thermal and memory state - and never copies your prompts, completions, images, or audio.
+
+[See exactly what is collected](/what-we-collect)
+
 ## API Reference
 
 Interactive Swagger docs are also available at [app.wildedge.dev/api/docs](https://app.wildedge.dev/api/docs).
