@@ -58,16 +58,52 @@ Then complete the [shared Wild Edge authorization flow](#authorize-in-wild-edge)
 
 ## Connect Claude
 
-In Claude or Claude Desktop:
+### 1. Open Customize
 
-1. Open **Settings → Connectors**.
-2. Select **Add custom connector**.
-3. Name the connector `Wild Edge` and enter `https://app.wildedge.dev/mcp` as its remote MCP server URL.
-4. Select **Add**, then **Connect** to start the OAuth flow.
+In Claude, select **Customize** in the left sidebar.
+
+<img src="./assets/1_claude_customise.png" alt="Claude setup: Customize in the left sidebar" width="360">
+
+### 2. Add a custom connector
+
+Open **Connectors**, then select **Add**.
+
+![Claude setup: Connectors page with the Add button highlighted](./assets/2_claude_connectors_add.png)
+
+From the menu, select **Add custom connector**.
+
+![Claude setup: Add custom connector in the Add menu](./assets/2_claude_connectors_custom.png)
+
+### 3. Enter the Wild Edge server URL
+
+Name the connector `Wild Edge`, enter `https://app.wildedge.dev/mcp` as the connector URL, and select **Continue**.
+
+<img src="./assets/3_claude_connectors_form.png" alt="Claude setup: custom connector form with the Wild Edge MCP URL" width="640">
+
+::: warning Use the exact server URL
+Enter `https://app.wildedge.dev/mcp`. Do not enter the documentation URL or the Wild Edge dashboard URL.
+:::
+
+### 4. Confirm the detected authentication settings
+
+Claude asks follow-up questions about authentication. Wild Edge supports the settings Claude detects:
+
+- **Authentication:** **Always required**
+- **OAuth client:** **No client ID — register one automatically**
+
+Keep these detected settings, leave **Advanced** unchanged, and finish adding the connector.
+
+<img src="./assets/4_claude_connectors_adding.png" alt="Claude setup: detected OAuth authentication and automatic client registration settings" width="540">
+
+### 5. Connect Claude
+
+On the new Wild Edge connector, select **Connect** to start the OAuth flow.
+
+<img src="./assets/5_claude_connecting.png" alt="Claude setup: Connect button for the Wild Edge connector" width="640">
+
+Then complete the [shared Wild Edge authorization flow](#authorize-in-wild-edge).
 
 For a Team or Enterprise organization, an owner may need to add Wild Edge under **Organization connectors** before individual members can connect it. See [Anthropic's custom connector guide](https://support.anthropic.com/en/articles/11175166-about-custom-integrations-using-remote-mcp) for plan and organization details.
-
-After selecting **Connect**, complete the [shared Wild Edge authorization flow](#authorize-in-wild-edge).
 
 ## Authorize in Wild Edge
 
@@ -84,6 +120,16 @@ The following steps are the same whether you connect ChatGPT, Claude, or another
 Your Wild Edge password and session stay with Wild Edge. The agent receives OAuth credentials only after you approve the connection.
 
 Start with **Read** unless you intend to ask the agent to make changes. You can change the connection's permissions later in Wild Edge.
+
+## Finish setup in your agent
+
+### Claude: set tool permissions
+
+After authorizing the connection, open the Wild Edge connector to control how Claude may use each MCP tool. Claude can allow a tool automatically, require your approval before using it, or disable it. You can set a default for a group and override individual tools.
+
+![Claude setup: granular permissions for individual Wild Edge MCP tools](./assets/6_claude_permissions.png)
+
+Claude's tool permissions are an independent, additional control layer. They do not expand the **Read** or **Read + Write** access granted in Wild Edge. A tool works only when both Wild Edge and Claude allow it.
 
 ### Try the connection
 
