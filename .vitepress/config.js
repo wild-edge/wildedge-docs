@@ -25,7 +25,13 @@ export default withMermaid(
           nav: [
             { text: 'BLOG', link: 'https://blog.wildedge.dev' },
             { text: 'CHANGELOG', link: '/changelog' },
-            { text: 'REMOTE MCP', link: '/mcp' },
+            {
+              text: 'REMOTE MCP',
+              items: [
+                { text: 'Coding agents', link: '/mcp' },
+                { text: 'Web agents (OAuth)', link: '/mcp_web' },
+              ],
+            },
             { text: 'API DOCS', link: 'https://app.wildedge.dev/api/docs' },
             { text: 'GET STARTED', link: 'https://app.wildedge.dev/dashboard/signup' },
           ],

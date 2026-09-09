@@ -47,9 +47,10 @@ features:
 
 ## Remote MCP
 
-Connect your coding agent - such as Claude Code, Codex, or Gemini CLI - directly to your Wild Edge account through the remote MCP server.
+Connect an AI agent directly to your Wild Edge account through the remote MCP server.
 
-[Read more about Remote MCP](/mcp)
+- [Connect a coding agent with a personal access token](/mcp)
+- [Connect a web agent such as ChatGPT or Claude with OAuth](/mcp_web)
 
 ## API Reference
 

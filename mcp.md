@@ -15,6 +15,10 @@ https://app.wildedge.dev/mcp
 
 You do not need to install or run an MCP server locally.
 
+::: tip Connecting ChatGPT or another web agent?
+Web agents can connect with OAuth, without creating or copying a personal access token. Follow the [web agent setup guide](/mcp_web).
+:::
+
 ## Connect your coding agent
 
 Create a personal MCP token, then add the Wild Edge remote server to your local coding agent.

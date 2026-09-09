@@ -18,3 +18,31 @@
   text-transform: uppercase;
   vertical-align: middle;
 }
+
+.vp-doc img[alt^="MCP token"] {
+  display: block;
+  width: 88%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 0.5rem;
+}
+
+.vp-doc img[alt^="MCP token dialog"] {
+  width: 72%;
+}
+
+@media (max-width: 640px) {
+  .vp-doc img[alt^="MCP token"] {
+    width: 100%;
+  }
+}
+
+.vp-doc img[alt^="ChatGPT setup"],
+.vp-doc img[alt^="Wild Edge OAuth"],
+.vp-doc img[alt^="Wild Edge MCP access"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 0.5rem;
+}
