@@ -5,8 +5,7 @@ titleTemplate: Dokumentacja Wild Edge
 
 hero:
   name: WildEdge
-  text: Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie.
-  tagline: Zobacz, jak zachowanie modelu zmienia się między wydaniami, środowiskami uruchomieniowymi i urządzeniami. Przeglądaj zapisane wejścia, wyjścia i opinie użytkowników, a potem zamieniaj wybrane przykłady w zbiory danych do ewaluacji i trenowania.
+  tagline: Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie.
 
 features:
   - icon:
@@ -43,6 +42,8 @@ features:
 ---
 
 ## Co robi WildEdge
+
+Zobacz, jak zachowanie modelu zmienia się między wydaniami, środowiskami uruchomieniowymi i urządzeniami. Przeglądaj zapisane wejścia, wyjścia i opinie użytkowników, a potem zamieniaj wybrane przykłady w zbiory danych do ewaluacji i trenowania.
 
 WildEdge instrumentuje wywołania inferencji i zapisuje, co naprawdę wydarzyło się na produkcji: czas odpowiedzi, pewność, dryf, stan sprzętu i temperaturę oraz opinie użytkowników o każdym wyniku. Włącz przechwytywanie, a surowe wejścia i wyjścia trafią obok zdarzenia, które je wygenerowało.
 

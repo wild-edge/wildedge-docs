@@ -5,8 +5,7 @@ titleTemplate: WildEdge Documentation
 
 hero:
   name: WildEdge
-  text: Know where your AI struggles in the real world.
-  tagline: See where model behavior changes across releases, runtimes, and devices. Inspect captured inputs, outputs, and feedback, then turn selected examples into datasets for evaluation and training.
+  tagline: Know where your AI struggles in the real world.
 
 features:
   - icon:
@@ -43,6 +42,8 @@ features:
 ---
 
 ## What WildEdge does
+
+See where model behavior changes across releases, runtimes, and devices. Inspect captured inputs, outputs, and feedback, then turn selected examples into datasets for evaluation and training.
 
 WildEdge instruments your inference calls and records what actually happened in production: latency, confidence, drift, hardware and thermal state, and the feedback your users give on each result. Turn on capture and the raw inputs and outputs land next to the event that produced them.
 
