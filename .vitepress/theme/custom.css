@@ -1,3 +1,9 @@
+:root {
+  /* Match the mono face used across wildedge.dev */
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
 .VPHome .VPFeatures .items .item:not(:has(a)) {
   opacity: 0.52;
   filter: grayscale(0.18);
@@ -39,11 +45,22 @@
 
 .vp-doc img[alt^="ChatGPT setup"],
 .vp-doc img[alt^="Claude setup"],
-.vp-doc img[alt^="Wild Edge OAuth"],
-.vp-doc img[alt^="Wild Edge MCP access"] {
+.vp-doc img[alt^="WildEdge OAuth"],
+.vp-doc img[alt^="WildEdge MCP access"] {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 1.5rem auto;
   border-radius: 0.5rem;
+}
+
+/* Hero carries the positioning line, so give it room to read in two lines */
+@media (min-width: 960px) {
+  .VPHome .VPHero .main {
+    max-width: 760px;
+  }
+
+  .VPHome .VPHero .text {
+    max-width: 760px;
+  }
 }

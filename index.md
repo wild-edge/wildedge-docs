@@ -1,11 +1,8 @@
 ---
 layout: home
-title: Docs | WildEdge
-titleTemplate: WildEdge Documentation
 
 hero:
-  name: WildEdge
-  tagline: Observability for on-device ML inference.
+  text: Know where your AI struggles in the real world.
 
 features:
   - icon:
@@ -15,8 +12,8 @@ features:
     badge:
       type: tip
       text: Beta
-    link: https://pypi.org/project/wildedge-sdk/
-    linkText: Get on PyPI
+    link: https://github.com/wild-edge/wildedge-python#install
+    linkText: Set up Python
   - icon:
       light: /icons/ios-light.svg
       dark: /icons/ios-dark.svg
@@ -24,14 +21,14 @@ features:
     badge:
       type: tip
       text: Beta
-    link: https://cocoapods.org/pods/WildEdge
-    linkText: Get on CocoaPods
+    link: https://github.com/wild-edge/wildedge-swift#getting-started
+    linkText: Set up iOS / macOS
   - icon:
       light: /icons/android-light.svg
       dark: /icons/android-dark.svg
     title: Android
-    link: https://central.sonatype.com/artifact/dev.wildedge/wildedge-android
-    linkText: Get on Maven Central
+    link: https://github.com/wild-edge/wildedge-android#quick-start
+    linkText: Set up Android
   - icon:
       light: /icons/linux-light.svg
       dark: /icons/linux-dark.svg
@@ -41,16 +38,30 @@ features:
       text: Coming Soon
 ---
 
-## Integration Guides
+## What WildEdge does
 
-**Integration guides coming.** SDK-specific setup guides, code examples, and platform walkthroughs are on the way. Until then, browse our repositories and integration examples on [GitHub](https://github.com/wild-edge).
+See where model behavior changes across releases, runtimes, and devices. Inspect captured inputs, outputs, and feedback, then turn selected examples into datasets for evaluation and training.
 
-## Remote MCP
+WildEdge instruments your inference calls and records what actually happened in production: latency, confidence, drift, hardware and thermal state, and the feedback your users give on each result. Turn on capture and the raw inputs and outputs land next to the event that produced them.
 
-Connect an AI agent directly to your Wild Edge account through the remote MCP server.
+1. **Compare** model behavior across app releases, model versions, runtimes, and device classes
+2. **Inspect** the events that went wrong, with their captured inputs, outputs, and user feedback
+3. **Build datasets** from selected examples and export them to your evaluation and training pipelines
 
-- [Connect a coding agent with a personal access token](/mcp)
-- [Connect a web agent such as ChatGPT or Claude with OAuth](/mcp_web)
+Capture is opt-in. Leave it off and the SDK sends telemetry only, never raw inputs or outputs.
+
+## Investigate with an AI agent
+
+Connect Claude Code, Codex, Gemini CLI, or ChatGPT to your account through the remote [MCP](https://modelcontextprotocol.io/) server. Ask it to inspect recent inference events, follow a trace, or dig into a failure, without copying data between your browser and your terminal.
+
+- [Connect a coding agent](/mcp) with a personal access token
+- [Connect a web agent](/mcp_web) such as ChatGPT or Claude with OAuth
+
+## Examples
+
+Every SDK ships runnable examples: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples).
+
+The [demo app](https://github.com/wild-edge/python-demo-app) runs on-device and remote models in one pipeline, so you can watch the whole loop before wiring up your own.
 
 ## API Reference
 
