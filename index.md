@@ -1,7 +1,5 @@
 ---
 layout: home
-title: Docs | WildEdge
-titleTemplate: WildEdge Documentation
 
 hero:
   text: Know where your AI struggles in the real world.
@@ -14,7 +12,6 @@ features:
     badge:
       type: tip
       text: Beta
-    details: On-device and remote models, plus traces for agent pipelines. Wrap an existing command with the CLI, or call the SDK directly.
     link: https://github.com/wild-edge/wildedge-python#install
     linkText: Set up Python
   - icon:
@@ -24,14 +21,12 @@ features:
     badge:
       type: tip
       text: Beta
-    details: Zero-code interception for common runtimes, or track model loads and inferences explicitly.
     link: https://github.com/wild-edge/wildedge-swift#getting-started
     linkText: Set up iOS / macOS
   - icon:
       light: /icons/android-light.svg
       dark: /icons/android-dark.svg
     title: Android
-    details: Decorate your interpreter, or wire the SDK up from the manifest and let it track for you.
     link: https://github.com/wild-edge/wildedge-android#quick-start
     linkText: Set up Android
   - icon:

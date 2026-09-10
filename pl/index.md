@@ -1,7 +1,5 @@
 ---
 layout: home
-title: Dokumentacja
-titleTemplate: Dokumentacja Wild Edge
 
 hero:
   text: Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie.
@@ -14,7 +12,6 @@ features:
     badge:
       type: tip
       text: Beta
-    details: Modele lokalne i zdalne oraz trace'y dla pipeline'ów agentowych. Opakuj istniejące polecenie w CLI albo wywołaj SDK bezpośrednio.
     link: https://github.com/wild-edge/wildedge-python#install
     linkText: Skonfiguruj Pythona
   - icon:
@@ -24,14 +21,12 @@ features:
     badge:
       type: tip
       text: Beta
-    details: Przechwytywanie bez zmian w kodzie dla popularnych środowisk albo jawne śledzenie ładowania modeli i inferencji.
     link: https://github.com/wild-edge/wildedge-swift#getting-started
     linkText: Skonfiguruj iOS / macOS
   - icon:
       light: /icons/android-light.svg
       dark: /icons/android-dark.svg
     title: Android
-    details: Udekoruj swój interpreter albo podłącz SDK z manifestu i pozwól mu śledzić za Ciebie.
     link: https://github.com/wild-edge/wildedge-android#quick-start
     linkText: Skonfiguruj Androida
   - icon:

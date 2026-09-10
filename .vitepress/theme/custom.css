@@ -45,8 +45,8 @@
 
 .vp-doc img[alt^="ChatGPT setup"],
 .vp-doc img[alt^="Claude setup"],
-.vp-doc img[alt^="Wild Edge OAuth"],
-.vp-doc img[alt^="Wild Edge MCP access"] {
+.vp-doc img[alt^="WildEdge OAuth"],
+.vp-doc img[alt^="WildEdge MCP access"] {
   display: block;
   max-width: 100%;
   height: auto;

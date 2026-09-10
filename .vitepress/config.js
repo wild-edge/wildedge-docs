@@ -26,11 +26,12 @@ export default withMermaid(
       root: {
         label: 'English',
         lang: 'en-US',
-        title: 'Wild Edge Documentation',
+        title: 'WildEdge Docs',
         description:
           'Know where your AI struggles in the real world. See where model behavior changes across releases, runtimes, and devices, then turn real examples into datasets for evaluation and training.',
         themeConfig: {
           logo: '/wildedge-logo-text.svg',
+          siteTitle: 'Docs',
           nav: [
             { text: 'BLOG', link: 'https://blog.wildedge.dev' },
             { text: 'CHANGELOG', link: '/changelog' },
@@ -50,7 +51,7 @@ export default withMermaid(
             text: 'Edit this page on GitHub',
           },
           footer: {
-            copyright: `© ${new Date().getFullYear()} Wild Edge`,
+            copyright: `© ${new Date().getFullYear()} WildEdge`,
           },
           search: {
             provider: 'local',
@@ -60,11 +61,12 @@ export default withMermaid(
       pl: {
         label: 'Polski',
         lang: 'pl-PL',
-        title: 'Dokumentacja Wild Edge',
+        title: 'Dokumentacja WildEdge',
         description:
           'Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie. Zobacz, jak zachowanie modelu zmienia się między wydaniami, środowiskami i urządzeniami, i zamieniaj prawdziwe przykłady w zbiory danych do ewaluacji i trenowania.',
         themeConfig: {
           logo: '/wildedge-logo-text.svg',
+          siteTitle: 'Dokumentacja',
           nav: [
             { text: 'BLOG', link: 'https://blog.wildedge.dev' },
             { text: 'DZIENNIK ZMIAN', link: '/pl/changelog' },
@@ -84,7 +86,7 @@ export default withMermaid(
             text: 'Edytuj tę stronę na GitHub',
           },
           footer: {
-            copyright: `© ${new Date().getFullYear()} Wild Edge`,
+            copyright: `© ${new Date().getFullYear()} WildEdge`,
           },
           search: {
             provider: 'local',

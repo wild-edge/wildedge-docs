@@ -1,11 +1,11 @@
 ---
-title: Use Wild Edge with remote MCP
+title: Remote MCP for coding agents
 description: Connect Claude Code, Codex, or Gemini CLI to create projects, investigate telemetry, and manage your team.
 ---
 
-# Use Wild Edge with remote MCP
+# Use WildEdge with remote MCP
 
-Wild Edge's remote [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server lets a local AI agent work with your Wild Edge account. You can ask the agent to create a project, inspect recent inference events, follow a trace, or investigate a failure without copying data between your browser and terminal.
+WildEdge's remote [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server lets a local AI agent work with your WildEdge account. You can ask the agent to create a project, inspect recent inference events, follow a trace, or investigate a failure without copying data between your browser and terminal.
 
 The remote endpoint is:
 
@@ -21,11 +21,11 @@ Web agents can connect with OAuth, without creating or copying a personal access
 
 ## Connect your coding agent
 
-Create a personal MCP token, then add the Wild Edge remote server to your local coding agent.
+Create a personal MCP token, then add the WildEdge remote server to your local coding agent.
 
 ### Create an MCP token
 
-1. Sign in to [Wild Edge](https://app.wildedge.dev/).
+1. Sign in to [WildEdge](https://app.wildedge.dev/).
 2. Open your profile and find **MCP access tokens**.
 
 ![MCP token table: no access tokens have been created](./assets/mcp_token_table_empty.png)
@@ -48,16 +48,16 @@ export WILDEDGE_MCP_TOKEN="we_mcp_..."
 ```
 
 ::: warning Protect the token
-An MCP token acts with your Wild Edge account's access. Do not commit it to source control or paste it into prompts. Use a separate token for each client so you can revoke one without interrupting the others. Delete a token from your profile as soon as it is no longer needed.
+An MCP token acts with your WildEdge account's access. Do not commit it to source control or paste it into prompts. Use a separate token for each client so you can revoke one without interrupting the others. Delete a token from your profile as soon as it is no longer needed.
 :::
 
 #### Change permissions or revoke a token
 
-Select a token in the table to change it between **Read** and **Read + Write**, or to delete it. Wild Edge shows the effect of a permission change before you save it. Deleting a token immediately disconnects clients that use it.
+Select a token in the table to change it between **Read** and **Read + Write**, or to delete it. WildEdge shows the effect of a permission change before you save it. Deleting a token immediately disconnects clients that use it.
 
 ![MCP token dialog: changing a token from read and write access to read-only access](./assets/mcp_token_edit_change.png)
 
-### Add Wild Edge MCP to your agent
+### Add WildEdge MCP to your agent
 
 Choose the client you use. The name `wildedge` in these examples is local to the client and can be changed.
 
@@ -95,16 +95,16 @@ gemini mcp add --scope user --transport http \
 Restart Gemini CLI, then run `/mcp list` to check the connection.
 
 ::: warning Gemini stores the expanded header
-The shell expands `WILDEDGE_MCP_TOKEN` before Gemini saves this server, so the bearer token is stored in your user-level Gemini settings. Protect `~/.gemini/settings.json`, never commit it, and delete or rotate the Wild Edge token if that file is exposed.
+The shell expands `WILDEDGE_MCP_TOKEN` before Gemini saves this server, so the bearer token is stored in your user-level Gemini settings. Protect `~/.gemini/settings.json`, never commit it, and delete or rotate the WildEdge token if that file is exposed.
 :::
 
 ## Example workflows
 
-After the connection works, your agent discovers the tools available to your account. You can work with Wild Edge in natural language while the MCP server enforces your user access and token permissions.
+After the connection works, your agent discovers the tools available to your account. You can work with WildEdge in natural language while the MCP server enforces your user access and token permissions.
 
 Start by establishing the account context without making changes:
 
-> List the Wild Edge companies available to me, including my role in each company. Then list the projects in the Acme company. Do not make any changes.
+> List the WildEdge companies available to me, including my role in each company. Then list the projects in the Acme company. Do not make any changes.
 
 Use the company and project names returned by the agent in the workflows below.
 
@@ -114,7 +114,7 @@ Use the company and project names returned by the agent in the workflows below.
 
 Ask the agent to create a project and return its initial `WILDEDGE_DSN`:
 
-> Create a Wild Edge project named “Checkout classifier” in the Acme company. Show me the returned `WILDEDGE_DSN` and explain where to put it in my SDK configuration.
+> Create a WildEdge project named “Checkout classifier” in the Acme company. Show me the returned `WILDEDGE_DSN` and explain where to put it in my SDK configuration.
 
 Review the company and project name before approving the write tool. The returned `WILDEDGE_DSN` is an SDK credential: store it in an environment variable or secret manager and do not commit it to source control.
 
@@ -132,7 +132,7 @@ For a suspicious event, ask for its normalized telemetry and the surrounding run
 
 > Open event `<event-id>` from the previous result. Explain the inputs, outputs, errors, and timing that are available. If it belongs to a run, follow the run trace and summarize where the problem started.
 
-The agent reasons over the bounded events returned by Wild Edge; it does not automatically analyze every event in the company. Specify the company, project, time window, and event type when you want a narrower investigation.
+The agent reasons over the bounded events returned by WildEdge; it does not automatically analyze every event in the company. Specify the company, project, time window, and event type when you want a narrower investigation.
 
 ### Invite a colleague
 
@@ -150,7 +150,7 @@ Supported roles are `ADMIN`, `USER`, and `VIEWER`. Inviting a colleague sends an
 
 ### Supported tools
 
-The supported tools are dynamic and may change. Your agent discovers the tools available through the Wild Edge MCP server automatically. The examples below highlight some basic tools for reference and are not a complete list.
+The supported tools are dynamic and may change. Your agent discovers the tools available through the WildEdge MCP server automatically. The examples below highlight some basic tools for reference and are not a complete list.
 
 | Tool | Description |
 | --- | --- |
@@ -168,6 +168,6 @@ Use a **Read** token for investigation-only sessions. Grant **Read + Write** onl
 ## Troubleshooting
 
 - **Unauthorized or disconnected:** confirm that `WILDEDGE_MCP_TOKEN` is set in the same shell that starts the agent, and that the token has not expired or been deleted.
-- **A write action is unavailable:** edit the token in your Wild Edge profile and grant **Read + Write**, or create a separate write-enabled token.
-- **The agent cannot see a company or project:** MCP access follows the permissions of the Wild Edge user who created the token.
+- **A write action is unavailable:** edit the token in your WildEdge profile and grant **Read + Write**, or create a separate write-enabled token.
+- **The agent cannot see a company or project:** MCP access follows the permissions of the WildEdge user who created the token.
 - **A token may have been compromised:** delete it immediately in **MCP access tokens**, create a replacement, and update only the affected client.
