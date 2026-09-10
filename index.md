@@ -5,7 +5,8 @@ titleTemplate: WildEdge Documentation
 
 hero:
   name: WildEdge
-  tagline: Observability for on-device ML inference.
+  text: Know where your AI struggles in the real world.
+  tagline: See where model behavior changes across releases, runtimes, and devices. Inspect captured inputs, outputs, and feedback, then turn selected examples into datasets for evaluation and training.
 
 features:
   - icon:
@@ -40,6 +41,16 @@ features:
       type: warning
       text: Coming Soon
 ---
+
+## What WildEdge does
+
+WildEdge instruments your inference calls and records what actually happened in production: latency, confidence, drift, hardware and thermal state, and the feedback your users give on each result. Turn on capture and the raw inputs and outputs land next to the event that produced them.
+
+1. **Compare** model behavior across app releases, model versions, runtimes, and device classes
+2. **Inspect** the events that went wrong, with their captured inputs, outputs, and user feedback
+3. **Build datasets** from selected examples and export them to your evaluation and training pipelines
+
+Capture is opt-in. Leave it off and the SDK sends telemetry only, never raw inputs or outputs.
 
 ## Integration Guides
 

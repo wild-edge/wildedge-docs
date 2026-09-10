@@ -19,7 +19,7 @@ export default withMermaid(
         lang: 'en-US',
         title: 'Wild Edge Documentation',
         description:
-          'Unify your ML metrics, hardware telemetry, and model performance in a single place.',
+          'Know where your AI struggles in the real world. See where model behavior changes across releases, runtimes, and devices, then turn real examples into datasets for evaluation and training.',
         themeConfig: {
           logo: '/wildedge-logo-text.svg',
           nav: [
@@ -53,7 +53,7 @@ export default withMermaid(
         lang: 'pl-PL',
         title: 'Dokumentacja Wild Edge',
         description:
-          'Połącz metryki ML, telemetrię sprzętu i wydajność modeli w jednym miejscu.',
+          'Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie. Zobacz, jak zachowanie modelu zmienia się między wydaniami, środowiskami i urządzeniami, i zamieniaj prawdziwe przykłady w zbiory danych do ewaluacji i trenowania.',
         themeConfig: {
           logo: '/wildedge-logo-text.svg',
           nav: [
