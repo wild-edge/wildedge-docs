@@ -14,8 +14,9 @@ features:
     badge:
       type: tip
       text: Beta
-    link: https://pypi.org/project/wildedge-sdk/
-    linkText: Pobierz z PyPI
+    details: Modele lokalne i zdalne oraz trace'y dla pipeline'ów agentowych. Opakuj istniejące polecenie w CLI albo wywołaj SDK bezpośrednio.
+    link: https://github.com/wild-edge/wildedge-python#install
+    linkText: Skonfiguruj Pythona
   - icon:
       light: /icons/ios-light.svg
       dark: /icons/ios-dark.svg
@@ -23,14 +24,16 @@ features:
     badge:
       type: tip
       text: Beta
-    link: https://cocoapods.org/pods/WildEdge
-    linkText: Pobierz z CocoaPods
+    details: Przechwytywanie bez zmian w kodzie dla popularnych środowisk albo jawne śledzenie ładowania modeli i inferencji.
+    link: https://github.com/wild-edge/wildedge-swift#getting-started
+    linkText: Skonfiguruj iOS / macOS
   - icon:
       light: /icons/android-light.svg
       dark: /icons/android-dark.svg
     title: Android
-    link: https://central.sonatype.com/artifact/dev.wildedge/wildedge-android
-    linkText: Pobierz z Maven Central
+    details: Udekoruj swój interpreter albo podłącz SDK z manifestu i pozwól mu śledzić za Ciebie.
+    link: https://github.com/wild-edge/wildedge-android#quick-start
+    linkText: Skonfiguruj Androida
   - icon:
       light: /icons/linux-light.svg
       dark: /icons/linux-dark.svg
@@ -61,15 +64,11 @@ Podłącz Claude Code, Codex, Gemini CLI lub ChatGPT do swojego konta przez zdal
 
 Przewodniki MCP są na razie dostępne tylko po angielsku.
 
-## Przewodniki integracji
+## Przykłady
 
-| SDK | Instrukcja | Integracje |
-|---|---|---|
-| Python | [Zacznij](https://github.com/wild-edge/wildedge-python#install) | transformers, mlx, timm, gguf, onnx, ultralytics, tensorflow, torch, keras, openai, anthropic |
-| iOS / macOS | [Zacznij](https://github.com/wild-edge/wildedge-swift#getting-started) | ONNX Runtime, ML Kit, TFLite, ExecuTorch |
-| Android | [Zacznij](https://github.com/wild-edge/wildedge-android#quick-start) | TFLite, ONNX Runtime, ML Kit, LiteRT LLM, Play Services TFLite |
+Każde SDK zawiera gotowe do uruchomienia przykłady: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples).
 
-Wolisz czytać kod? Każde SDK zawiera gotowe przykłady: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples). [Aplikacja demo](https://github.com/wild-edge/python-demo-app) uruchamia modele lokalne i zdalne w jednym pipelinie.
+[Aplikacja demo](https://github.com/wild-edge/python-demo-app) uruchamia modele lokalne i zdalne w jednym pipelinie, więc możesz zobaczyć całą pętlę w działaniu, zanim podłączysz własną.
 
 ## Referencja API
 
