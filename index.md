@@ -4,8 +4,7 @@ title: Docs | WildEdge
 titleTemplate: WildEdge Documentation
 
 hero:
-  name: WildEdge
-  tagline: Know where your AI struggles in the real world.
+  text: Know where your AI struggles in the real world.
 
 features:
   - icon:
@@ -53,6 +52,13 @@ WildEdge instruments your inference calls and records what actually happened in 
 
 Capture is opt-in. Leave it off and the SDK sends telemetry only, never raw inputs or outputs.
 
+## Investigate with an AI agent
+
+Connect Claude Code, Codex, Gemini CLI, or ChatGPT to your account through the remote [MCP](https://modelcontextprotocol.io/) server. Ask it to inspect recent inference events, follow a trace, or dig into a failure, without copying data between your browser and your terminal.
+
+- [Connect a coding agent](/mcp) with a personal access token
+- [Connect a web agent](/mcp_web) such as ChatGPT or Claude with OAuth
+
 ## Integration Guides
 
 | SDK | Setup guide | Integrations |
@@ -62,13 +68,6 @@ Capture is opt-in. Leave it off and the SDK sends telemetry only, never raw inpu
 | Android | [Get started](https://github.com/wild-edge/wildedge-android#quick-start) | TFLite, ONNX Runtime, ML Kit, LiteRT LLM, Play Services TFLite |
 
 Prefer to read code? Every SDK ships runnable examples: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples). The [demo app](https://github.com/wild-edge/python-demo-app) runs on-device and remote models in one pipeline.
-
-## Remote MCP
-
-Connect an AI agent directly to your Wild Edge account through the remote MCP server.
-
-- [Connect a coding agent with a personal access token](/mcp)
-- [Connect a web agent such as ChatGPT or Claude with OAuth](/mcp_web)
 
 ## API Reference
 

@@ -5,6 +5,15 @@ export default withMermaid(
   defineConfig({
     head: [
       ['link', { rel: 'icon', type: 'image/png', href: '/wildedge-logo-text.png' }],
+      ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+      ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+      [
+        'link',
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap',
+        },
+      ],
     ],
 
     base: '/',
@@ -59,6 +68,13 @@ export default withMermaid(
           nav: [
             { text: 'BLOG', link: 'https://blog.wildedge.dev' },
             { text: 'DZIENNIK ZMIAN', link: '/pl/changelog' },
+            {
+              text: 'ZDALNE MCP',
+              items: [
+                { text: 'Agenci w terminalu', link: '/mcp' },
+                { text: 'Agenci webowi (OAuth)', link: '/mcp_web' },
+              ],
+            },
             { text: 'DOKUMENTACJA API', link: 'https://app.wildedge.dev/api/docs' },
             { text: 'ZACZNIJ', link: 'https://app.wildedge.dev/dashboard/signup' },
           ],

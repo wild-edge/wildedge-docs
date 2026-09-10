@@ -4,8 +4,7 @@ title: Dokumentacja
 titleTemplate: Dokumentacja Wild Edge
 
 hero:
-  name: WildEdge
-  tagline: Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie.
+  text: Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie.
 
 features:
   - icon:
@@ -52,6 +51,15 @@ WildEdge instrumentuje wywołania inferencji i zapisuje, co naprawdę wydarzyło
 3. **Buduj zbiory danych** z wybranych przykładów i eksportuj je do swoich pipeline'ów ewaluacji i trenowania
 
 Przechwytywanie jest opcjonalne. Gdy jest wyłączone, SDK wysyła wyłącznie telemetrię, nigdy surowych wejść ani wyjść.
+
+## Zbadaj problem z agentem AI
+
+Podłącz Claude Code, Codex, Gemini CLI lub ChatGPT do swojego konta przez zdalny serwer [MCP](https://modelcontextprotocol.io/). Poproś agenta, żeby przejrzał ostatnie zdarzenia inferencji, prześledził trace albo zbadał awarię, bez przenoszenia danych między przeglądarką a terminalem.
+
+- [Podłącz agenta w terminalu](/mcp) za pomocą osobistego tokenu dostępu
+- [Podłącz agenta webowego](/mcp_web) takiego jak ChatGPT lub Claude przez OAuth
+
+Przewodniki MCP są na razie dostępne tylko po angielsku.
 
 ## Przewodniki integracji
 
