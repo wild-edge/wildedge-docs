@@ -55,7 +55,13 @@ Przechwytywanie jest opcjonalne. Gdy jest wyłączone, SDK wysyła wyłącznie t
 
 ## Przewodniki integracji
 
-**Przewodniki integracji w drodze.** Szczegółowe instrukcje konfiguracji, przykłady kodu i poradniki dla poszczególnych platform są w przygotowaniu. W międzyczasie zapraszamy do przeglądania repozytoriów i przykładów integracji na [GitHubie](https://github.com/wild-edge).
+| SDK | Instrukcja | Integracje |
+|---|---|---|
+| Python | [Zacznij](https://github.com/wild-edge/wildedge-python#install) | transformers, mlx, timm, gguf, onnx, ultralytics, tensorflow, torch, keras, openai, anthropic |
+| iOS / macOS | [Zacznij](https://github.com/wild-edge/wildedge-swift#getting-started) | ONNX Runtime, ML Kit, TFLite, ExecuTorch |
+| Android | [Zacznij](https://github.com/wild-edge/wildedge-android#quick-start) | TFLite, ONNX Runtime, ML Kit, LiteRT LLM, Play Services TFLite |
+
+Wolisz czytać kod? Każde SDK zawiera gotowe przykłady: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples). [Aplikacja demo](https://github.com/wild-edge/python-demo-app) uruchamia modele lokalne i zdalne w jednym pipelinie.
 
 ## Referencja API
 

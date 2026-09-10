@@ -55,7 +55,13 @@ Capture is opt-in. Leave it off and the SDK sends telemetry only, never raw inpu
 
 ## Integration Guides
 
-**Integration guides coming.** SDK-specific setup guides, code examples, and platform walkthroughs are on the way. Until then, browse our repositories and integration examples on [GitHub](https://github.com/wild-edge).
+| SDK | Setup guide | Integrations |
+|---|---|---|
+| Python | [Get started](https://github.com/wild-edge/wildedge-python#install) | transformers, mlx, timm, gguf, onnx, ultralytics, tensorflow, torch, keras, openai, anthropic |
+| iOS / macOS | [Get started](https://github.com/wild-edge/wildedge-swift#getting-started) | ONNX Runtime, ML Kit, TFLite, ExecuTorch |
+| Android | [Get started](https://github.com/wild-edge/wildedge-android#quick-start) | TFLite, ONNX Runtime, ML Kit, LiteRT LLM, Play Services TFLite |
+
+Prefer to read code? Every SDK ships runnable examples: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples). The [demo app](https://github.com/wild-edge/python-demo-app) runs on-device and remote models in one pipeline.
 
 ## Remote MCP
 
