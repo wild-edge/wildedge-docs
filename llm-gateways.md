@@ -13,6 +13,8 @@ Each event records:
 - input, output, cached and reasoning tokens, when the gateway reports them
 - latency, and time to first token for streamed calls
 - whether the call succeeded, and the error code when it failed
+- the gateway and its service name, and the model name your app asked the gateway for
+- the cost the gateway reports, when it reports one
 
 WildEdge doesn't store prompt or response text from gateway traces.
 
@@ -76,11 +78,45 @@ Use your proxy's address, one of your LiteLLM keys and a model name from your Li
 
 Open **Events** in WildEdge. Events appear within a few minutes. You should see an inference event for the provider model that served the request. It carries the request's token counts and latency.
 
+### 4. Query gateway events
+
+Gateway events have their own columns, which you can use in SQL on the **Analytics** page or through [MCP](./mcp). They are empty on events from the SDKs.
+
+| Column | What it holds |
+| --- | --- |
+| `gateway` | The gateway that reported the call, for example `litellm`. |
+| `service_name` | The `OTEL_SERVICE_NAME` you set on the gateway. |
+| `model_provider` | The provider that served the call, for example `openai`. |
+| `requested_model_id` | The model name your app sent to the gateway. |
+| `request_id` | One gateway request. A failed attempt and its fallback share it. |
+| `reported_cost_amount` | The cost the gateway reports, as an exact decimal. |
+| `reported_cost_currency` | The currency of that cost, for example `USD`. |
+| `reported_cost_is_estimated` | `true` when the gateway priced the call itself. |
+
+For example, the cost and token use per requested model over the selected time range:
+
+```sql
+SELECT
+  requested_model_id,
+  model_name,
+  COUNT(*) AS calls,
+  SUM(tokens_in) AS tokens_in,
+  SUM(tokens_out) AS tokens_out,
+  SUM(reported_cost_amount) AS cost_usd
+FROM events
+WHERE gateway = 'litellm'
+  AND reported_cost_currency = 'USD'
+GROUP BY ALL
+ORDER BY cost_usd DESC
+```
+
+LiteLLM prices each call from its own price list, so the cost is an estimate. Calls LiteLLM can't price have no cost, so the filter on currency leaves them out. Count them separately with `reported_cost_amount IS NULL`.
+
 ### What the beta does not cover yet
 
 - **Duplicate events.** When an export is retried, the same model call can be stored twice. Totals can be slightly too high until duplicates are removed.
 - **Apps that also use the SDK.** If your app records its OpenAI or Anthropic calls with a WildEdge SDK and sends them through the gateway, each call is counted twice. The two events aren't linked into one trace. To use the SDK for on-device models only, enable just those integrations, for example `wildedge run --integrations llama_cpp`. `wildedge run` enables every integration by default, including OpenAI and Anthropic.
-- **Gateway details.** The service name, the model name your app requested, and the cost LiteLLM reports aren't stored yet. Events show the provider model and token counts.
+- **Costs of unpriced models.** LiteLLM reports no cost for models missing from its price list and for failed calls. These events have no cost, so cost totals leave them out.
 - **Cache hits.** LiteLLM doesn't export a model call when it answers from its cache, so cache hits don't appear.
 - **Interrupted streams.** A stream the client cancels can look like a successful call.
 - **Missing usage.** When a call fails or the provider doesn't report usage, LiteLLM exports zero tokens. WildEdge records these token counts as unknown, not as zero.
