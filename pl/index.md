@@ -59,6 +59,10 @@ Podłącz Claude Code, Codex, Gemini CLI lub ChatGPT do swojego konta przez zdal
 
 Przewodniki MCP są na razie dostępne tylko po angielsku.
 
+## Monitoruj wywołania przez bramę LLM
+
+Twoje wywołania modeli przechodzą już przez bramę? Skieruj jej eksport OpenTelemetry do WildEdge, a każde wywołanie modelu stanie się zdarzeniem inferencji, bez SDK w aplikacji. [Skonfiguruj LiteLLM](/llm-gateways) (po angielsku).
+
 ## Przykłady
 
 Każde SDK zawiera gotowe do uruchomienia przykłady: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples).
