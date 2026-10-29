@@ -79,6 +79,7 @@ Open **Events** in WildEdge. Events appear within a few minutes. You should see 
 ### What the beta does not cover yet
 
 - **Duplicate events.** When an export is retried, the same model call can be stored twice. Totals can be slightly too high until duplicates are removed.
+- **Apps that also use the SDK.** If your app records its OpenAI or Anthropic calls with a WildEdge SDK and sends them through the gateway, each call is counted twice. The two events aren't linked into one trace. To use the SDK for on-device models only, enable just those integrations, for example `wildedge run --integrations llama_cpp`. `wildedge run` enables every integration by default, including OpenAI and Anthropic.
 - **Gateway details.** The service name, the model name your app requested, and the cost LiteLLM reports aren't stored yet. Events show the provider model and token counts.
 - **Cache hits.** LiteLLM doesn't export a model call when it answers from its cache, so cache hits don't appear.
 - **Interrupted streams.** A stream the client cancels can look like a successful call.
