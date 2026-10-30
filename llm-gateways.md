@@ -1,9 +1,9 @@
 ---
-title: LLM gateway integrations
+title: Set up gateway telemetry
 description: Send model calls from an LLM gateway to WildEdge over OpenTelemetry, from LiteLLM or OpenRouter.
 ---
 
-# LLM gateway integrations <Badge type="tip" text="Beta" />
+# Set up gateway telemetry <Badge type="tip" text="Beta" />
 
 If your app reaches LLM providers through a gateway, the gateway can send WildEdge a record of every model call. You don't need to change your app or install an SDK. The gateway exports OpenTelemetry (OTLP) traces, and WildEdge turns each model call into an inference event.
 
@@ -167,6 +167,10 @@ Send one request through OpenRouter with the API key you use in your app. Open *
 - **Fallbacks.** Each request is one event, for the model and provider that answered. Attempts that failed before a fallback aren't recorded.
 - **Requests OpenRouter rejects before routing,** for example with an unknown model ID. OpenRouter sends no trace for them.
 - **Duplicate events.** Same as [for LiteLLM](#what-the-beta-does-not-cover-yet).
+
+## Next: investigate
+
+[Connect your AI agent](/connect-agent), or follow [Investigate events and traces](/investigate). If your app also uses an SDK, check the [combined setup guide](/setup/sdk-and-gateway) to avoid recording the same call twice.
 
 ## Troubleshooting
 

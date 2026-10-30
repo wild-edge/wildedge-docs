@@ -1,11 +1,11 @@
 ---
-title: Connect a web agent with OAuth
+title: Connect ChatGPT or Claude
 description: Connect ChatGPT, Claude, or another OAuth-capable web agent to WildEdge through remote MCP.
 ---
 
-# Connect a web agent with OAuth
+# Connect ChatGPT or Claude
 
-WildEdge supports OAuth authentication for remote [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) clients. This lets web agents such as ChatGPT and Claude connect to your WildEdge account through a browser sign-in—there is no access token to create, copy, or paste into the agent.
+WildEdge supports OAuth authentication for remote [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) clients. This lets web agents such as ChatGPT and Claude connect to your WildEdge account through a browser sign-in. You do not need to create or copy a token.
 
 Use this MCP server URL in your agent:
 
@@ -15,8 +15,8 @@ https://app.wildedge.dev/mcp
 
 During setup, the agent redirects you to WildEdge. You sign in, choose **Read** or **Read + Write**, and authorize the connection. WildEdge then issues and manages the OAuth credentials for that agent.
 
-::: tip Connecting a coding agent?
-For Codex CLI, Claude Code, or Gemini CLI, see the [personal access token setup guide](/mcp).
+::: tip Using Codex, Claude Code, or Gemini CLI?
+For Codex CLI, Claude Code, or Gemini CLI, see [Connect Codex, Claude Code, or Gemini CLI](/mcp).
 :::
 
 ## Connect ChatGPT
@@ -89,7 +89,7 @@ Enter `https://app.wildedge.dev/mcp`. Do not enter the documentation URL or the 
 Claude asks follow-up questions about authentication. WildEdge supports the settings Claude detects:
 
 - **Authentication:** **Always required**
-- **OAuth client:** **No client ID — register one automatically**
+- **OAuth client:** **No client ID** (automatic registration)
 
 Keep these detected settings, leave **Advanced** unchanged, and finish adding the connector.
 

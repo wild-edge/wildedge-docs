@@ -2,7 +2,7 @@
 
 ## Quickest way: edit on GitHub
 
-Every page has an "Edit this page" link at the bottom. Click it, make your changes, and open a PR — no local setup needed.
+Every page has an "Edit this page" link at the bottom. Click it, make your changes, and open a PR. No local setup is needed.
 
 ## Working locally
 
