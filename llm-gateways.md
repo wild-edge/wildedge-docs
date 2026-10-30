@@ -1,6 +1,6 @@
 ---
 title: LLM gateway integrations
-description: Send model calls from an LLM gateway to WildEdge over OpenTelemetry, starting with LiteLLM.
+description: Send model calls from an LLM gateway to WildEdge over OpenTelemetry, from LiteLLM or OpenRouter.
 ---
 
 # LLM gateway integrations <Badge type="tip" text="Beta" />
@@ -23,6 +23,7 @@ Supported gateways:
 | Gateway | Versions | Status |
 | --- | --- | --- |
 | [LiteLLM proxy](#litellm) | 1.106.6 | Beta |
+| [OpenRouter](#openrouter) | Broadcast | Beta |
 
 ## LiteLLM
 
@@ -122,6 +123,51 @@ LiteLLM prices each call from its own price list, so the cost is an estimate. Ca
 - **Missing usage.** When a call fails or the provider doesn't report usage, LiteLLM exports zero tokens. WildEdge records these token counts as unknown, not as zero.
 - **Traces only.** WildEdge doesn't accept OpenTelemetry metrics or logs.
 
+## OpenRouter
+
+OpenRouter sends traces with its Broadcast feature. You set it up in the OpenRouter dashboard. Your app doesn't change.
+
+### 1. Find your project secret
+
+Use a project secret, found the same way as [for LiteLLM](#_1-find-your-project-secret). Use a separate project key for OpenRouter.
+
+### 2. Add WildEdge as a Broadcast destination
+
+1. In OpenRouter, open **Settings → Observability** and turn on **Enable Broadcast**.
+2. Edit the **OpenTelemetry Collector** destination.
+3. Set **Endpoint** to the full traces URL:
+
+   ```text
+   https://ingest.wildedge.dev/api/otlp/v1/traces
+   ```
+
+4. Set **Headers** to:
+
+   ```json
+   {"Authorization": "Bearer <secret>"}
+   ```
+
+5. Turn on **Privacy Mode**. WildEdge doesn't store prompt or response text, and without it each export carries the full prompt. WildEdge rejects exports over 2 MB.
+6. Select **Test Connection**, then save. The test doesn't create an event.
+
+### 3. Check that events arrive
+
+Send one request through OpenRouter with the API key you use in your app. Open **Events** in WildEdge. Events appear within a few minutes, one inference event per request.
+
+### What you get from OpenRouter
+
+- `gateway` and `model_provider` are both `openrouter`, because OpenRouter is the API you call and pay. The provider that served the call, for example `azure`, isn't a column yet.
+- `model_name` is OpenRouter's model ID, for example `openai/gpt-4o-mini`.
+- `reported_cost_amount` is what OpenRouter charged, in USD, so `reported_cost_is_estimated` is `false`. A stream your app cancels is charged, and its event is marked as failed.
+- `request_id` is OpenRouter's generation ID, the one shown in its activity log.
+
+### What the beta does not cover yet
+
+- **Fallbacks.** Each request is one event, for the model and provider that answered. Attempts that failed before a fallback aren't recorded.
+- **Time to first token.** Not recorded for OpenRouter calls.
+- **Requests OpenRouter rejects before routing,** for example with an unknown model ID. OpenRouter sends no trace for them.
+- **Duplicate events.** Same as [for LiteLLM](#what-the-beta-does-not-cover-yet).
+
 ## Troubleshooting
 
 LiteLLM logs export failures, for example `Failed to export spans batch`. The HTTP status tells you why:
@@ -136,6 +182,8 @@ LiteLLM logs export failures, for example `Failed to export spans batch`. The HT
 | `503` | WildEdge couldn't store the events yet. | The exporter retries on its own. Nothing to do. |
 
 If requests succeed but no events appear, check that your LiteLLM version is supported and that `LITELLM_OTEL_V2=true` is set on the proxy process.
+
+OpenRouter saves a destination only after **Test Connection** passes. If it fails, check that the endpoint ends in `/v1/traces` and that the header is valid JSON.
 
 ### How retries work
 
