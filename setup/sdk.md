@@ -27,6 +27,8 @@ Keep credentials out of source control. Use separate project keys for integratio
 
 Input and output capture is opt-in. Follow your SDK guide to configure capture or supply attachments through its tracking API. Support varies by integration.
 
+See [Captured content](/what-we-collect#captured-content) for the ways content can reach WildEdge.
+
 ## 4. Check your first event
 
 Run one inference through an integration enabled in your SDK. Open **Events** in your WildEdge project and find the new event. Check the model, timing, and available telemetry. Captured inputs and outputs are available only when capture is enabled and supported by the integration.

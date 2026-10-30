@@ -5,6 +5,8 @@ title: Investigate events and traces
 
 Start with a small set of recent events, find a suspicious inference, then inspect the context available to explain it.
 
+Use [Telemetry reference](/what-we-collect) to choose fields for the problem you are investigating.
+
 ## 1. Find recent events
 
 Open **Events** in your [WildEdge project](https://app.wildedge.dev/), or [connect your AI agent](/connect-agent) and ask:

@@ -18,6 +18,8 @@ Each event records:
 
 WildEdge doesn't store prompt or response text from gateway traces.
 
+See [Telemetry reference](/what-we-collect) for guidance on failures, latency, usage, and cost.
+
 Supported gateways:
 
 | Gateway | Versions | Status |
