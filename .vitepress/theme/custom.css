@@ -152,3 +152,7 @@
   outline-offset: 4px;
 }
 ::selection { background: rgba(0, 183, 139, .25); }
+
+.agent-setup { margin: 24px 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--we-accent-border); }
+.agent-setup h3 { margin-top: 8px; }
+.agent-setup p { margin: 10px 0; }

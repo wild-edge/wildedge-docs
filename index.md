@@ -24,15 +24,51 @@ Each setup guide ends with a check that your first inference event has arrived.
 
 ## 2. Investigate your data
 
-<div class="next-step">
-<div><span class="eyebrow">ALREADY SENDING EVENTS?</span><h3>Connect your AI agent</h3><p>Inspect events, follow traces, and investigate failures with your agent.</p></div>
-<a href="/connect-agent">Choose your agent →</a>
+<div class="agent-setup">
+<div>
+
+### Use your agent with WildEdge
+
+Connect Codex, Claude Code, Gemini CLI, ChatGPT, or Claude through MCP. Then ask it to find failed calls or explain a slow run.
+
+[Connect your agent →](/connect-agent)
+
+</div>
 </div>
 
-You can also open **Events** in [WildEdge](https://app.wildedge.dev/) to inspect the telemetry yourself. For a first investigation, follow [Investigate events and traces](/investigate).
+### Start with a problem
+
+| Problem | What to inspect |
+| --- | --- |
+| [OpenAI or Anthropic calls fail](/what-we-collect#failures) | Provider error codes, HTTP status, and time until failure |
+| [llama.cpp responses start slowly](/what-we-collect#latency) | Time to first token, model load time, and quantization |
+| [Core ML or TensorFlow Lite slows on some phones](/what-we-collect#device-performance) | Device model, thermal state, memory, and actual accelerator |
+| [LiteLLM or OpenRouter costs increase](/what-we-collect#usage-and-cost) | Requested and served models, token use, and reported cost |
+| [ONNX Runtime or Transformers results change](/what-we-collect#model-behavior) | Model versions, input measurements, predictions, and feedback |
+
+Available signals depend on the integration. The linked guides explain what to check and where data may be missing.
+
+[Follow an event through its run or trace →](/investigate)
 
 ## Resources
 
-- **Runnable examples:** [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples).
-- **Demo app:** run on-device and remote models in [one example pipeline](https://github.com/wild-edge/python-demo-app).
-- **API reference:** browse the [interactive API docs](https://app.wildedge.dev/api/docs).
+### Run an example
+
+| What you are building | Examples |
+| --- | --- |
+| Local LLM on a desktop or server | [llama.cpp](https://github.com/wild-edge/wildedge-python/blob/main/examples/gguf_example.py), [MLX](https://github.com/wild-edge/wildedge-python/blob/main/examples/mlx_example.py), [Transformers](https://github.com/wild-edge/wildedge-python/blob/main/examples/transformers_example.py) |
+| On-device inference on iOS / macOS | [Core ML car scanner](https://github.com/wild-edge/wildedge-swift/tree/main/Examples/CarScannerExample), [ONNX Runtime](https://github.com/wild-edge/wildedge-swift/tree/main/Examples/OnnxExample), [ExecuTorch](https://github.com/wild-edge/wildedge-swift/tree/main/Examples/execuTorchExample) |
+| On-device inference on Android | [Image classification](https://github.com/wild-edge/wildedge-android/tree/main/samples/image-classification), [local LLM](https://github.com/wild-edge/wildedge-android/tree/main/samples/local-llm) |
+| Remote model calls from Python | [OpenAI](https://github.com/wild-edge/wildedge-python/blob/main/examples/openai_example.py), [Anthropic](https://github.com/wild-edge/wildedge-python/blob/main/examples/anthropic_example.py), [other HTTP APIs](https://github.com/wild-edge/wildedge-python/blob/main/examples/llm_api_example.py) |
+| Local and remote models in one pipeline | [Python demo app](https://github.com/wild-edge/python-demo-app) |
+
+### Reference
+
+- **[Telemetry reference](/what-we-collect):** collected fields, SDK and gateway coverage, and optional captured content, grouped by troubleshooting task.
+
+### Configure an integration
+
+- **SDK setup:** [Python, iOS / macOS, and Android](/setup/sdk).
+- **Gateway export:** [LiteLLM](/llm-gateways#litellm) or [OpenRouter](/llm-gateways#openrouter).
+- **Agent access:** [Connect your AI agent](/connect-agent).
+- **HTTP endpoints:** [API reference](https://app.wildedge.dev/api/docs).

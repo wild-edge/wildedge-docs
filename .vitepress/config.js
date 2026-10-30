@@ -52,6 +52,7 @@ export default withMermaid(
               { text: 'Investigate events and traces', link: '/investigate' },
             ] },
             { text: 'Reference', items: [
+              { text: 'Telemetry reference', link: '/what-we-collect' },
               { text: 'Gateway fields and limitations', link: '/llm-gateways#_4-query-gateway-events' },
               { text: 'Troubleshooting gateways', link: '/llm-gateways#troubleshooting' },
               { text: 'API reference ↗', link: 'https://app.wildedge.dev/api/docs' },
