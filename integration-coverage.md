@@ -73,4 +73,3 @@ For gateway retries, duplicate handling, and provider-specific gaps, see [LLM ga
 3. Check the fields needed for your investigation.
 4. If a field is absent, check adapter support before treating it as a model or device issue.
 
-Coverage was checked against the server schema, Python SDK implementation and configuration, Swift v1.1.6 release notes, Android v1.1.0 release changes, and the gateway setup guides. No complete per-field mobile coverage matrix is claimed here.
