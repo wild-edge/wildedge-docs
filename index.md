@@ -57,6 +57,10 @@ Connect Claude Code, Codex, Gemini CLI, or ChatGPT to your account through the r
 - [Connect a coding agent](/mcp) with a personal access token
 - [Connect a web agent](/mcp_web) such as ChatGPT or Claude with OAuth
 
+## Monitor calls through an LLM gateway
+
+Already route model calls through a gateway? Point its OpenTelemetry export at WildEdge and every model call becomes an inference event, with no SDK in your app. Set up [LiteLLM](/llm-gateways#litellm) or [OpenRouter](/llm-gateways#openrouter).
+
 ## Examples
 
 Every SDK ships runnable examples: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples).
