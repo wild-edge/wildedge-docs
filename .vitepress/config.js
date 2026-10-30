@@ -28,23 +28,35 @@ export default withMermaid(
         lang: 'en-US',
         title: 'WildEdge Docs',
         description:
-          'Know where your AI struggles in the real world. See where model behavior changes across releases, runtimes, and devices, then turn real examples into datasets for evaluation and training.',
+          'Set up inference telemetry from your app or LLM gateway and investigate it in WildEdge or with your AI agent.',
         themeConfig: {
           logo: '/wildedge-logo-text.svg',
-          siteTitle: 'Docs',
+          siteTitle: 'WildEdge Docs',
           nav: [
-            { text: 'BLOG', link: 'https://blog.wildedge.dev' },
-            { text: 'CHANGELOG', link: '/changelog' },
-            {
-              text: 'REMOTE MCP',
-              items: [
-                { text: 'Coding agents', link: '/mcp' },
-                { text: 'Web agents (OAuth)', link: '/mcp_web' },
-              ],
-            },
-            { text: 'LLM GATEWAYS', link: '/llm-gateways' },
-            { text: 'API DOCS', link: 'https://app.wildedge.dev/api/docs' },
-            { text: 'GET STARTED', link: 'https://app.wildedge.dev/dashboard/signup' },
+            { text: 'Guide', link: '/' },
+            { text: 'API reference', link: 'https://app.wildedge.dev/api/docs' },
+            { text: 'Changelog', link: '/changelog' },
+            { text: 'Open WildEdge ↗', link: 'https://app.wildedge.dev/' },
+          ],
+          sidebar: [
+            { text: 'Get started', items: [
+              { text: 'Choose your setup', link: '/' },
+              { text: 'App only', link: '/setup/sdk' },
+              { text: 'Gateway only', link: '/llm-gateways' },
+              { text: 'App + gateway', link: '/setup/sdk-and-gateway' },
+            ] },
+            { text: 'Use WildEdge', items: [
+              { text: 'Connect your AI agent', link: '/connect-agent' },
+              { text: 'Codex / Claude Code / Gemini CLI', link: '/mcp' },
+              { text: 'ChatGPT / Claude', link: '/mcp_web' },
+              { text: 'Investigate events and traces', link: '/investigate' },
+            ] },
+            { text: 'Reference', items: [
+              { text: 'Gateway fields and limitations', link: '/llm-gateways#_4-query-gateway-events' },
+              { text: 'Troubleshooting gateways', link: '/llm-gateways#troubleshooting' },
+              { text: 'API reference ↗', link: 'https://app.wildedge.dev/api/docs' },
+              { text: 'Changelog', link: '/changelog' },
+            ] },
           ],
           socialLinks: [{ icon: 'github', link: 'https://github.com/wild-edge' }],
           editLink: {

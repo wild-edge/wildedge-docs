@@ -1,72 +1,38 @@
 ---
-layout: home
-
-hero:
-  text: Know where your AI struggles in the real world.
-
-features:
-  - icon:
-      light: /icons/python-light.svg
-      dark: /icons/python-dark.svg
-    title: Python
-    badge:
-      type: tip
-      text: Beta
-    link: https://github.com/wild-edge/wildedge-python#install
-    linkText: Set up Python
-  - icon:
-      light: /icons/ios-light.svg
-      dark: /icons/ios-dark.svg
-    title: iOS / macOS
-    badge:
-      type: tip
-      text: Beta
-    link: https://github.com/wild-edge/wildedge-swift#getting-started
-    linkText: Set up iOS / macOS
-  - icon:
-      light: /icons/android-light.svg
-      dark: /icons/android-dark.svg
-    title: Android
-    link: https://github.com/wild-edge/wildedge-android#quick-start
-    linkText: Set up Android
-  - icon:
-      light: /icons/linux-light.svg
-      dark: /icons/linux-dark.svg
-    title: Linux / Embedded
-    badge:
-      type: warning
-      text: Coming Soon
+title: Get started with WildEdge
+description: Collect inference telemetry from your app or LLM gateway, then investigate it in WildEdge or with your AI agent.
 ---
 
-## What WildEdge does
+<div class="docs-intro">
+<div class="eyebrow">GET STARTED</div>
 
-See where model behavior changes across releases, runtimes, and devices. Inspect captured inputs, outputs, and feedback, then turn selected examples into datasets for evaluation and training.
+# Get started with WildEdge
 
-WildEdge instruments your inference calls and records what actually happened in production: latency, confidence, drift, hardware and thermal state, and the feedback your users give on each result. Turn on capture and the raw inputs and outputs land next to the event that produced them.
+Collect inference telemetry from your app or LLM gateway, then investigate it in WildEdge or with your AI agent.
 
-1. **Compare** model behavior across app releases, model versions, runtimes, and device classes
-2. **Inspect** the events that went wrong, with their captured inputs, outputs, and user feedback
-3. **Build datasets** from selected examples and export them to your evaluation and training pipelines
+</div>
 
-Capture is opt-in. Leave it off and the SDK sends telemetry only, never raw inputs or outputs.
+## 1. Choose where to collect telemetry
 
-## Investigate with an AI agent
+<div class="setup-grid">
+<a class="setup-card" href="/setup/sdk"><span class="card-number">01 / APPLICATION</span><h3>App only</h3><p>Instrument inference calls in your application, including on-device models.</p><span class="card-meta">Python · iOS / macOS · Android</span><strong>Set up app telemetry →</strong></a>
+<a class="setup-card" href="/llm-gateways"><span class="card-number">02 / GATEWAY</span><h3>Gateway only</h3><p>Record model calls through your gateway without changing your app.</p><span class="card-meta">LiteLLM · OpenRouter · Beta</span><strong>Set up gateway telemetry →</strong></a>
+<a class="setup-card" href="/setup/sdk-and-gateway"><span class="card-number">03 / BOTH</span><h3>App + gateway</h3><p>Record local inference with the SDK and remote calls with the gateway.</p><span class="card-meta">On-device + remote inference</span><strong>Set up both →</strong></a>
+</div>
 
-Connect Claude Code, Codex, Gemini CLI, or ChatGPT to your account through the remote [MCP](https://modelcontextprotocol.io/) server. Ask it to inspect recent inference events, follow a trace, or dig into a failure, without copying data between your browser and your terminal.
+Each setup guide ends with a check that your first inference event has arrived.
 
-- [Connect a coding agent](/mcp) with a personal access token
-- [Connect a web agent](/mcp_web) such as ChatGPT or Claude with OAuth
+## 2. Investigate your data
 
-## Monitor calls through an LLM gateway
+<div class="next-step">
+<div><span class="eyebrow">ALREADY SENDING EVENTS?</span><h3>Connect your AI agent</h3><p>Inspect events, follow traces, and investigate failures with your agent.</p></div>
+<a href="/connect-agent">Choose your agent →</a>
+</div>
 
-Already route model calls through a gateway? Point its OpenTelemetry export at WildEdge and every model call becomes an inference event, with no SDK in your app. Set up [LiteLLM](/llm-gateways#litellm) or [OpenRouter](/llm-gateways#openrouter).
+You can also open **Events** in [WildEdge](https://app.wildedge.dev/) to inspect the telemetry yourself. For a first investigation, follow [Investigate events and traces](/investigate).
 
-## Examples
+## Resources
 
-Every SDK ships runnable examples: [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples).
-
-The [demo app](https://github.com/wild-edge/python-demo-app) runs on-device and remote models in one pipeline, so you can watch the whole loop before wiring up your own.
-
-## API Reference
-
-Interactive Swagger docs are also available at [app.wildedge.dev/api/docs](https://app.wildedge.dev/api/docs).
+- **Runnable examples:** [Python](https://github.com/wild-edge/wildedge-python/tree/main/examples), [Swift](https://github.com/wild-edge/wildedge-swift/tree/main/Examples), [Android](https://github.com/wild-edge/wildedge-android/tree/main/samples).
+- **Demo app:** run on-device and remote models in [one example pipeline](https://github.com/wild-edge/python-demo-app).
+- **API reference:** browse the [interactive API docs](https://app.wildedge.dev/api/docs).

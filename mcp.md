@@ -1,9 +1,9 @@
 ---
-title: Remote MCP for coding agents
+title: Connect Codex, Claude Code, or Gemini CLI
 description: Connect Claude Code, Codex, or Gemini CLI to create projects, investigate telemetry, and manage your team.
 ---
 
-# Use WildEdge with remote MCP
+# Connect Codex, Claude Code, or Gemini CLI
 
 WildEdge's remote [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server lets a local AI agent work with your WildEdge account. You can ask the agent to create a project, inspect recent inference events, follow a trace, or investigate a failure without copying data between your browser and terminal.
 
@@ -15,11 +15,11 @@ https://app.wildedge.dev/mcp
 
 You do not need to install or run an MCP server locally.
 
-::: tip Connecting ChatGPT or another web agent?
-Web agents can connect with OAuth, without creating or copying a personal access token. Follow the [web agent setup guide](/mcp_web).
+::: tip Using ChatGPT or Claude?
+Follow [Connect ChatGPT or Claude](/mcp_web) to sign in with OAuth.
 :::
 
-## Connect your coding agent
+## Connect your agent
 
 Create a personal MCP token, then add the WildEdge remote server to your local coding agent.
 
@@ -132,7 +132,7 @@ For a suspicious event, ask for its normalized telemetry and the surrounding run
 
 > Open event `<event-id>` from the previous result. Explain the inputs, outputs, errors, and timing that are available. If it belongs to a run, follow the run trace and summarize where the problem started.
 
-The agent reasons over the bounded events returned by WildEdge; it does not automatically analyze every event in the company. Specify the company, project, time window, and event type when you want a narrower investigation.
+The agent reasons over the events returned by WildEdge. It does not automatically analyze every event in the company. Specify the company, project, time window, and event type when you want a narrower investigation.
 
 ### Invite a colleague
 

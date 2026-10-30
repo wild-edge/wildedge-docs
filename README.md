@@ -4,7 +4,7 @@
 
 # WildEdge Docs
 
-Documentation for [WildEdge](https://wildedge.dev): know where your AI struggles in the real world. Live at [docs.wildedge.dev](https://docs.wildedge.dev).
+Setup guides and reference documentation for [WildEdge](https://wildedge.dev). Live at [docs.wildedge.dev](https://docs.wildedge.dev).
 
 Built with VitePress.
 
