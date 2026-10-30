@@ -36,7 +36,7 @@ export default withMermaid(
             { text: 'Guide', link: '/' },
             { text: 'API reference', link: 'https://app.wildedge.dev/api/docs' },
             { text: 'Changelog', link: '/changelog' },
-            { text: 'Open WildEdge ↗', link: 'https://app.wildedge.dev/' },
+            { text: 'Open WildEdge', link: 'https://app.wildedge.dev/' },
           ],
           sidebar: [
             { text: 'Get started', items: [
@@ -50,12 +50,14 @@ export default withMermaid(
               { text: 'Codex / Claude Code / Gemini CLI', link: '/mcp' },
               { text: 'ChatGPT / Claude', link: '/mcp_web' },
               { text: 'Investigate events and traces', link: '/investigate' },
+              { text: 'Troubleshooting guide', link: '/what-we-collect' },
             ] },
             { text: 'Reference', items: [
-              { text: 'Telemetry reference', link: '/what-we-collect' },
+              { text: 'Telemetry reference', link: '/telemetry' },
+              { text: 'Integration coverage', link: '/integration-coverage' },
               { text: 'Gateway fields and limitations', link: '/llm-gateways#_4-query-gateway-events' },
               { text: 'Troubleshooting gateways', link: '/llm-gateways#troubleshooting' },
-              { text: 'API reference ↗', link: 'https://app.wildedge.dev/api/docs' },
+              { text: 'API reference', link: 'https://app.wildedge.dev/api/docs' },
               { text: 'Changelog', link: '/changelog' },
             ] },
           ],

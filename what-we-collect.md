@@ -1,11 +1,11 @@
 ---
-title: Telemetry reference
+title: Troubleshooting guide
 description: Choose telemetry for investigating failures, latency, cost, device issues, and model changes.
 ---
 
-# Telemetry reference
+# Troubleshooting guide
 
-Use this page to identify which telemetry can help explain a problem. Open **Events** in your project or [connect your AI agent](/connect-agent) to inspect it.
+Use this page to identify which telemetry can help explain a problem. See [Telemetry reference](/telemetry) for event and field definitions and [Integration coverage](/integration-coverage) for collection behavior. Open **Events** in your project or [connect your AI agent](/connect-agent) to inspect it.
 
 Field availability depends on the SDK, integration, runtime, and provider. The fields below describe supported signals, not a guarantee that every event contains them. A missing value means unknown, not zero.
 
@@ -88,12 +88,12 @@ Filter by device, app version, and model version. Compare affected devices with 
 | --- | --- |
 | Device model, OS version, app version | Whether the issue is limited to a device class or release |
 | Thermal state and CPU frequency | Whether heat or throttling coincides with slower calls |
-| Available memory and memory warnings | Whether memory pressure coincides with failures |
+| Available memory | Whether memory pressure coincides with failures |
 | `accelerator_actual` | Which accelerator ran the inference |
 | Model load and unload events | Startup overhead and model eviction |
-| Accelerator fallback events | A reported change from the requested accelerator |
+| Requested and actual accelerator | Differences between configuration and reported execution |
 
-These signals require SDK instrumentation and platform support. Gateway exports do not describe the calling device's hardware. A missing fallback event does not prove the requested accelerator was used.
+These signals require SDK instrumentation and platform support. Gateway exports do not describe the calling device's hardware. A missing accelerator value does not prove the requested accelerator was used.
 
 ## Model behavior
 
