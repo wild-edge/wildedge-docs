@@ -64,7 +64,8 @@ Available signals depend on the integration. The linked guides explain what to c
 
 ### Reference
 
-- **[Telemetry reference](/what-we-collect):** collected fields, SDK and gateway coverage, and optional captured content, grouped by troubleshooting task.
+- **[Telemetry reference](/telemetry):** event types, payload fields, units, and optional content.
+- **[Integration coverage](/integration-coverage):** automatic tracking, manual instrumentation, and delivery behavior.
 
 ### Configure an integration
 
