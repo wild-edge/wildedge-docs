@@ -144,7 +144,7 @@ Use a project secret, found the same way as [for LiteLLM](#_1-find-your-project-
 4. Set **Headers** to:
 
    ```json
-   {"Authorization": "Bearer <secret>"}
+   {"X-Project-Secret": "<secret>"}
    ```
 
 5. Turn on **Privacy Mode**. WildEdge doesn't store prompt or response text, and without it each export carries the full prompt. WildEdge rejects exports over 2 MB.

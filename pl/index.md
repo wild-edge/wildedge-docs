@@ -61,7 +61,7 @@ Przewodniki MCP są na razie dostępne tylko po angielsku.
 
 ## Monitoruj wywołania przez bramę LLM
 
-Twoje wywołania modeli przechodzą już przez bramę? Skieruj jej eksport OpenTelemetry do WildEdge, a każde wywołanie modelu stanie się zdarzeniem inferencji, bez SDK w aplikacji. [Skonfiguruj LiteLLM](/llm-gateways) (po angielsku).
+Twoje wywołania modeli przechodzą już przez bramę? Skieruj jej eksport OpenTelemetry do WildEdge, a każde wywołanie modelu stanie się zdarzeniem inferencji, bez SDK w aplikacji. Skonfiguruj [LiteLLM](/llm-gateways#litellm) lub [OpenRouter](/llm-gateways#openrouter) (po angielsku).
 
 ## Przykłady
 
