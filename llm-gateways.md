@@ -160,11 +160,11 @@ Send one request through OpenRouter with the API key you use in your app. Open *
 - `model_name` is OpenRouter's model ID, for example `openai/gpt-4o-mini`.
 - `reported_cost_amount` is what OpenRouter charged, in USD, so `reported_cost_is_estimated` is `false`. A stream your app cancels is charged, and its event is marked as failed.
 - `request_id` is OpenRouter's generation ID, the one shown in its activity log.
+- Time to first token is recorded on every call, streamed or not. It's how long the model took to start answering, measured by OpenRouter.
 
 ### What the beta does not cover yet
 
 - **Fallbacks.** Each request is one event, for the model and provider that answered. Attempts that failed before a fallback aren't recorded.
-- **Time to first token.** Not recorded for OpenRouter calls.
 - **Requests OpenRouter rejects before routing,** for example with an unknown model ID. OpenRouter sends no trace for them.
 - **Duplicate events.** Same as [for LiteLLM](#what-the-beta-does-not-cover-yet).
 
