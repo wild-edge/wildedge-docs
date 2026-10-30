@@ -59,7 +59,7 @@ Connect Claude Code, Codex, Gemini CLI, or ChatGPT to your account through the r
 
 ## Monitor calls through an LLM gateway
 
-Already route model calls through a gateway? Point its OpenTelemetry export at WildEdge and every model call becomes an inference event, with no SDK in your app. [Set up LiteLLM](/llm-gateways).
+Already route model calls through a gateway? Point its OpenTelemetry export at WildEdge and every model call becomes an inference event, with no SDK in your app. Set up [LiteLLM](/llm-gateways#litellm) or [OpenRouter](/llm-gateways#openrouter).
 
 ## Examples
 
