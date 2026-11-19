@@ -175,7 +175,7 @@ Send one request through OpenRouter with the API key you use in your app. Open *
 
 ## Bifrost
 
-Bifrost sends traces with its `otel` plugin. You add the plugin to Bifrost's config. Your app doesn't change.
+Bifrost sends traces with its `otel` plugin. Add the snippet below to your config to enable tracing.
 
 ### 1. Find your project secret
 
