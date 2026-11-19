@@ -9,7 +9,7 @@ description: What has changed recently
 
 **Platform**
 
-- Added beta [Bifrost](/llm-gateways#bifrost) gateway support over OpenTelemetry, with token use, latency, failures, fallbacks, and estimated cost.
+- Added beta [Bifrost](/gateways/bifrost) gateway support over OpenTelemetry, with token use, latency, failures, fallbacks, and estimated cost.
 
 ## October 2026
 

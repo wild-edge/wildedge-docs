@@ -70,6 +70,6 @@ Available signals depend on the integration. The linked guides explain what to c
 ### Configure an integration
 
 - **SDK setup:** [Python, iOS / macOS, and Android](/setup/sdk).
-- **Gateway export:** [LiteLLM](/llm-gateways#litellm), [OpenRouter](/llm-gateways#openrouter), or [Bifrost](/llm-gateways#bifrost).
+- **Gateway export:** [LiteLLM](/gateways/litellm), [OpenRouter](/gateways/openrouter), or [Bifrost](/gateways/bifrost).
 - **Agent access:** [Connect your AI agent](/connect-agent).
 - **HTTP endpoints:** [API reference](https://app.wildedge.dev/api/docs).

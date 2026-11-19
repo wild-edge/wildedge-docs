@@ -72,7 +72,7 @@ Compare usage by requested model and the model that served the call. Check missi
 | `reported_cost_is_estimated` | Whether that cost is an estimate |
 | `request_id` | Related gateway attempts, where supported |
 
-The cost fields above come from gateway exports. LiteLLM and Bifrost report estimated prices. OpenRouter reports the amount charged. Missing cost does not mean a free call. [Gateway fields and query examples](/llm-gateways#_4-query-gateway-events) cover these differences.
+The cost fields above come from gateway exports. LiteLLM and Bifrost report estimated prices. OpenRouter reports the amount charged. Missing cost does not mean a free call. [Gateway fields and query examples](/llm-gateways#query-gateway-events) cover these differences.
 
 If the gateway exports a cloud call, disable SDK tracking for that call to avoid counting it twice. SDK tracking for on-device models and gateway tracking for cloud models do not overlap. See [app and gateway setup](/setup/sdk-and-gateway).
 

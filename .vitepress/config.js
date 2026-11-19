@@ -42,7 +42,11 @@ export default withMermaid(
             { text: 'Get started', items: [
               { text: 'Choose your setup', link: '/' },
               { text: 'App only', link: '/setup/sdk' },
-              { text: 'Gateway only', link: '/llm-gateways' },
+              { text: 'Gateway only', link: '/llm-gateways', items: [
+                { text: 'LiteLLM', link: '/gateways/litellm' },
+                { text: 'OpenRouter', link: '/gateways/openrouter' },
+                { text: 'Bifrost', link: '/gateways/bifrost' },
+              ] },
               { text: 'App + gateway', link: '/setup/sdk-and-gateway' },
             ] },
             { text: 'Use WildEdge', items: [
@@ -55,7 +59,7 @@ export default withMermaid(
             { text: 'Reference', items: [
               { text: 'Telemetry reference', link: '/telemetry' },
               { text: 'Integration coverage', link: '/integration-coverage' },
-              { text: 'Gateway fields and limitations', link: '/llm-gateways#_4-query-gateway-events' },
+              { text: 'Gateway fields', link: '/llm-gateways#query-gateway-events' },
               { text: 'Troubleshooting gateways', link: '/llm-gateways#troubleshooting' },
               { text: 'API reference', link: 'https://app.wildedge.dev/api/docs' },
               { text: 'Changelog', link: '/changelog' },

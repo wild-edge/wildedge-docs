@@ -65,7 +65,7 @@ SDK buffering and gateway exporter retries are separate mechanisms.
 
 For Python settings and defaults, see [Configuration](https://github.com/wild-edge/wildedge-python/blob/main/docs/configuration.md). Retryable transmitter failures include HTTP 429, server errors, and network errors. Queue and age limits mean persistence is not an unlimited delivery guarantee.
 
-For gateway retries and provider-specific gaps, see [LLM gateways](/llm-gateways#retries).
+For retries and known limitations of each gateway, see its setup page: [LiteLLM](/gateways/litellm), [OpenRouter](/gateways/openrouter), or [Bifrost](/gateways/bifrost).
 
 ## Verify your setup
 

@@ -29,4 +29,4 @@ SDK and gateway events are not automatically linked into one trace. See [the com
 
 ## Investigate gateway calls
 
-Ask your agent to filter by gateway and inspect provider, model, token use, latency, and reported cost where available. Gateway reporting differs by provider. See [gateway fields and limitations](/llm-gateways#_4-query-gateway-events) before interpreting totals.
+Ask your agent to filter by gateway and inspect provider, model, token use, latency, and reported cost where available. Gateway reporting differs by provider. See [gateway fields](/llm-gateways#query-gateway-events) before interpreting totals.
