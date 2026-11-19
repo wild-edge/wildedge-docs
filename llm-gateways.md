@@ -107,8 +107,6 @@ LiteLLM prices each call from its own price list, so the cost is an estimate. Ca
 
 ### What the beta does not cover yet
 
-- **Duplicate events.** When an export is retried, the same model call can be stored twice. Duplicates are removed by 02:05 UTC the next day, so today's totals can be slightly high until then.
-- **Apps that also use the SDK.** If your app records its OpenAI or Anthropic calls with a WildEdge SDK and sends them through the gateway, each call is counted twice. The two events aren't linked into one trace. To use the SDK for on-device models only, enable just those integrations, for example `wildedge run --integrations llama_cpp`. `wildedge run` enables every integration by default, including OpenAI and Anthropic.
 - **Costs of unpriced models.** LiteLLM reports no cost for models missing from its price list and for failed calls. These events have no cost, so cost totals leave them out.
 - **Cache hits.** LiteLLM doesn't export a model call when it answers from its cache, so cache hits don't appear.
 - **Interrupted streams.** A stream the client cancels can look like a successful call.
@@ -158,7 +156,6 @@ Send one request through OpenRouter with the API key you use in your app. Open *
 
 - **Fallbacks.** Each request is one event, for the model and provider that answered. Attempts that failed before a fallback aren't recorded.
 - **Requests OpenRouter rejects before routing,** for example with an unknown model ID. OpenRouter sends no trace for them.
-- **Duplicate events.** Same as [for LiteLLM](#what-the-beta-does-not-cover-yet).
 
 ## Bifrost
 
@@ -220,8 +217,8 @@ Open **Events** in WildEdge. Events appear within a few minutes, one inference e
 
 ### What the beta does not cover yet
 
-- **Unchecked features.** We checked chat completions, streaming, failures and fallbacks on Bifrost v2.5.1. Embeddings, tool calls, retries and Bifrost's cache aren't checked yet. Other versions are mapped the same way.
-- **Duplicate events.** Same as [for LiteLLM](#what-the-beta-does-not-cover-yet).
+- **Unchecked features.** We checked chat completions, streaming, failures and fallbacks on Bifrost v2.5.1. Embeddings, tool calls, retries and Bifrost's cache aren't checked yet.
+- **Traces only.** WildEdge doesn't accept OpenTelemetry metrics. Leave `metrics_enabled` off.
 
 ## Next: investigate
 
