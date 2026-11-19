@@ -16,6 +16,7 @@ The [telemetry reference](/telemetry) lists accepted fields. An integration send
 | Android SDK | Decorated runtime calls record supported inference telemetry | Wrap supported runtimes or use model handles and tracking APIs | Installing the dependency does not instrument every call |
 | LiteLLM export | Exported provider calls become inference events | SDK tracking for local calls or application context | Cache hits are not exported. Reported cost is estimated |
 | OpenRouter Broadcast | Exported requests become inference events | SDK tracking for local calls or application context | Rejections before routing and failed fallback attempts are not exported |
+| Bifrost export | Exported provider attempts become inference events | SDK tracking for local calls or application context | Reported cost is estimated. Unpriced models have no cost |
 
 Gateway exports do not supply the calling device's hardware state or application feedback. SDK and gateway events are not automatically linked into one trace. Disable SDK tracking for cloud calls exported by the gateway if you want one event per call.
 
@@ -49,7 +50,7 @@ Other SDKs have their own attachment APIs and settings. Follow the platform guid
 
 Summaries, attributes, errors, URLs, and custom fields can contain content independently of attachments. See [content and identifiers](/telemetry#content-and-identifiers).
 
-Gateway prompt and response text is not stored by WildEdge. Enable OpenRouter Privacy Mode to avoid sending that content in exports.
+WildEdge keeps gateway prompt and response text as event summaries only when the gateway exports it. LiteLLM leaves it out by default, Bifrost with `disable_content_logging`, and OpenRouter in Privacy Mode.
 
 ## Buffering and delivery
 

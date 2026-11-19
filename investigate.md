@@ -19,7 +19,7 @@ Name the project and time window so the investigation stays focused. Your agent 
 
 > Open event `event-id` from the previous result. Explain the errors, timing, and available telemetry. Describe any captured inputs and outputs that are available.
 
-SDK inputs and outputs require capture to be enabled. WildEdge does not store prompt or response text from gateway traces. Missing data should not be treated as evidence that a call succeeded or had no cost.
+SDK inputs and outputs require capture to be enabled. Gateway prompt and response text is kept only when the gateway exports it. Missing data should not be treated as evidence that a call succeeded or had no cost.
 
 ## 3. Follow the surrounding trace
 

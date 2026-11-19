@@ -18,7 +18,7 @@ For apps with local and remote inference:
 | Inference path | Record with |
 | --- | --- |
 | On-device or local model | WildEdge SDK |
-| Remote model through LiteLLM or OpenRouter | Gateway export |
+| Remote model through LiteLLM, OpenRouter, or Bifrost | Gateway export |
 
 Enable only the SDK integrations that cover calls your gateway does not already record.
 
@@ -33,10 +33,10 @@ wildedge run --integrations llama_cpp
 ## 2. Configure both sources
 
 1. Follow [Set up app telemetry](/setup/sdk) for your application's platform.
-2. Follow [Set up gateway telemetry](/llm-gateways) for LiteLLM or OpenRouter.
+2. Follow [Set up gateway telemetry](/llm-gateways) for LiteLLM, OpenRouter, or Bifrost.
 3. Use the same WildEdge project if you want to inspect both sources there, with separate project keys so you can revoke either independently.
 
-SDK capture is opt-in. WildEdge does not store prompt or response text from gateway traces.
+SDK capture is opt-in. Gateway prompt and response text is kept only when the gateway exports it. See [Set up gateway telemetry](/llm-gateways).
 
 ## 3. Verify each inference path
 

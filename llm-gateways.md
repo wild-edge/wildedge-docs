@@ -1,6 +1,6 @@
 ---
 title: Set up gateway telemetry
-description: Send model calls from an LLM gateway to WildEdge over OpenTelemetry, from LiteLLM or OpenRouter.
+description: Send model calls from an LLM gateway to WildEdge over OpenTelemetry, from LiteLLM, OpenRouter or Bifrost.
 ---
 
 # Set up gateway telemetry <Badge type="tip" text="Beta" />
@@ -16,7 +16,7 @@ Each event records:
 - the gateway and its service name, and the model name your app asked the gateway for
 - the cost the gateway reports, when it reports one
 
-WildEdge doesn't store prompt or response text from gateway traces.
+When a gateway includes prompt and response text in its traces, WildEdge keeps it as the event's input and output summaries. Each setup below says how to leave it out.
 
 See [Troubleshooting guide](/what-we-collect) for guidance on failures, latency, usage, and cost.
 
@@ -26,6 +26,7 @@ Supported gateways:
 | --- | --- | --- |
 | [LiteLLM proxy](#litellm) | 1.106.6 | Beta |
 | [OpenRouter](#openrouter) | Broadcast | Beta |
+| [Bifrost](#bifrost) | v2.5.1 | Beta |
 
 ## LiteLLM
 
@@ -63,6 +64,8 @@ OTEL_SERVICE_NAME=litellm
 - The exporter adds `/v1/traces` to the endpoint itself. Don't add it yourself.
 - If your setup can only set an `Authorization` header, use `Authorization=Bearer <secret>` in place of `X-Project-Secret=<secret>`.
 - `OTEL_SERVICE_NAME` names the gateway in your traces. Use any name you like.
+
+LiteLLM leaves prompt and response text out of the export unless you set `OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT`.
 
 You don't need to change the LiteLLM config file.
 
@@ -149,7 +152,7 @@ Use a project secret, found the same way as [for LiteLLM](#_1-find-your-project-
    {"X-Project-Secret": "<secret>"}
    ```
 
-5. Turn on **Privacy Mode**. WildEdge doesn't store prompt or response text, and without it each export carries the full prompt. WildEdge rejects exports over 2 MB.
+5. Turn on **Privacy Mode**. Without it, each export carries the full prompt and response, which WildEdge keeps as the event's summaries. WildEdge also rejects exports over 2 MB.
 6. Select **Test Connection**, then save. The test doesn't create an event.
 
 ### 3. Check that events arrive
@@ -170,6 +173,69 @@ Send one request through OpenRouter with the API key you use in your app. Open *
 - **Requests OpenRouter rejects before routing,** for example with an unknown model ID. OpenRouter sends no trace for them.
 - **Duplicate events.** Same as [for LiteLLM](#what-the-beta-does-not-cover-yet).
 
+## Bifrost
+
+Bifrost sends traces with its `otel` plugin. You add the plugin to Bifrost's config. Your app doesn't change.
+
+### 1. Find your project secret
+
+Use a project secret, found the same way as [for LiteLLM](#_1-find-your-project-secret). Use a separate project key for Bifrost.
+
+### 2. Add the otel plugin
+
+Add the plugin to the `plugins` list in Bifrost's `config.json`, then restart Bifrost:
+
+```json
+"plugins": [
+  {
+    "enabled": true,
+    "name": "otel",
+    "config": {
+      "service_name": "bifrost",
+      "collector_url": "https://ingest.wildedge.dev/api/otlp/v1/traces",
+      "trace_type": "genai_extension",
+      "protocol": "http",
+      "headers": { "X-Project-Secret": "<secret>" },
+      "disable_content_logging": true
+    }
+  }
+]
+```
+
+- `collector_url` is the full traces URL, including `/v1/traces`.
+- `trace_type` must be `genai_extension`. It follows the OpenTelemetry GenAI conventions, which WildEdge reads.
+- `protocol` must be `http`. WildEdge doesn't accept OTLP over gRPC.
+- To keep the secret out of `config.json`, set the header value to `"env.WILDEDGE_PROJECT_SECRET"` and put the secret in that environment variable.
+- `disable_content_logging: true` leaves prompt and response text out of the export. If you turn it off, WildEdge keeps the end of the prompt and the start of the response as the event's input and output summaries.
+- `service_name` names the gateway in your traces. Use any name you like.
+
+### 3. Check that events arrive
+
+Send one request through Bifrost:
+
+```sh
+curl http://localhost:8080/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{"model": "openai/gpt-4o-mini", "messages": [{"role": "user", "content": "Hello"}]}'
+```
+
+Use your Bifrost address and a provider and model you configured in it.
+
+Open **Events** in WildEdge. Events appear within a few minutes, one inference event per provider attempt.
+
+### What you get from Bifrost
+
+- `gateway` is `bifrost`, and `model_provider` is the provider that served the attempt, for example `openai`.
+- Each provider attempt is its own event. A failed attempt and the fallback that followed it share a `run_id`. `request_id` is empty, because Bifrost doesn't put its request ID on model calls.
+- `reported_cost_amount` is Bifrost's estimate from its price table, in USD, so `reported_cost_is_estimated` is `true`. Bifrost reports a cost of 0 for models missing from that table, and no cost for failed calls. WildEdge records both as unknown.
+- Failed attempts record the provider's HTTP status and error code, for example a `429` when the provider rate limits.
+- Time to first token is recorded on streamed calls.
+
+### What the beta does not cover yet
+
+- **Unchecked features.** We checked chat completions, streaming, failures and fallbacks on Bifrost v2.5.1. Embeddings, tool calls, retries and Bifrost's cache aren't checked yet. Other versions are mapped the same way.
+- **Duplicate events.** Same as [for LiteLLM](#what-the-beta-does-not-cover-yet).
+
 ## Next: investigate
 
 [Connect your AI agent](/connect-agent), or follow [Investigate events and traces](/investigate). If your app also uses an SDK, check the [combined setup guide](/setup/sdk-and-gateway) to avoid recording the same call twice.
@@ -188,6 +254,8 @@ LiteLLM logs export failures, for example `Failed to export spans batch`. The HT
 | `503` | WildEdge couldn't store the events yet. | The exporter retries on its own. Nothing to do. |
 
 If requests succeed but no events appear, check that your LiteLLM version is supported and that `LITELLM_OTEL_V2=true` is set on the proxy process.
+
+If Bifrost requests succeed but no events appear, check Bifrost's logs for errors from the `otel` plugin. The status codes above apply.
 
 OpenRouter saves a destination only after **Test Connection** passes. If it fails, check that the endpoint ends in `/v1/traces` and that the header is valid JSON.
 
