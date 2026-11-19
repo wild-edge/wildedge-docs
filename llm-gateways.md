@@ -243,6 +243,6 @@ If Bifrost requests succeed but no events appear, check Bifrost's logs for error
 
 OpenRouter saves a destination only after **Test Connection** passes. If it fails, check that the endpoint ends in `/v1/traces` and that the header is valid JSON.
 
-### If WildEdge is unavailable
+### Retries
 
 The gateway retries any export that WildEdge doesn't store, and drops it if it still fails after a few seconds. LiteLLM gives up after about 10 seconds. Events in a dropped export are lost.
