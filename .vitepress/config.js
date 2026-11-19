@@ -18,7 +18,7 @@ export default withMermaid(
 
     base: '/',
 
-    srcExclude: ['README.md', 'CONTRIBUTING.md', 'LICENSE'],
+    srcExclude: ['README.md', 'CONTRIBUTING.md', 'LICENSE', 'parts/**'],
 
     outDir: '.vitepress/dist',
 

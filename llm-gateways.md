@@ -32,20 +32,7 @@ Supported gateways:
 
 ### 1. Find your project secret
 
-1. Sign in to [WildEdge](https://app.wildedge.dev/) and open the project that should receive the events.
-2. Open **API Keys** and select **Reveal DSN** on a project key.
-
-The DSN looks like this:
-
-```text
-https://<secret>@ingest.wildedge.dev/<key>
-```
-
-The part between `https://` and `@` is your project secret. You need only the secret.
-
-::: warning Protect the secret
-Anyone with the secret can send events to your project. Keep it in your secret store, not in source control. Use a separate project key for the gateway, so you can revoke it without affecting your apps.
-:::
+<!--@include: ./parts/project-secret.md-->
 
 ### 2. Configure the LiteLLM proxy
 
@@ -134,7 +121,7 @@ OpenRouter sends traces with its Broadcast feature. You set it up in the OpenRou
 
 ### 1. Find your project secret
 
-Use a project secret, found the same way as [for LiteLLM](#_1-find-your-project-secret). Use a separate project key for OpenRouter.
+<!--@include: ./parts/project-secret.md-->
 
 ### 2. Add WildEdge as a Broadcast destination
 
@@ -179,7 +166,7 @@ Bifrost sends traces with its `otel` plugin. Add the snippet below to your confi
 
 ### 1. Find your project secret
 
-Use a project secret, found the same way as [for LiteLLM](#_1-find-your-project-secret). Use a separate project key for Bifrost.
+<!--@include: ./parts/project-secret.md-->
 
 ### 2. Add the otel plugin
 
