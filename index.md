@@ -43,7 +43,7 @@ Connect Codex, Claude Code, Gemini CLI, ChatGPT, or Claude through MCP. Then ask
 | [OpenAI or Anthropic calls fail](/what-we-collect#failures) | Provider error codes, HTTP status, and time until failure |
 | [llama.cpp responses start slowly](/what-we-collect#latency) | Time to first token, model load time, and quantization |
 | [Core ML or TensorFlow Lite slows on some phones](/what-we-collect#device-performance) | Device model, thermal state, memory, and actual accelerator |
-| [LiteLLM or OpenRouter costs increase](/what-we-collect#usage-and-cost) | Requested and served models, token use, and reported cost |
+| [Gateway costs increase](/what-we-collect#usage-and-cost) | Requested and served models, token use, and reported cost |
 | [ONNX Runtime or Transformers results change](/what-we-collect#model-behavior) | Model versions, input measurements, predictions, and feedback |
 
 Available signals depend on the integration. The linked guides explain what to check and where data may be missing.
@@ -70,6 +70,6 @@ Available signals depend on the integration. The linked guides explain what to c
 ### Configure an integration
 
 - **SDK setup:** [Python, iOS / macOS, and Android](/setup/sdk).
-- **Gateway export:** [LiteLLM](/llm-gateways#litellm) or [OpenRouter](/llm-gateways#openrouter).
+- **Gateway export:** [LiteLLM](/gateways/litellm), [OpenRouter](/gateways/openrouter), or [Bifrost](/gateways/bifrost).
 - **Agent access:** [Connect your AI agent](/connect-agent).
 - **HTTP endpoints:** [API reference](https://app.wildedge.dev/api/docs).

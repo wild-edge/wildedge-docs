@@ -5,6 +5,14 @@ description: What has changed recently
 
 # Changelog
 
+## November 2026
+
+**Platform**
+
+- Added beta [Bifrost](/gateways/bifrost) gateway support over OpenTelemetry, with token use, latency, failures, retries, fallbacks, and estimated cost.
+- Gateway traces now include MCP tool calls from LiteLLM and Bifrost.
+- LiteLLM streams your app cancels are now recorded as failed.
+
 ## October 2026
 
 **Platform**

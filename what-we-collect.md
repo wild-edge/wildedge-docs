@@ -23,7 +23,7 @@ Field availability depends on the SDK, integration, runtime, and provider. The f
 
 ## Failures
 
-**Applies to:** OpenAI and Anthropic SDK integrations, LiteLLM, and OpenRouter.
+**Applies to:** OpenAI and Anthropic SDK integrations, LiteLLM, OpenRouter, and Bifrost.
 
 Start with the failed inference or error event. Compare the error code, model, and elapsed time before opening the surrounding run.
 
@@ -59,7 +59,7 @@ Compare calls with similar models, input sizes, and output sizes. Longer output 
 
 ## Usage and cost
 
-**Applies to:** LiteLLM and OpenRouter for reported cost. SDK integrations can supply token usage.
+**Applies to:** LiteLLM, OpenRouter, and Bifrost for reported cost. SDK integrations can supply token usage.
 
 Compare usage by requested model and the model that served the call. Check missing prices before interpreting totals.
 
@@ -72,7 +72,7 @@ Compare usage by requested model and the model that served the call. Check missi
 | `reported_cost_is_estimated` | Whether that cost is an estimate |
 | `request_id` | Related gateway attempts, where supported |
 
-The cost fields above come from gateway exports. LiteLLM reports estimated prices. OpenRouter reports the amount charged. Missing cost does not mean a free call. [Gateway fields and query examples](/llm-gateways#_4-query-gateway-events) cover these differences.
+The cost fields above come from gateway exports. LiteLLM and Bifrost report estimated prices. OpenRouter reports the amount charged. Missing cost does not mean a free call. [Gateway fields and query examples](/llm-gateways#query-gateway-events) cover these differences.
 
 If the gateway exports a cloud call, disable SDK tracking for that call to avoid counting it twice. SDK tracking for on-device models and gateway tracking for cloud models do not overlap. See [app and gateway setup](/setup/sdk-and-gateway).
 
@@ -142,7 +142,7 @@ Measurements can identify a problem without showing the original input or output
 
 Input and output capture is opt-in. Follow your SDK guide to configure capture or supply attachments. Support and upload limits depend on the integration and project configuration.
 
-WildEdge does not store prompt or response text from gateway traces. For OpenRouter, enable Privacy Mode to avoid including that content in the export.
+WildEdge keeps prompt and response text from gateway traces as event summaries, when the gateway exports it. LiteLLM leaves it out by default, Bifrost with `disable_content_logging`, and OpenRouter in Privacy Mode.
 
 Review summaries, attributes, error messages, and attachments for sensitive content. Disabling attachments does not remove content supplied in other fields.
 
