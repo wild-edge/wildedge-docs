@@ -16,6 +16,8 @@ Each event records:
 - the gateway and its service name, and the model name your app asked the gateway for
 - the cost the gateway reports, when it reports one
 
+When the gateway runs MCP tools, each tool call appears in the trace as a tool span, with the tool name, the MCP server, its duration and whether it failed. Tool arguments and results are never kept.
+
 When a gateway includes prompt and response text in its traces, WildEdge keeps it as the event's input and output summaries. Each gateway's setup says how to leave it out.
 
 WildEdge accepts traces only. Don't send OpenTelemetry metrics or logs to it.

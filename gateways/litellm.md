@@ -55,13 +55,15 @@ Open **Events** in WildEdge. Events appear within a few minutes. You should see 
 - `request_id` is LiteLLM's call ID. A failed attempt and its fallback share it.
 - `reported_cost_amount` is LiteLLM's estimate from its price list, in USD, so `reported_cost_is_estimated` is `true`. Models missing from the price list and failed calls have no cost.
 - When the provider doesn't report usage, LiteLLM exports zero tokens. WildEdge records these token counts as unknown, not as zero.
+- A stream your app cancels is recorded as failed, with error code `STREAM_CANCELLED` and no token counts.
+- MCP tool calls, through LiteLLM's `/mcp` gateway or run for a chat completion, appear in the trace as tool spans.
 
 See [Query gateway events](/llm-gateways#query-gateway-events) for the columns and an example query.
 
 ## Known limitations
 
 - **Cache hits.** LiteLLM doesn't export a model call when it answers from its cache, so cache hits don't appear.
-- **Interrupted streams.** LiteLLM exports a stream the client cancels as a successful call, with its own token estimate.
+- **Tool loops.** When LiteLLM runs an MCP tool for a chat completion, it doesn't export the model call that reads the tool result. That call and its tokens are missing.
 
 ## Retries
 
