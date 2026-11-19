@@ -234,15 +234,23 @@ LiteLLM logs export failures, for example `Failed to export spans batch`. The HT
 | `404` | Wrong endpoint. | Check that the endpoint is `https://ingest.wildedge.dev/api/otlp`. |
 | `413` | The export batch is too large. | Lower `OTEL_BSP_MAX_EXPORT_BATCH_SIZE`. |
 | `415` | Unsupported encoding. | Set `OTEL_EXPORTER` to `http/protobuf` or `http/json`. |
-| `429` | Too many requests for this project key. | The exporter retries on its own. If it persists, contact us. |
-| `503` | WildEdge couldn't store the events yet. | The exporter retries on its own. Nothing to do. |
+| `429` | Too many requests for this project key. | The gateway may retry, see [Retries](#retries). If it persists, contact us. |
+| `503` | WildEdge couldn't store the events yet. | The gateway may retry, see [Retries](#retries). |
 
 If requests succeed but no events appear, check that your LiteLLM version is supported and that `LITELLM_OTEL_V2=true` is set on the proxy process.
 
-If Bifrost requests succeed but no events appear, check Bifrost's logs for errors from the `otel` plugin. The status codes above apply.
+If Bifrost requests succeed but no events appear, look for `failed to emit trace` in Bifrost's logs. The status codes above apply.
 
 OpenRouter saves a destination only after **Test Connection** passes. If it fails, check that the endpoint ends in `/v1/traces` and that the header is valid JSON.
 
 ### Retries
 
-The gateway retries any export that WildEdge doesn't store, and drops it if it still fails after a few seconds. LiteLLM gives up after about 10 seconds. Events in a dropped export are lost.
+When WildEdge can't take an export, it answers `429` or `503` with a `Retry-After` of a second or two. A connection that fails or times out gets no answer. What the gateway does next differs:
+
+| Gateway | On a failed export |
+| --- | --- |
+| LiteLLM | Retries `429`, `502`, `503`, `504` and connection errors with backoff, for up to 10 seconds in total. Set `OTEL_EXPORTER_OTLP_TIMEOUT` to change it. Then it drops the batch. |
+| Bifrost | Doesn't retry. It sends each request's trace once, with a 5 second timeout. Set `export_timeout` in the plugin config to change it, up to 60. After 5 failures in a row it stops sending for 30 seconds. |
+| OpenRouter | Retries from a delivery queue. OpenRouter doesn't document for how long. |
+
+Events in an export the gateway drops are lost.
