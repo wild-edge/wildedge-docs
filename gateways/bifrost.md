@@ -78,3 +78,8 @@ Bifrost doesn't retry. It sends each request's trace once, with a 5 second timeo
 ## Troubleshooting
 
 If Bifrost requests succeed but no events appear, look for `failed to emit trace` in Bifrost's logs. See [status codes](/llm-gateways#troubleshooting) for what each HTTP status means.
+
+## Next
+
+- [Investigate events and traces](/investigate), or [connect your AI agent](/connect-agent) to do it for you.
+- Also using a WildEdge SDK? Follow [App + gateway](/setup/sdk-and-gateway) so each call is recorded once.

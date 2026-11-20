@@ -84,42 +84,6 @@ export default withMermaid(
           },
         },
       },
-      pl: {
-        label: 'Polski',
-        lang: 'pl-PL',
-        title: 'Dokumentacja WildEdge',
-        description:
-          'Dowiedz się, gdzie Twoje AI zawodzi w prawdziwym świecie. Zobacz, jak zachowanie modelu zmienia się między wydaniami, środowiskami i urządzeniami, i zamieniaj prawdziwe przykłady w zbiory danych do ewaluacji i trenowania.',
-        themeConfig: {
-          logo: '/wildedge-logo-text.svg',
-          siteTitle: 'Dokumentacja',
-          nav: [
-            { text: 'BLOG', link: 'https://blog.wildedge.dev' },
-            { text: 'DZIENNIK ZMIAN', link: '/pl/changelog' },
-            {
-              text: 'ZDALNE MCP',
-              items: [
-                { text: 'Agenci w terminalu', link: '/mcp' },
-                { text: 'Agenci webowi (OAuth)', link: '/mcp_web' },
-              ],
-            },
-            { text: 'BRAMY LLM', link: '/llm-gateways' },
-            { text: 'DOKUMENTACJA API', link: 'https://app.wildedge.dev/api/docs' },
-            { text: 'ZACZNIJ', link: 'https://app.wildedge.dev/dashboard/signup' },
-          ],
-          socialLinks: [{ icon: 'github', link: 'https://github.com/wild-edge' }],
-          editLink: {
-            pattern: 'https://github.com/wild-edge/wildedge-docs/edit/main/:path',
-            text: 'Edytuj tę stronę na GitHub',
-          },
-          footer: {
-            copyright: `© ${new Date().getFullYear()} WildEdge`,
-          },
-          search: {
-            provider: 'local',
-          },
-        },
-      },
     },
 
     vite: {
@@ -130,7 +94,7 @@ export default withMermaid(
           title: 'WildEdge',
           description:
             'Inference observability for on-device and cloud AI. Collect telemetry from your app (Python, iOS / macOS, Android SDKs) or LLM gateway (LiteLLM, OpenRouter, Bifrost), then investigate it in WildEdge or with your AI agent over MCP.',
-          ignoreFiles: ['pl/**', 'parts/**'],
+          ignoreFiles: ['parts/**'],
         }),
       ],
     },

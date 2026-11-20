@@ -171,3 +171,8 @@ Use a **Read** token for investigation-only sessions. Grant **Read + Write** onl
 - **A write action is unavailable:** edit the token in your WildEdge profile and grant **Read + Write**, or create a separate write-enabled token.
 - **The agent cannot see a company or project:** MCP access follows the permissions of the WildEdge user who created the token.
 - **A token may have been compromised:** delete it immediately in **MCP access tokens**, create a replacement, and update only the affected client.
+
+## Next
+
+- [Try your first investigation](/connect-agent#try-your-first-investigation) with a read-only prompt.
+- [Investigate events and traces](/investigate) step by step.

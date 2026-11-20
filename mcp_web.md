@@ -158,3 +158,8 @@ Permission changes take effect immediately. Disconnecting revokes the connection
 - **The agent cannot see a company or project:** MCP access follows the permissions of the WildEdge user who authorized the connection.
 - **A write action is unavailable:** change the connection to **Read + Write** under **MCP access → OAuth connections**, then retry.
 - **A connection is unfamiliar or no longer needed:** disconnect it immediately from the **OAuth connections** tab.
+
+## Next
+
+- [Try your first investigation](/connect-agent#try-your-first-investigation) with a read-only prompt.
+- [Investigate events and traces](/investigate) step by step.
