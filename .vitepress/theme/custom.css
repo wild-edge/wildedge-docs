@@ -202,11 +202,9 @@
 .vp-doc a.we-agent:hover { border-color: var(--we-accent-border); }
 .we-agent strong { color: var(--vp-c-text-1); }
 .we-agent-tag { flex-shrink: 0; padding: 2px 8px; border-radius: 6px; background: var(--vp-c-brand-soft); font-family: var(--vp-font-family-mono); font-size: 10.5px; font-weight: 700; color: var(--we-accent); }
-@media (max-width: 640px) {
-  .we-map { grid-template-columns: 1fr; padding: 14px; }
-  .we-map > div:empty { display: none; }
-  .we-step { padding: 14px 0 8px; }
-  .we-step span { display: inline; }
-  .we-row-2, .we-row-3 { grid-template-columns: 1fr; }
-  .we-merge, .we-fan { display: none; }
+/* Narrow screens: keep the desktop layout and scale the whole map to fit.
+   tan(atan2(a, b)) gives the unitless ratio a / b. */
+.we-map-fit { container-type: inline-size; overflow-x: auto; }
+@container (max-width: 599px) {
+  .we-map { width: 600px; box-sizing: border-box; zoom: tan(atan2(100cqw, 600px)); }
 }

@@ -7,6 +7,7 @@ description: The building blocks of WildEdge, from projects, keys, events, runs,
 
 Your app or LLM gateway sends **events** to a **project**. You investigate them as events and runs, query them with **SQL**, chart them on **dashboards**, and turn the useful ones into **datasets** you can export for training.
 
+<div class="we-map-fit">
 <div class="we-map" role="figure" aria-label="WildEdge data flow: your app SDK or LLM gateway sends events to your project with a DSN. You use events as runs and traces, SQL charts and dashboards, and datasets you export for training. Your AI agent works across all of it over MCP.">
 <div class="we-step"><span>01</span> Collect</div>
 <div class="we-row we-row-2">
@@ -37,6 +38,7 @@ Your app or LLM gateway sends **events** to a **project**. You investigate them 
 </div>
 <div></div>
 <a class="we-agent" href="/connect-agent"><span class="we-agent-tag">MCP</span><span><strong>Your AI agent</strong> works across your project: reads events, follows runs, writes SQL, builds dashboards.</span></a>
+</div>
 </div>
 
 ## Companies and projects
