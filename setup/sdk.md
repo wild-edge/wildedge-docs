@@ -5,6 +5,8 @@ title: Set up app telemetry
 
 Use a WildEdge SDK to record inference calls in your application, including on-device models. Choose your platform, configure your project credentials, then confirm that events arrive.
 
+Trying WildEdge for the first time? The Python quickstarts for an [on-device model](/quickstart/on-device) or a [cloud API](/quickstart/cloud) get you to a first event in a few minutes.
+
 If your gateway also sends telemetry to WildEdge, follow [Set up app and gateway telemetry](/setup/sdk-and-gateway) to avoid recording the same call twice.
 
 ## 1. Choose your platform

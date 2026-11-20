@@ -12,6 +12,13 @@ Collect inference telemetry from your app or LLM gateway, then investigate it in
 
 </div>
 
+::: tip New to WildEdge?
+Send your first event from Python in a few minutes:
+
+- **[On-device model →](/quickstart/on-device)** Run a small model on your laptop. No GPU or API key needed.
+- **[Cloud API →](/quickstart/cloud)** Trace an OpenAI call, or any OpenAI-compatible provider.
+:::
+
 ## 1. Choose where to collect telemetry
 
 <div class="setup-grid">
