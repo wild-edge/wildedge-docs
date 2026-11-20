@@ -78,3 +78,8 @@ LiteLLM logs export failures, for example `Failed to export spans batch`, with t
 - `415`: set `OTEL_EXPORTER` to `http/protobuf` or `http/json`.
 
 If requests succeed but no events appear, check that your LiteLLM version is supported and that `LITELLM_OTEL_V2=true` is set on the proxy process.
+
+## Next
+
+- [Investigate events and traces](/investigate), or [connect your AI agent](/connect-agent) to do it for you.
+- Also using a WildEdge SDK? Follow [App + gateway](/setup/sdk-and-gateway) so each call is recorded once.

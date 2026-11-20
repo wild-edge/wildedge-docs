@@ -154,3 +154,8 @@ Review summaries, attributes, error messages, and attachments for sensitive cont
 4. Check exporter or SDK logs if the event does not arrive.
 
 Follow [app setup](/setup/sdk) or [gateway troubleshooting](/llm-gateways#troubleshooting) for connection checks. Use the [API reference](https://app.wildedge.dev/api/docs) for endpoint schemas.
+
+## Next
+
+- [Investigate events and traces](/investigate) with these fields.
+- [Telemetry reference](/telemetry): every field, type, and unit.

@@ -74,3 +74,7 @@ For retries and known limitations of each gateway, see its setup page: [LiteLLM]
 3. Check the fields needed for your investigation.
 4. If a field is absent, check adapter support before treating it as a model or device issue.
 
+## Next
+
+- [Telemetry reference](/telemetry): every accepted field.
+- [Troubleshooting guide](/what-we-collect): which fields answer which question.

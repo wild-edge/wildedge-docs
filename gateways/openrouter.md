@@ -56,3 +56,8 @@ OpenRouter retries failed deliveries from a queue. It doesn't document for how l
 ## Troubleshooting
 
 OpenRouter saves a destination only after **Test Connection** passes. If it fails, check that the endpoint ends in `/v1/traces` and that the header is valid JSON. See [status codes](/llm-gateways#troubleshooting) for what each HTTP status means.
+
+## Next
+
+- [Investigate events and traces](/investigate), or [connect your AI agent](/connect-agent) to do it for you.
+- Also using a WildEdge SDK? Follow [App + gateway](/setup/sdk-and-gateway) so each call is recorded once.

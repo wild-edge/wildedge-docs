@@ -48,3 +48,8 @@ To have your agent instrument your app, ask:
 ::: tip Connecting before instrumentation?
 You can connect your agent first. A connection with write access can help create a project and project key. Follow your client's setup guide, then [choose your instrumentation setup](/).
 :::
+
+## Next
+
+- [Investigate events and traces](/investigate) with your agent.
+- [How WildEdge works](/concepts) explains the events, runs, charts, and datasets your agent can work with.

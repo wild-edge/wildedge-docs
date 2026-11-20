@@ -23,12 +23,15 @@ https://<secret>@ingest.wildedge.dev/<key>
 
 ## 2. Install
 
-Create a project and add the SDK, Transformers, and PyTorch:
+Create a project and add the SDK, Transformers, and the CPU build of PyTorch:
 
 ```bash
 uv init wildedge-quickstart && cd wildedge-quickstart
-uv add wildedge-sdk transformers torch
+uv add wildedge-sdk transformers
+uv add torch --index pytorch-cpu=https://download.pytorch.org/whl/cpu
 ```
+
+The CPU build skips about 2 GB of CUDA libraries that Linux installs by default. The model runs on CPU either way.
 
 ## 3. Run a model
 
