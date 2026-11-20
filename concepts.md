@@ -28,7 +28,7 @@ Your app or LLM gateway sends **events** to a **project**. You investigate them 
 <div class="we-lane">
 <a class="we-node" href="#sql-and-charts"><strong>SQL and charts</strong><span>Sandboxed read-only SQL on the <code>events</code> table. Save results as charts.</span></a>
 <div class="we-down" aria-hidden="true"></div>
-<a class="we-node" href="#dashboards"><strong>Dashboards</strong><span>Themed groups of charts.</span></a>
+<a class="we-node" href="#dashboards"><strong>Dashboards</strong><span>Related charts in one time window.</span></a>
 </div>
 <div class="we-lane">
 <a class="we-node" href="#datasets"><strong>Datasets</strong><span>Curated events with their captured inputs and outputs.</span></a>
