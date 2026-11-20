@@ -8,14 +8,14 @@ description: The building blocks of WildEdge, from projects, keys, events, runs,
 Your app or LLM gateway sends **events** to a **project**. You investigate them as events and runs, query them with **SQL**, chart them on **dashboards**, and turn the useful ones into **datasets** you can export for training.
 
 <div class="we-map-fit">
-<div class="we-map" role="figure" aria-label="WildEdge data flow: your app SDK or LLM gateway sends events to your project with a DSN. You use events as runs and traces, SQL charts and dashboards, and datasets you export for training. Your AI agent works across all of it over MCP.">
+<div class="we-map" role="figure" aria-label="WildEdge data flow: your app SDK or LLM gateway sends events to your project with a project key. You use events as runs and traces, SQL charts and dashboards, and datasets you export for training. Your AI agent works across all of it over MCP.">
 <div class="we-step"><span>01</span> Collect</div>
 <div class="we-row we-row-2">
-<a class="we-node" href="/setup/sdk"><strong>App SDK</strong><span>Python, Swift, Kotlin. Local and cloud model calls, with device context.</span></a>
-<a class="we-node" href="/llm-gateways"><strong>LLM gateway</strong><span>LiteLLM, OpenRouter, Bifrost. Cloud calls, no app changes.</span></a>
+<a class="we-node" href="/setup/sdk"><strong>App SDK</strong><span>Python, Swift, Kotlin. Cloud / on-device model calls, with device context.</span></a>
+<a class="we-node" href="/llm-gateways"><strong>LLM gateway</strong><span>LiteLLM, OpenRouter, Bifrost over OTLP. Cloud calls only, no app changes.</span></a>
 </div>
 <div></div>
-<div class="we-merge" aria-hidden="true"><i></i><i></i><span>DSN</span></div>
+<div class="we-merge" aria-hidden="true"><i></i><i></i><span>project key</span></div>
 <div class="we-step"><span>02</span> Store</div>
 <a class="we-node we-node-core" href="#events"><strong>Events in your project</strong><span class="we-chips"><code>inference</code><code>model_load</code><code>error</code><code>feedback</code><code>span</code></span></a>
 <div></div>
@@ -23,17 +23,17 @@ Your app or LLM gateway sends **events** to a **project**. You investigate them 
 <div class="we-step"><span>03</span> Use</div>
 <div class="we-row we-row-3">
 <div class="we-lane">
-<a class="we-node" href="#runs-traces-and-spans"><strong>Runs and traces</strong><span>Follow one execution step by step.</span></a>
+<a class="we-node" href="#runs-traces-and-spans"><strong>Runs and traces</strong><span>One execution's spans and model calls, from SDK tracing.</span></a>
 </div>
 <div class="we-lane">
-<a class="we-node" href="#sql-and-charts"><strong>SQL and charts</strong><span>Query the <code>events</code> table. Save charts.</span></a>
+<a class="we-node" href="#sql-and-charts"><strong>SQL and charts</strong><span>Sandboxed read-only SQL on the <code>events</code> table. Save results as charts.</span></a>
 <div class="we-down" aria-hidden="true"></div>
-<a class="we-node" href="#dashboards"><strong>Dashboards</strong><span>Charts on one page and time window.</span></a>
+<a class="we-node" href="#dashboards"><strong>Dashboards</strong><span>Themed groups of charts.</span></a>
 </div>
 <div class="we-lane">
-<a class="we-node" href="#datasets"><strong>Datasets</strong><span>Labeled events with their attachments.</span></a>
+<a class="we-node" href="#datasets"><strong>Datasets</strong><span>Curated events with their captured inputs and outputs.</span></a>
 <div class="we-down" aria-hidden="true"></div>
-<a class="we-node we-node-out" href="#training-export"><strong>Training export</strong><span>Upload to Edge Impulse.</span></a>
+<a class="we-node we-node-out" href="#training-export"><strong>Training export</strong><span>Training vendor of choice</span></a>
 </div>
 </div>
 <div></div>
