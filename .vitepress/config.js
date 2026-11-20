@@ -40,6 +40,10 @@ export default withMermaid(
           ],
           sidebar: [
             { text: 'Get started', items: [
+              { text: 'Quickstart', items: [
+                { text: 'On-device model', link: '/quickstart/on-device' },
+                { text: 'Cloud API', link: '/quickstart/cloud' },
+              ] },
               { text: 'Choose your setup', link: '/' },
               { text: 'App only', link: '/setup/sdk' },
               { text: 'Gateway only', link: '/llm-gateways', items: [
