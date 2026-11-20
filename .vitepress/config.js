@@ -45,6 +45,7 @@ export default withMermaid(
                 { text: 'On-device model', link: '/quickstart/on-device' },
                 { text: 'Cloud API', link: '/quickstart/cloud' },
               ] },
+              { text: 'How WildEdge works', link: '/concepts' },
               { text: 'Choose your setup', link: '/' },
               { text: 'App only', link: '/setup/sdk' },
               { text: 'Gateway only', link: '/llm-gateways', items: [

@@ -6,6 +6,8 @@ description: Start from recent events, find a suspicious inference, and inspect 
 
 Start with a small set of recent events, find a suspicious inference, then inspect the context available to explain it.
 
+New to events, runs, and spans? See [How WildEdge works](/concepts).
+
 Use [Troubleshooting guide](/what-we-collect) to choose fields for the problem you are investigating.
 
 ## 1. Find recent events
