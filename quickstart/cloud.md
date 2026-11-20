@@ -88,6 +88,7 @@ No events? Check that `WILDEDGE_DSN` is set in the same shell. Without a DSN the
 
 ## Next steps
 
+- **Learn the building blocks.** [How WildEdge works](/concepts) explains projects, events, runs, SQL charts, dashboards, and datasets.
 - **Instrument your own app.** Call `wildedge.init(integrations=[...])` before you create API clients. Use `openai`, `anthropic`, or both.
 - **Stream responses.** Streaming calls record time to first token. See [streaming](https://github.com/wild-edge/wildedge-python/blob/main/docs/streaming.md).
 - **Add a local model.** Follow the [on-device quickstart](/quickstart/on-device), then group local and remote calls into one trace with `wildedge.trace()`. See [manual tracking](https://github.com/wild-edge/wildedge-python/blob/main/docs/manual-tracking.md#track-spans-for-agentic-workflows).
