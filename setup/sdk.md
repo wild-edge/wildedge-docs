@@ -1,5 +1,6 @@
 ---
 title: Set up app telemetry
+description: Record inference calls in your application with the Python, iOS / macOS, or Android SDK, then confirm your first event arrives.
 ---
 # Set up app telemetry
 
