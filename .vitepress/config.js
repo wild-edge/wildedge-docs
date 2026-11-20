@@ -23,6 +23,13 @@ export default withMermaid(
 
     outDir: '.vitepress/dist',
 
+    // Search must live in the top-level themeConfig; VitePress ignores it inside a locale.
+    themeConfig: {
+      search: {
+        provider: 'local',
+      },
+    },
+
     locales: {
       root: {
         label: 'English',
@@ -78,9 +85,6 @@ export default withMermaid(
           },
           footer: {
             copyright: `© ${new Date().getFullYear()} WildEdge`,
-          },
-          search: {
-            provider: 'local',
           },
         },
       },

@@ -209,3 +209,27 @@
 @container (max-width: 599px) {
   .we-map { width: 600px; box-sizing: border-box; zoom: tan(atan2(100cqw, 600px)); }
 }
+
+/* Top bar: a wide search pill centered between the logo and the nav links */
+@media (min-width: 768px) {
+  .VPNavBarSearch.search { flex-grow: 1; justify-content: center; padding-left: 24px; padding-right: 24px; }
+  .VPNavBarSearch #local-search { width: 100%; max-width: 360px; }
+  .VPNavBarSearch .DocSearch-Button {
+    width: 100%; max-width: 360px; height: 36px; padding: 0 10px 0 12px;
+    border: 1px solid var(--vp-c-divider); border-radius: 999px;
+    background: var(--vp-c-bg-alt); justify-content: space-between;
+  }
+  .VPNavBarSearch .DocSearch-Button:hover { border-color: var(--vp-c-brand-1); }
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Placeholder { display: inline-block; font-size: 13px; color: var(--vp-c-text-2); }
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Keys { display: flex; }
+}
+
+/* Thin, quiet sidebar scrollbar. Chrome and Safari use the ::-webkit-scrollbar rules
+   (they ignore them once scrollbar-width is set), Firefox uses scrollbar-width. */
+.VPSidebar::-webkit-scrollbar { width: 6px; }
+.VPSidebar::-webkit-scrollbar-track { background: transparent; }
+.VPSidebar::-webkit-scrollbar-thumb { background: transparent; border-radius: 3px; }
+.VPSidebar:hover::-webkit-scrollbar-thumb { background: var(--vp-c-divider); }
+@supports not selector(::-webkit-scrollbar) {
+  .VPSidebar { scrollbar-width: thin; scrollbar-color: var(--vp-c-divider) transparent; }
+}
