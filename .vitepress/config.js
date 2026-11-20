@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import llmstxt from 'vitepress-plugin-llms'
 
 export default withMermaid(
   defineConfig({
@@ -118,6 +119,19 @@ export default withMermaid(
           },
         },
       },
+    },
+
+    vite: {
+      plugins: [
+        // Serves /llms.txt, /llms-full.txt, and a Markdown copy of each page (/page.md) for AI agents.
+        llmstxt({
+          domain: 'https://docs.wildedge.dev',
+          title: 'WildEdge',
+          description:
+            'Inference observability for on-device and cloud AI. Collect telemetry from your app (Python, iOS / macOS, Android SDKs) or LLM gateway (LiteLLM, OpenRouter, Bifrost), then investigate it in WildEdge or with your AI agent over MCP.',
+          ignoreFiles: ['pl/**', 'parts/**'],
+        }),
+      ],
     },
 
     mermaid: {

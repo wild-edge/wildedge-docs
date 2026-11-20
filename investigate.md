@@ -1,5 +1,6 @@
 ---
 title: Investigate events and traces
+description: Start from recent events, find a suspicious inference, and inspect the context that explains it, in WildEdge or with your AI agent.
 ---
 # Investigate events and traces
 

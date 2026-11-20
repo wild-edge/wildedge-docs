@@ -1,5 +1,6 @@
 ---
 title: Connect your AI agent
+description: Connect Codex, Claude Code, Gemini CLI, ChatGPT, or Claude to WildEdge through the remote MCP server, and point it at these docs.
 ---
 # Connect your AI agent
 
@@ -31,6 +32,18 @@ Then use the returned company and project names:
 > For project `PROJECT` in company `COMPANY`, inspect up to 25 events from the last 24 hours. Summarize failures, slow calls, and the telemetry available to explain them. Do not make any changes.
 
 [Continue to investigate events and traces →](/investigate)
+
+## Give your agent these docs
+
+The docs are published in Markdown for agents:
+
+- [`/llms.txt`](https://docs.wildedge.dev/llms.txt): an index of every page with a one-line summary.
+- [`/llms-full.txt`](https://docs.wildedge.dev/llms-full.txt): all pages in one file.
+- Any page as Markdown: add `.md` to its URL, for example [`/telemetry.md`](https://docs.wildedge.dev/telemetry.md).
+
+To have your agent instrument your app, ask:
+
+> Read https://docs.wildedge.dev/llms.txt, then add WildEdge to this project. Use the setup that matches how we run models.
 
 ::: tip Connecting before instrumentation?
 You can connect your agent first. A connection with write access can help create a project and project key. Follow your client's setup guide, then [choose your instrumentation setup](/).

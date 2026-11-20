@@ -1,5 +1,6 @@
 ---
 title: Set up app and gateway telemetry
+description: Record on-device inference with an SDK and cloud calls through your LLM gateway without counting the same call twice.
 ---
 # Set up app and gateway telemetry
 
