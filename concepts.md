@@ -77,21 +77,13 @@ The [telemetry reference](/telemetry) lists every field.
 
 A **run** is one execution of a workflow or agent, for example one car scan or one support conversation turn. Its events and spans share a `run_id`.
 
-A **span** is a timed step inside a run: an agent step, a tool call, a retrieval. Spans nest through `parent_span_id`, and together with the run's inference events they form the **trace**: the tree you see on a run's page.
+A **span** is a timed step inside a run, such as an agent step, a tool call, or a retrieval. Spans nest, and with the run's model calls they form the **trace** you see on the run's page:
 
-```text
-run: scan-7f3a                              16.2 s
-├─ span: detect_car (agent_step)              52 ms
-│  └─ inference: yolo-car (Core ML)           41 ms
-├─ span: read_plate (agent_step)              21 ms
-│  └─ inference: plate-ocr (Core ML)          19 ms
-└─ span: describe (agent_step)              16.1 s
-   └─ inference: gpt-4o-mini (OpenAI)       16.1 s
-```
+[![A run's trace in WildEdge: a scan step with detect, classify, and recognize spans, two on-device models, a model load, and a Gemini call](/images/concepts-run-waterfall.png)](/images/concepts-run-waterfall.png)
 
 If you know OpenTelemetry: a run is a trace, a span is a span, and an inference event is a leaf span that carries model data.
 
-The SDK sets these ids when you use `wildedge.trace()` and `wildedge.span()`, or the equivalent in Swift and Kotlin. Gateway calls are not linked into SDK runs automatically.
+Runs and spans come from `wildedge.trace()` and `wildedge.span()` in the SDK, or the Swift and Kotlin equivalents.
 
 ## Attachments
 

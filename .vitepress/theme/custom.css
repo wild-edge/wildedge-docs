@@ -157,6 +157,9 @@
 .agent-setup h3 { margin-top: 8px; }
 .agent-setup p { margin: 10px 0; }
 
+/* Concepts page: product screenshots */
+.vp-doc img[alt^="A run's trace"] { display: block; width: 100%; height: auto; margin: 8px 0; border: 1px solid var(--vp-c-divider); border-radius: 10px; }
+
 /* Concepts page: data-flow map */
 .we-map { display: grid; grid-template-columns: 64px minmax(0, 1fr); column-gap: 16px; margin: 28px 0 8px; padding: 22px 22px 20px 18px; border: 1px solid var(--vp-c-divider); border-radius: 14px; background: var(--vp-c-bg-alt); }
 .we-step { padding-top: 12px; font-family: var(--vp-font-family-mono); font-size: 10.5px; font-weight: 600; line-height: 1.5; letter-spacing: .08em; text-transform: uppercase; color: var(--vp-c-text-3); }
