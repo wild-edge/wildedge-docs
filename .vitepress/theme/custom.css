@@ -166,8 +166,9 @@
 .we-step span { display: block; }
 .we-row { display: grid; gap: 10px; }
 .we-row-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.we-row-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; }
-.we-lane { display: flex; flex-direction: column; }
+.we-row-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto auto auto; row-gap: 0; }
+/* lanes share the row tracks, so boxes on the same row get the same height */
+.we-lane { display: grid; grid-row: span 3; grid-template-rows: subgrid; }
 .vp-doc a.we-node { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border: 1px solid var(--vp-c-divider); border-radius: 10px; background: var(--vp-c-bg); color: var(--vp-c-text-1); text-decoration: none; transition: border-color .15s, transform .15s; }
 .vp-doc a.we-node:hover { border-color: var(--we-accent-border); transform: translateY(-1px); }
 .we-node strong { font-size: 14px; line-height: 1.35; }
@@ -177,7 +178,7 @@
 .we-node-core strong { font-size: 16px; }
 .we-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
 .vp-doc a.we-node-out { border-style: dashed; }
-.vp-doc a.we-node-out { align-self: center; width: 72%; gap: 2px; padding: 8px 12px; }
+.vp-doc a.we-node-out { align-self: start; justify-self: center; width: 72%; gap: 2px; padding: 8px 12px; }
 .we-node-out strong { font-size: 13px; }
 .we-node-out > span { font-size: 12px; }
 /* Connectors: --we-line is the stroke, arrowheads are CSS triangles */
