@@ -7,35 +7,43 @@ description: The building blocks of WildEdge, from projects, keys, events, runs,
 
 Your app or LLM gateway sends **events** to a **project**. You investigate them as events and runs, query them with **SQL**, chart them on **dashboards**, and turn the useful ones into **datasets** you can export for training.
 
-```mermaid
-flowchart LR
-    sdk([App with WildEdge SDK]) -->|DSN| project
-    gw([LLM gateway]) -->|DSN| project
-    subgraph project [Project]
-      events[Events] --> runs[Runs and traces]
-      events --> sql[SQL and charts]
-      sql --> dash[Dashboards]
-      events -->|with attachments| ds[Datasets]
-    end
-    ds --> train([Training export])
-    agent([Your AI agent]) -.->|MCP| project
-
-    classDef external fill:#eef2f6,stroke:#8494a7,color:#243449
-    classDef inside fill:#e0f2ed,stroke:#26836c,color:#164f42
-    class sdk,gw,train,agent external
-    class events,runs,sql,dash,ds inside
-    style project fill:transparent,stroke:#8494a7
-```
+<div class="we-map" role="figure" aria-label="WildEdge data flow: your app SDK or LLM gateway sends events to your project with a DSN. You use events as runs and traces, SQL charts and dashboards, and datasets you export for training. Your AI agent works across all of it over MCP.">
+<div class="we-step"><span>01</span> Collect</div>
+<div class="we-row we-row-2">
+<a class="we-node" href="/setup/sdk"><strong>App SDK</strong><span>Python, Swift, Kotlin. Local and cloud model calls, with device context.</span></a>
+<a class="we-node" href="/llm-gateways"><strong>LLM gateway</strong><span>LiteLLM, OpenRouter, Bifrost. Cloud calls, no app changes.</span></a>
+</div>
+<div></div>
+<div class="we-merge" aria-hidden="true"><i></i><i></i><span>DSN</span></div>
+<div class="we-step"><span>02</span> Store</div>
+<a class="we-node we-node-core" href="#events"><strong>Events in your project</strong><span class="we-chips"><code>inference</code><code>model_load</code><code>error</code><code>feedback</code><code>span</code></span></a>
+<div></div>
+<div class="we-fan" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="we-step"><span>03</span> Use</div>
+<div class="we-row we-row-3">
+<div class="we-lane">
+<a class="we-node" href="#runs-traces-and-spans"><strong>Runs and traces</strong><span>Follow one execution step by step.</span></a>
+</div>
+<div class="we-lane">
+<a class="we-node" href="#sql-and-charts"><strong>SQL and charts</strong><span>Query the <code>events</code> table. Save charts.</span></a>
+<div class="we-down" aria-hidden="true"></div>
+<a class="we-node" href="#dashboards"><strong>Dashboards</strong><span>Charts on one page and time window.</span></a>
+</div>
+<div class="we-lane">
+<a class="we-node" href="#datasets"><strong>Datasets</strong><span>Labeled events with their attachments.</span></a>
+<div class="we-down" aria-hidden="true"></div>
+<a class="we-node we-node-out" href="#training-export"><strong>Training export</strong><span>Upload to Edge Impulse.</span></a>
+</div>
+</div>
+<div></div>
+<a class="we-agent" href="/connect-agent"><span class="we-agent-tag">MCP</span><span><strong>Your AI agent</strong> works across your project: reads events, follows runs, writes SQL, builds dashboards.</span></a>
+</div>
 
 ## Companies and projects
 
 A **company** is your organization in WildEdge. It holds your team and billing.
 
 A **project** holds the telemetry for one application or environment, for example `ios-app` or `support-bot-staging`. Events, runs, datasets, charts, dashboards, and training integrations all belong to a project. Most teams use one project per application and environment.
-
-::: tip Projects are called apps in MCP
-The MCP tools name a project an *app*, for example `list_apps` and `create_app`. It is the same thing.
-:::
 
 ## Keys and tokens
 
@@ -141,7 +149,7 @@ Training integrations may need to be enabled for your project. Contact us if **T
 | Term | Meaning | Similar to |
 | --- | --- | --- |
 | Company | Your organization, team, and billing | Organization, workspace |
-| Project | Telemetry for one app or environment. Called *app* in MCP. | Project |
+| Project | Telemetry for one app or environment | Project |
 | DSN | Write-only key that sends events to a project | Sentry DSN, ingestion key |
 | Event | One recorded occurrence: inference, load, error, feedback, span | Log record, span |
 | Run | One workflow or agent execution, grouped by `run_id` | Trace, session |
