@@ -93,7 +93,7 @@ Attachment capture is off until you enable it in **Project Settings** and in you
 
 ## SQL and charts
 
-Every project has one queryable table, `events`. Open **SQL** to run read-only SQL (DuckDB dialect) against it, limited to the project and the selected time window.
+Every project has one queryable table, `events`. Open **SQL** to run read-only SQL against it, limited to the project and the selected time window.
 
 ```sql
 SELECT model_name, quantile_cont(duration_ms, 0.95) AS p95_ms, count(*) AS calls
