@@ -178,9 +178,6 @@
 .we-node-core strong { font-size: 16px; }
 .we-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
 .vp-doc a.we-node-out { border-style: dashed; }
-.vp-doc a.we-node-out { align-self: start; justify-self: center; width: 72%; gap: 2px; padding: 8px 12px; }
-.we-node-out strong { font-size: 13px; }
-.we-node-out > span { font-size: 12px; }
 /* Connectors: --we-line is the stroke, arrowheads are CSS triangles */
 .we-map { --we-line: var(--vp-c-border); }
 .we-merge, .we-fan { position: relative; display: grid; height: 40px; }
