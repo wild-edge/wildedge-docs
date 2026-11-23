@@ -3,16 +3,11 @@ title: Companies & projects
 description: Organize applications and environments into WildEdge projects and connect each one to the right telemetry destination.
 ---
 
-# Companies & projects
+# Companies & projects <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/empty-demo-app?hours=168" aria-label="Open a new project overview in the demo">See Demo</a>
 
 Your **company** holds your team and billing. A **project** holds the telemetry and settings for an application or environment, including events, runs, dashboards, datasets, and training integrations.
 
-[Explore Projects in the demo](https://wildedge.dev/demo/wildedge-demolabs/projects?hours=168) · [Sign in to WildEdge](https://app.wildedge.dev/)
-
-<figure class="workflow-shot">
-  <a href="/images/workflows/admin-projects.jpg"><img src="/images/workflows/admin-projects.jpg" alt="WildEdge DemoLabs Projects view showing four applications, their last event status, and a setup link for the empty project." width="1536" height="570"><span class="workflow-shot-open">Open full-size screenshot</span></a>
-  <figcaption>The Projects view shows which apps are sending telemetry and which are waiting for their first event.</figcaption>
-</figure>
+[Sign in to WildEdge](https://app.wildedge.dev/)
 
 ## Decide when to create a project
 
@@ -23,6 +18,12 @@ Use one project for each application you investigate independently. If staging a
 1. In WildEdge, open **Projects** from the profile menu or select the company name in the breadcrumb.
 2. Confirm you’re in the intended company, then select **Create Project**.
 3. Enter a project name and select **Create Project**.
-4. Connect your [app or gateway](/setup/sdk-and-gateway) with an ingestion key from the new project. Open [Events](/monitoring/events) to confirm its first event arrived.
+4. In **Overview**, select the app platform or gateway you want to connect. Follow the setup steps with an ingestion key from this project.
+5. Send an inference and open [Events](/monitoring/events) to confirm it arrived.
 
-The demo lets you browse existing projects. Create projects after signing in to your own company.
+<figure class="workflow-shot">
+  <a href="/images/workflows/admin-project-overview.png"><img src="/images/workflows/admin-project-overview.png" alt="A new project Overview is waiting for its first event and offers Python, iOS and macOS, Android, LiteLLM, OpenRouter, and Bifrost setup." width="1440" height="480"><span class="workflow-shot-open">Open full-size screenshot</span></a>
+  <figcaption>Choose what to connect from the new project’s Overview.</figcaption>
+</figure>
+
+The demo opens the Overview of an empty project. Sign in to create a project in your own company.

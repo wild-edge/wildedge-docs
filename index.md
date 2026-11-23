@@ -11,7 +11,7 @@ Collect inference telemetry from your app or LLM gateway, with optional capture 
 
 </div>
 
-- **Try a Python quickstart** to [run a model locally](/quickstart/on-device) or [trace a cloud API call](/quickstart/cloud).
+- **Try a Python quickstart** for [an on-device model](/quickstart/on-device) or [a cloud API call](/quickstart/cloud).
 - **Set up telemetry** for [an app](/setup/sdk), [a gateway](/llm-gateways), or [both](/setup/sdk-and-gateway).
 - **[Explore the demo](https://wildedge.dev/demo/)** with sample events, traces, and dashboards.
 
@@ -19,21 +19,19 @@ Collect inference telemetry from your app or LLM gateway, with optional capture 
 
 <!--@include: ./parts/product-map.md-->
 
-[Why did this car scan take 16 seconds?](/monitoring/runs#find-the-slow-step-in-a-run)
-
 ## Explore your telemetry
 
 [Find an event and follow its trace](/investigate) in WildEdge, or [connect your AI agent](/connect-agent) to investigate through MCP.
 
 | Problem | What to inspect |
 | --- | --- |
-| [OpenAI or Anthropic calls fail](/what-we-collect#failures) | Provider error codes, HTTP status, and time until failure |
-| [llama.cpp responses start slowly](/what-we-collect#latency) | Time to first token, model load time, and quantization |
-| [Core ML or TensorFlow Lite slows on some phones](/what-we-collect#device-performance) | Device model, thermal state, memory, and actual accelerator |
-| [Gateway costs increase](/what-we-collect#usage-and-cost) | Requested and served models, token use, and reported cost |
-| [ONNX Runtime or Transformers results change](/what-we-collect#model-behavior) | Model versions, input measurements, predictions, and feedback |
+| [OpenAI or Anthropic calls fail](/monitoring/events#find-an-event) | Provider error codes, HTTP status, and time until failure |
+| [llama.cpp responses start slowly](/monitoring/models#investigate-one-model) | Time to first token, model load time, and quantization |
+| [Core ML or TensorFlow Lite slows on some phones](/monitoring/hardware#find-the-affected-devices) | Device model, thermal state, memory, and actual accelerator |
+| [Gateway costs increase](/monitoring/gateways#read-the-gateway-overview) | Requested and served models, token use, and reported cost |
+| [ONNX Runtime or Transformers results change](/monitoring/models#what-can-appear-in-model-details) | Model versions, input measurements, predictions, and feedback |
 
-Available signals depend on the integration. The linked guides explain what to check and where data may be missing.
+See [what WildEdge collects](/what-we-collect) for signal availability by integration.
 
 ## Resources
 

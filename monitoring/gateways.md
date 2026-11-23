@@ -3,11 +3,9 @@ title: Gateways
 description: Track gateway spend, see how requests were routed, and investigate failed provider attempts.
 ---
 
-# Gateways
+# Gateways <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/the-one-with-the-gateway/gateways?hours=168" aria-label="Open Gateways in the demo">See Demo</a>
 
 See what your gateway traffic costs, which model served each route, and whether retries or fallbacks recovered requests. Start with a time range, then open individual provider attempts in Events.
-
-[Open Gateways in the demo](https://wildedge.dev/demo/wildedge-demolabs/the-one-with-the-gateway/gateways?hours=168)
 
 <figure class="workflow-shot">
   <a href="/images/workflows/gateways.jpg"><img src="/images/workflows/gateways.jpg" alt="Seven days of OpenRouter traffic with 128,030 requests, $6,248.71 in spend, and a spike in failures and recoveries on September 24." width="1536" height="1296"><span class="workflow-shot-open">Open full-size screenshot</span></a>
@@ -18,10 +16,10 @@ See what your gateway traffic costs, which model served each route, and whether 
 
 | Section | What it tells you |
 | --- | --- |
-| **Requests, Failed requests, Spend, p95 Latency** | Compare request volume, failure rate, reported spend, and end-to-end latency across observed attempts. The example has 128,030 requests and 131,712 provider attempts. |
+| **Requests, Failed requests, Spend, p95 Latency** | Compare request volume, failure rate, reported spend, and end-to-end latency across observed attempts. |
 | **Request outcomes** | See when requests succeeded on their first observed attempt, recovered after a failed attempt, or had no observed successful attempt. |
-| **Failure contributors** | Rank failures by requested model, gateway, and error code. Rate limiting accounts for 83% of failures here, followed by authentication and provider errors. |
-| **Routing & recovery** | Compare requested and served models, attempts per request, and latency. Gemini Flash-Lite served 3,682 recovered Sonnet requests. The fallback route took two attempts and had a p95 of 3.9 seconds, compared with 2.6 seconds for the direct route. |
+| **Failure contributors** | Rank failures by requested model, gateway, and error code. |
+| **Routing & recovery** | Compare requested and served models, attempts per request, and latency. |
 | **Recent failed requests** | Open **View events** on a row to inspect the provider attempts linked to that request ID. |
 
 ## Inspect a failed request

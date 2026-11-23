@@ -6,7 +6,7 @@ description: Start from recent events, find a suspicious inference, and inspect 
 
 Start with a small set of recent events, find a suspicious inference, then inspect the context available to explain it.
 
-New to events, runs, and spans? See [How WildEdge works](/concepts).
+New to events, runs, and spans? See [Where your inference data goes](/#how-wildedge-works).
 
 Use [Troubleshooting guide](/what-we-collect) to choose fields for the problem you are investigating.
 
@@ -39,4 +39,4 @@ Ask your agent to filter by gateway and inspect provider, model, token use, late
 ## Next
 
 - [Troubleshooting guide](/what-we-collect): which fields explain failures, latency, cost, and device issues.
-- Keep what you found: save a query as a [chart or dashboard](/concepts#sql-and-charts), or add the events to a [dataset](/concepts#datasets).
+- Keep what you found: save a query as a [chart or dashboard](/monitoring/dashboards), or add the events to a [dataset](/datasets-and-training/datasets).

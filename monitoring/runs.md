@@ -3,11 +3,9 @@ title: Runs
 description: Find slow or failing runs, follow their spans, and inspect individual calls.
 ---
 
-# Runs
+# Runs <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/runs?hours=168" aria-label="Open Runs in the demo">See Demo</a>
 
 Use Runs to see where a request spent time or which step failed. A run groups the recorded steps of one execution. Each step appears as a span in the trace.
-
-[Open Runs in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/runs?hours=168)
 
 ## Find a run to investigate
 

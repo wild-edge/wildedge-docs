@@ -60,8 +60,8 @@ export default withMermaid(
           sidebar: [
             { text: 'Get started', items: [
               sidebarItem('Send your first event', undefined, 'rocket', [
-                { text: 'Run a model locally', link: '/quickstart/on-device' },
-                { text: 'Trace a cloud API call', link: '/quickstart/cloud' },
+                { text: 'On-device model', link: '/quickstart/on-device' },
+                { text: 'Cloud API call', link: '/quickstart/cloud' },
               ]),
               sidebarItem('Instrument your app', '/setup/sdk', 'code'),
               sidebarItem('Connect an LLM gateway', '/llm-gateways', 'link', [
@@ -95,7 +95,8 @@ export default withMermaid(
               sidebarItem('Company limits', '/administration/limits', 'credit-card'),
             ] },
             { text: 'Learn more', items: [
-              sidebarItem('How WildEdge works', '/concepts', 'compass'),
+              sidebarItem('Architecture', '/architecture', 'compass'),
+              sidebarItem('Deployment options', '/deployment', 'server'),
             ] },
             { text: 'Reference', items: [
               sidebarItem('Telemetry reference', '/telemetry', 'list'),

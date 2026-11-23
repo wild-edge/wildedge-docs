@@ -7,7 +7,7 @@ description: The building blocks of WildEdge, from projects, keys, events, runs,
 
 Your app or LLM gateway sends **events** to a **project**. You investigate them as events and runs, query them with **SQL**, chart them on **dashboards**, and turn the useful ones into **datasets** you can export for training.
 
-<!--@include: ./parts/product-map.md-->
+See [Where your inference data goes](/#how-wildedge-works) for the interactive map.
 
 ## Companies and projects
 

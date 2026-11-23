@@ -3,11 +3,9 @@ title: Capture
 description: Review captured model inputs and outputs alongside the events that produced them.
 ---
 
-# Capture
+# Capture <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/events?hasAttachments=true&amp;show-details=true&amp;highlighted-event=demo-car-event-33&amp;attachment-id=demo-car-attachment-33&amp;hours=168" aria-label="Inspect a captured photo in the demo">See Demo</a>
 
 Capture gives you the original input or output attached to an inference event. Open it alongside the model’s prediction to investigate a result or collect an example for a dataset.
-
-[Inspect a captured photo in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/events?hasAttachments=true&show-details=true&highlighted-event=demo-car-event-33&attachment-id=demo-car-attachment-33&hours=168)
 
 <figure class="workflow-shot">
   <a href="/images/workflows/event-attachment.jpg"><img src="/images/workflows/event-attachment.jpg" alt="A captured car photo appears with the reported Honda CR-V prediction." width="1536" height="978"><span class="workflow-shot-open">Open full-size screenshot</span></a>

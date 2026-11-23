@@ -3,11 +3,9 @@ title: Datasets
 description: Review inference examples, correct dataset labels, and prepare data for training.
 ---
 
-# Datasets
+# Datasets <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/datasets/car-review-sample?hours=168" aria-label="Open Car review sample in the demo">See Demo</a>
 
 A dataset collects inference events you want to review or use for training. Start with a single event or a filtered batch from [Capture](/datasets-and-training/capture#add-captured-events-to-a-dataset).
-
-[Open Car review sample in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/datasets/car-review-sample?hours=168)
 
 <figure class="workflow-shot">
   <a href="/images/workflows/dataset-detail.jpg"><img src="/images/workflows/dataset-detail.jpg" alt="The full Car review sample view shows dataset actions, coverage, charts, and the first four rows." width="1536" height="1005"><span class="workflow-shot-open">Open full-size screenshot</span></a>

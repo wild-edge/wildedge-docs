@@ -3,11 +3,9 @@ title: Events
 description: Filter inference traffic and inspect the timing, tokens, and captured content for a single event.
 ---
 
-# Events
+# Events <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/events?hours=168&amp;modelName=gemini-3.8-flash&amp;hasAttachments=true" aria-label="Open Events in the demo">See Demo</a>
 
 Use Events to find a slow inference, investigate a failure, or check what a model returned. Start with the traffic histogram, narrow the list, then open a matching event.
-
-[Open Events in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/events?hours=168&modelName=gemini-3.8-flash&hasAttachments=true)
 
 ## Find an event
 

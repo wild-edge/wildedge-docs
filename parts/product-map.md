@@ -8,23 +8,23 @@
 <div></div>
 <div class="we-merge" aria-hidden="true"><i></i><i></i></div>
 <div class="we-step"><span>02</span> Store</div>
-<a class="we-node we-node-core" href="/concepts.html#events"><strong>Events in your project</strong><span class="we-chips"><code>inference</code><code>model_load</code><code>error</code><code>feedback</code><code>span</code></span></a>
+<a class="we-node we-node-core" href="/monitoring/events.html"><strong>Events in your project</strong><span class="we-chips"><code>inference</code><code>model_load</code><code>error</code><code>feedback</code><code>span</code></span></a>
 <div></div>
 <div class="we-fan" aria-hidden="true"><i></i><i></i><i></i></div>
 <div class="we-step"><span>03</span> Use</div>
 <div class="we-row we-row-3">
 <div class="we-lane">
-<a class="we-node" href="/concepts.html#runs-traces-and-spans"><strong>Runs and traces</strong><span>One execution's spans and model calls, from SDK tracing.</span></a>
+<a class="we-node" href="/monitoring/runs.html"><strong>Runs and traces</strong><span>One execution's spans and model calls, from SDK tracing.</span></a>
 </div>
 <div class="we-lane">
-<a class="we-node" href="/concepts.html#sql-and-charts"><strong>SQL and charts</strong><span>Sandboxed read-only SQL on the <code>events</code> table. Save results as charts.</span></a>
+<a class="we-node" href="/monitoring/query.html"><strong>SQL and charts</strong><span>Sandboxed read-only SQL on the <code>events</code> table. Save results as charts.</span></a>
 <div class="we-down" aria-hidden="true"></div>
-<a class="we-node" href="/concepts.html#dashboards"><strong>Dashboards</strong><span>Related charts in one time window.</span></a>
+<a class="we-node" href="/monitoring/dashboards.html"><strong>Dashboards</strong><span>Related charts in one time window.</span></a>
 </div>
 <div class="we-lane">
-<a class="we-node" href="/concepts.html#datasets"><strong>Datasets</strong><span>Curated events with their captured inputs and outputs.</span></a>
+<a class="we-node" href="/datasets-and-training/datasets.html"><strong>Datasets</strong><span>Curated events with their captured inputs and outputs.</span></a>
 <div class="we-down" aria-hidden="true"></div>
-<a class="we-node we-node-out" href="/concepts.html#training-export"><strong>Training export</strong><span>Training vendor of choice</span></a>
+<a class="we-node we-node-out" href="/datasets-and-training/training.html"><strong>Training export</strong><span>Training vendor of choice</span></a>
 </div>
 </div>
 <div></div>

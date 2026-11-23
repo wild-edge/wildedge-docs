@@ -3,11 +3,9 @@ title: Notifications
 description: Review groups of failed model calls, inspect the events behind them, and resolve notifications after triage.
 ---
 
-# Notifications
+# Notifications <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/notifications?hours=168" aria-label="Open Notifications in the demo">See Demo</a>
 
 Use Notifications to triage failed model calls in a project. Each failure group shows the model, error code, number of failed calls, and when the first and last failures occurred.
-
-[Open Notifications in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/notifications?hours=168)
 
 <figure class="workflow-shot">
   <a href="/images/workflows/notifications.jpg"><img src="/images/workflows/notifications.jpg" alt="The Car Classifier project has three unresolved groups, including a network timeout, three HTTP 503 failures, and an IllegalStateException." width="1536" height="580"><span class="workflow-shot-open">Open full-size screenshot</span></a>

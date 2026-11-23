@@ -61,4 +61,4 @@ You can connect your agent first. A connection with write access can help create
 ## Next
 
 - [Investigate events and traces](/investigate) with your agent.
-- [How WildEdge works](/concepts) explains the events, runs, charts, and datasets your agent can work with.
+- [Where your inference data goes](/#how-wildedge-works) explains the events, runs, charts, and datasets your agent can work with.

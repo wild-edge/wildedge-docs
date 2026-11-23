@@ -3,7 +3,7 @@ title: Models
 description: Compare model health, then investigate latency, errors, and prediction confidence for one model.
 ---
 
-# Models
+# Models <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/models?hours=168" aria-label="Open Models in the demo">See Demo</a>
 
 Use Models to see which models reported telemetry in the selected time range and decide which one to investigate.
 
@@ -15,8 +15,6 @@ Scan **Inference calls**, **p95 call latency**, and **Call error rate** to compa
   <a href="/images/workflows/models-inventory.jpg"><img src="/images/workflows/models-inventory.jpg" alt="Three model cards compare inference volume, p95 latency, errors, confidence trends, and last-seen times for one cloud model and two Core ML models." width="1280" height="720"><span class="workflow-shot-open">Open full-size screenshot</span></a>
   <figcaption>The Car Classifier project uses two on-device Core ML models and Gemini. Gemini logged 74 inferences and had the highest p95 latency in this seven-day window.</figcaption>
 </figure>
-
-[Open Models in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/models?hours=168)
 
 ## Investigate one model
 

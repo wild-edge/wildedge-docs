@@ -3,11 +3,9 @@ title: Training
 description: Track dataset exports to Edge Impulse from your project.
 ---
 
-# Training
+# Training <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/news-reader/training?hours=168" aria-label="Open Training in the demo">See Demo</a>
 
 Send a reviewed image dataset to Edge Impulse, then use Training to check which images arrived and which labels the export used.
-
-[Open Training in the demo](https://wildedge.dev/demo/wildedge-demolabs/news-reader/training?hours=168)
 
 <figure class="workflow-shot">
   <a href="/images/workflows/training-export.jpg"><img src="/images/workflows/training-export.jpg" alt="The export history shows completed Edge Impulse jobs and their exported image counts." width="1536" height="552"><span class="workflow-shot-open">Open full-size screenshot</span></a>

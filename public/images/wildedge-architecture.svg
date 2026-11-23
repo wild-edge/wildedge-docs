@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1926" viewBox="0 0 1400 1926" role="img" aria-label="Wild Edge architecture">
+<defs><style>@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400;src:url(data:font/woff2;base64,d09GMgABAAAAABIAAA8AAAAAJEAAABGmAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGkwbIBwqBmA/U1RBVC4AgT4RCAq4PKwxATYCJAODHAuBUAAEIAWEEAcgG2Aco6KcsQaS/fMwJrL5QkMgZK/R83CEo70G81jsSpgu+TQ374mllP7Z7/w/QpJZHvr243dn9uFm1SV5Ekukf8heqVrFGqFos+YRdnja5r81Du5WCeYmoigeUQd9cEndHWkAVgDTVbXrlF/tflS4/Wy/T2fOSDLN1/p8RBwGrXQIVV5KQLuV2wBBBRUAq7ANKoRezUoVs/3/v7nSZo44LTsG5Sp0hav6O5PbzOwc5HaPkj2C7DFn97CtRHJV5KpSPmBXAFQErq+uqoqFMrW1NSmvTlJ5oQq/wzE2W0S+CcrYiQdtfC8k0BERU/vyrYW2umZiD+PFviaK/eWJwxWKo8nESRTidIg4k/pSA+0NJDFg5WqaAwIN1P+BotmjSQ08Mvjkvu5OMJEBGbzJ2bHFEPJGhgEb7kcSuyFR6LBUwVARqzeAoZ4ZOuzmoLf/v09zMYqEFoovmWXTBgn1CIH3vFYeaOD5I83dZbRUhpUiowVgxlluznqyxHHhgz0A9DbSIK1NoWcVFTfPIkfcGrZNlQ8fSsHAJiZhPsnVmvqYQL31n6r+Jwi9waYDLUQrvb1FYQtSSFgEj+CECYqi+VFcGB5VYqr5cKxwNjVYcXZuDrUGiFp1AUcAvMNFoO1DoMNBwHbAVgeiuhBAnmYoWYFHkrzFoiAzkD0CWbNWds+QBES+kw3AKKpHK5xtBY4Sxjls5YmURMWWGtvKUsGYHe2pZPWQLZ3hjHBsl1YHJVpOZnmh9KJotrKqstK0pcxMqU/POmNFl03CdVUI1JbFYlUBVEZaWkVFSq1esdMzpdI2dN1TPdJSYHU2LNpbFjQMVqSfBGKYxqS4tuNhTMAICKsk/SOKN18r6Mb5iiiOv+IiKcwJFuGlOuuzVQRXNSLJxPmoOS0YXliB8MTADTs5imw6y9F+jFmf32WcjlFYGcJyuviLAAxlwhLTNohbCKLBgsxsEiM+a4RlLCzKkkxxNZmYxPSjigGZkCmxkpiII1kOgpO7M1k0D2iD6CBdDHPebnan9qsabaWDXs3uoMelXOvMINqgh9XM6n/Xuvf2hLxXMoN3VyZe/utc+26JUWCjZqeQWC9ONGHgBybzKSmjJu7kjKWF+VDjYxjFOEZGZUxGlDkbygAvs82KFkiR9qulUJU/8VHgXsLASQ0mn4QtwD8qCql+UPycvZ3VJCSmtp+ry5GxO1NYLUuKnKXORWkIEWNOLtfnUwNde5YL5+40y30IJ5H9auVmffr5O6a8pRFMYXCirml1BUgMj/XkjWBY8UJsVknVjwBwfx3azQYZUg0xc8msooeZWXElplswQXfYHW9ViEeM6Gv7IAzrvPQmA36PZqqlAyA8KsAID/I8TwxPCzFm7XuwbG5AJIRs/w94jFvXDNe70P6jd15lW9d1k1+Hbo52rrIl9c7Od/QLgVDEiBz6w253E2QCZwjL+SzSg6S7FOHA0uG50HIBOFpcMejbAECsYQi9djeohiogjozDgrKl3uan8obSU0x5LBs2vMVLIkXNirQhp/B8RUkzVJapxSddhgESmlOmLHBAvIC/3M8RU7AN4e3GiTHiKeu+51Q50IvBibhZ0bzTAeGu9aOab16vYeSe12NorGe8NcSgh9z+bUhgCWOGKemXYkKtw9barorm1rIk/TorQYsSu15KgbGysdy0C9Fjk4NQBJbLkqE8lDwGI1HpL1aZpDVDMO0uY0PGCekQ9usIwrMHcQAXxBgAHhLoJJYMJIfUvAAsh97Mi0TfX/3l7x1jX3qBtD+CnorrDimtKtIido+BrNNY6dfaGk9fn+WC27y4CVixTZ+1LWjMCQiSHR1PeCw1ubx4+wltiLqWpB8OjTN0tmfXsH9ldpBBTqZj96BvS2YIJG4Gs3MgsCqDJ2Evy7pjiN2exYGFz8GgYJIA4T1ggr8+js0JIai37ds60d7QL3zo2dh3iZw0z72Dncabk0WMa+8cz9MMzXo8z3M8S+PjGG3933p8lXcrRzLNPeMiaWd7K53rifhZ3llPfCNj2j626U4jy4Th2J4HOodR7dnl9Y/viHJKZ3afu1tTruTHx2mejVdfll1l8p//ZydhUEElpyepWlNNqcqjFlTWIKvhlQFv5XC9JlAjM52iDtsxkzpHnY3Wfpg+hrpRZLjShZqOARpauH3L+iPro1EsXLBi7ZwhrMDL1Ucide3JnmQEFia6dyQLzdmOBL8mo9btWr912bZd69ZFqVhjU13L2ramRGMM+LKX6Fi/hbZ8F6dp8FM0e19H6/TAAXlmWe0Lq4cRS1fPqDkMKWSoMuO872g4UMeOeh2fztA0fGKuY9JTndPiWk5pelwfO78sGAo1zepq17Aam9OPufQ++6H59BSaPtTRNoPaTyVcrEhzkXiiS6GBtRl7Ookg48idVdC4wpGsfyV8e8XWOHjlRsDxn5XVrG7402p4DWCghTtkF3bELHooZKyMSJxMJMSiQ8uL7wqRJanQR6yQxRCtqzDdntx4ycHYTcNNtN15CeAvtezDaX3FnoBFMtWOAV92ii1Zpg0YhJjNew9WPJDfZz+RjMj/KbftEYy0o8NQwu56BOggerba2R4Yx44LNXC+AE/oijuwqf3oS9VyFWk0GvhWucudVlhrcBkrU14gxQqMRXXTTLap76J98TI9bTabYmkE/JP+hB5Pf5IGNOTp0lo6/a+yrwVjPMsKPfga96p/ZdKtBQ9e7Q09vAYqaciagt2ZXi65El6yctfiHEC5acSuJWt7XQvyPol/GK27kgddzUt+EE17S96cDt2YDoYJ/7gc7/XCI43zCYQASa38VTSPujd7YTZR4GtIyRZWOCqRCiubpzpRpHoBNdp0jxATbivtQamppike/kAyVe7A8rtzh4iO4X+VOFzBACU8VvFsScm3IAHRnL4I9jNZbx5887ZrstLajJrSHshjzjQbWYyuiYdyQqlGU/ERwBwoIXcatWY8Qq81jVG6XUmljk/TIxyUrVBRSZeW+fU5egD+aJUETa1mRl7S80klyIcsLUZTxgN5TOlm1Kp0Tb59E87zZhk/rGL1mip0BCJT5tvJlIjm57jD7MZaDMYOsmjzQE9tGLc49BMced8xXMk35eZBDo6yO3gKXOvZhe1aKL0nm+9skEgy+7B9PcDwI8yYOlqMFiZgUMJ+KiZ9SEa7tBLJXfjGHWyyCtH17/y7nq6p5QR8TQ1NxWt4ARevBWzWmw/vXGWdhGiD5cqwXeotIHCb2R2OxX6j9HMA/ujZTvjb8X91fP06/EaGZnnU3zAm+J2/DXpX5c/wIGeluZIolpEqyusPtUapcWL26RNc8lOw8E+0jtIG5coItKkKItMmc5qBaHPG2shYRoaGmBWgDuHyVCW5HE5qHqb6ARgvCDxzhfHDRZyetjSj5pQX8pgyzUYNH8WdG/C4s/9rttInz4yDb9yxNHHIl/CaUi2ohWb1KtjPXPmTGdf1bUDhl6rLDLhFbTWYZWACFFvAiqLkyMU3reOnaf+eNv1FYtVXTP47ZfYGgmMbSdhBjF7hkCHIjqLC+FurdAFJTgXeyoBhsntSz3Zs+0XvxSPYEbtE3OEEkEAdliNRmwECXRHu1Y4JowMvXfya23YBHilnzcDuxNc+3zW49dpyUBjUN81Y3XYNot5A6RO/P/RD7dYsvCUbf/iHOiO+83EY/YCNz7gmiiVX4R1rbBORCpaL2Eq8hfi5xKT3SoGpUYMI5diSRi0isjqBBZq9YcPGHhEwe46yoYf+r2yYjUcjbYkLiVhrOBxti19IRlrBgFUjVv8RPlm+NwvUBKWK1GhsY+L3HNKa8sH2GI3Ttb4A7INoW0tGg+OdalOtNcepDtdof/ZV2AvGlY86SIByiOzW2luoMf7RTCLk9YUDFkH5bXKyfEbD8LOizcQXmcGnRIgxKTNwVqHdlEipwcbNHfFpfXs+n0PM2dz+1tRrMHQSyCEmZTA1YyJ/jjfG0r5IxJNDBcOYVPf6ls75fcT8n+DjDbZJlaak1tCEC93GthQK1BCe1llbiF+8po60wcO0a3Q15oDZS/sDkbAnAYtZhLI0aU0NLpHb2pTRuXG6micFiMxNSZUIJZW5EQFZzYM9kwofAcPfFR4hfo2P//n60skTgAbyz1JYw6hQVer4vAc6tZyRC/VWX6aUINOlVp9eKDd13YKuvy5zqISoJTxL4cf5pM0isCRsQT7xgJkpG/BFUZ1AH0O9Xk7WC3R0AUAGMe0aba3Jb/bTXjYc9iQgeQChLM0Iy+K2xrQOJwjmDclfPGhnxkA6MN4xvFJAVXE0Xc1RgkoZTkvBkf7C8wWagvOF+7FlUySwZMoyDIzujxwHCgrGVQBAf35fgQPRBOmgBnEU9OUfKD6doqitcBg8rLCtSMHliaAdyM8OJ4ToUG/ZfJDuj69zEFu6nN3EZnu14tgskFmyyrAys3QWAEP7sTkgtXSlYVVqyRyAJdY6yM3dzi5yiy0Hnh1dt8Ir6gPvr1O9U0HBM4H5YAYWQuIGiaRBLOEzcx6QCxBxUVEeLK6bMn6OWMyLq4NBwN8d4B8gfZblhj+4ayofe6xXfUBbststlstpyXeKQn8hZq1JK3B3O4KGDXoZ6VAsPVf850S0+FkOLuH+1wCe9wkpAei5xKsEGPPMqr6mric3jtvQ8eSTTcvGLeitb7mzrGBx1UI+v2RH7nC4W3qu3FhtUaWw0W5lR8xilO8Ztw12MStGnINFOkWwYWrKv2+3v3VUx1E2cmL+yHk1J8+xmSfd7w20eKu54Zy3xmLx1gZEfm8t+MtQXar2G8vyba39wg8cpA3VsrES3SJnt45GzTLsdtG6Nm9bEkta3nds+nuT3oNarT4TKH9BwzsF5Nws13uyR+DkNbzA2XOyl8vOJZ0Cfn/5YcS8Xr73FDs1U+YRW+XBmb5F2KJ9Ynof0bd5+mJs8T4yOvCozfs2f3dA1b702hn5FrnbnVLYkHwunU2U6caTaehhesAqKFp2nkydI4IcMfQS7w49RunWy4aUisoGy0oHl4lKh/ARgufxoYATG14OiPGnaJzv2MZgxPqL5/HzF+l1PVC3Au/Bj++kMmDY0uOnG9NpXGCpSAd1SznWAhi3UQYQpy6MWYCyNas/EK36ADRX6+sqXMJPFIu/PPIJJPxjtc/2dhUOBSeJoS+PvgwLv94NZqgm50+egojJo6aMLzY7p9eu2bthDfb7lm90fLvaKZFs6lN7lRnWDG/ZkmW8XkKUrDSO9/2W3b8/08DR6gCt7Wsb+dQL7SPa2Jib2xTfcVK4YDlHlK3NNScuZPHYct+xMQiZ9bPvM8d+h8COZh4eCpYwXwx4mhfrz1XnjlmFIV73PJ8Pis6F6i+Px+/e127mJO+5H3U0qfRpZg1AMvN7e03tCPRv2Czf4P2tgr2Dk2ycr2/+328eanAF7GmUGvzvTn+cBPzzk61hPNYjpU5VDCDPmZQ7VeQyaO42LiVfThVsx3zmFj6/uAJKMkm0AIElwfYwO3gWHRmj2b02UCRtSu5DZZtJhVzTcpG8N+XhXAZJC8qvwGaQkQGCr1zcJc5l4cQNWL8y+73+nHkRUECpwiRHtrIylgBsrnGNMCP63gxUj8kp8ko+dfqVJs8lx6JcCo1jRmeMOqvIMyMvQ5SsoqkKYkq5SxlerJg5Ji4rBsPmvzGba1icAvzgQ536z98McYYD/cv/HsrD806n0njGFr0mZTumGWhTVilLgSnZrdQUmWWwEfvrqh8hcmk2JtIA2q9Ytb+yYMpQiAE4oorAfkPcxot7h2rnlEGiaYdXRHNDf0/OTZ19mlvM92BuY3xMn9tK//DNaW1stC4VdIybEsQ4VkhJm2uGFk2adcPIFWc1D7dCDYw9dybURcx9T03phtqljbkviVp5HadqM9OwZmYzUmceKSBkLD1rbFChQpOWsWumpHJWUzp2nI3a2Ru3SOjUJsGLRbBOiu0Svrpc04aWIHMFNGhi3g5UiCinOB7KyIVi5HI3W4d82G7V3TGxIGPMYotUtzxxnSMmPaTBDY5BDmuqByAA) format('woff2');}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;src:url(data:font/woff2;base64,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) format('woff2');}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;src:url(data:font/woff2;base64,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) format('woff2');}text{font-family:'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;}</style></defs>
+<rect width="1400" height="1926" fill="#ffffff"/>
+<svg x="634.3" y="26" width="131.4" height="92" viewBox="0 0 155.9174 109.2068" preserveAspectRatio="xMidYMid meet"><defs
+     id="defs1" /><g
+     id="layer4"
+     style="display:inline"
+     transform="translate(-227.77338,-74.276628)"><g
+       id="g43"
+       transform="translate(198.04634,24.067748)"
+       style="display:inline"><g
+         id="g41-0-5"
+         transform="matrix(1.1832688,0,0,1.1832688,-17.116315,36.161999)"
+         style="display:inline"><g
+           id="g40-3-4"
+           transform="translate(-122.51718,-0.990493)"
+           style="display:inline"><path
+             style="display:inline;fill:#024079;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             d="m 200.32358,53.367042 5.89028,-9.177868 -10.95865,-17.944795 -33.14993,57.669903 10.95865,-0.13698 10.82167,-18.62971 11.78056,18.90368 32.41738,-53.602129 -0.3395,-17.587398 -31.9409,52.833777 -6.43821,-10.13675 5.89028,-10.136751 z"
+             id="path33-0-9-5" /><path
+             style="display:inline;fill:#00b78b;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             d="m 228.08354,30.449146 14.08916,24.06439 5.48854,-8.41425 -19.9172,-33.237541 z"
+             id="path33-0-3-4-1" /><path
+             style="display:inline;fill:#00b78b;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             d="m 208.99919,66.280357 11.54292,-9.6191 16.6354,27.27299 23.65168,-37.910586 0.45266,-18.332883 L 237.517,66.280357 223.37126,42.855014 Z"
+             id="path40-4-9-1" /><path
+             style="display:inline;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             d="m 260.82919,46.023657 7.24262,11.88243 h -11.54293 l -15.9564,26.02816 53.30116,0.11317 -5.20563,-9.39278 -31.9128,0.22634 4.86614,-8.03479 22.29369,0.11317 -22.63319,-39.268583 z"
+             id="path40-4-0-6-6" /></g><g
+           id="g20-5-1"
+           style="display:inline;fill:#00b78b;fill-opacity:1;stroke:none"
+           transform="translate(-2.7599506,-46.002733)"><rect
+             style="fill:#024079;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             id="rect17-1-8-1-9"
+             width="3.600328"
+             height="3.600328"
+             x="81.374847"
+             y="73.333061" /><rect
+             style="fill:#024079;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             id="rect17-1-8-4-3-3"
+             width="3.600328"
+             height="3.600328"
+             x="90.545479"
+             y="73.968529" /><rect
+             style="fill:#00b78b;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             id="rect17-1-8-4-4-2-4"
+             width="3.600328"
+             height="3.600328"
+             x="86.573433"
+             y="66.872032" /><rect
+             style="fill:#00b78b;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             id="rect17-1-8-4-4-7-6-7"
+             width="3.600328"
+             height="3.600328"
+             x="84.936089"
+             y="79.079155" /><rect
+             style="fill:#00b78b;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             id="rect17-1-8-4-4-7-7-0-9-9"
+             width="3.600328"
+             height="3.600328"
+             x="94.294106"
+             y="68.071243" /><rect
+             style="fill:#00b78b;fill-opacity:1;stroke:none;stroke-width:0.264999"
+             id="rect17-1-8-4-4-7-7-0-5-2-0-8"
+             width="3.600328"
+             height="3.600328"
+             x="95.211731"
+             y="84.446518" /></g><g
+           id="g21-0-0"
+           style="display:inline;fill:#f9f9f9"
+           transform="translate(-2.1482032,-43.791936)"><rect
+             style="fill:#f9f9f9;stroke:none;stroke-width:0.264999"
+             id="rect17-1-3-7"
+             width="3.600328"
+             height="3.600328"
+             x="75.018181"
+             y="79.074654" /><rect
+             style="fill:#f9f9f9;stroke:none;stroke-width:0.264999"
+             id="rect17-1-7-9-5"
+             width="3.600328"
+             height="3.600328"
+             x="78.354904"
+             y="84.417755" /></g></g><path
+         style="font-weight:bold;font-size:25.4px;-inkscape-font-specification:'sans-serif Bold';fill:#024079;stroke-width:0.265"
+         d="m 56.751754,140.94858 -4.973339,18.46708 h -5.270996 l -3.311426,-12.03027 -3.224609,12.03027 h -5.270997 l -4.973339,-18.46708 h 4.973339 l 2.840137,12.7124 3.398242,-12.7124 h 4.750098 l 3.237012,12.7124 2.976562,-12.7124 z m 13.158887,18.46708 H 59.095797 v -3.27421 h 3.026172 v -11.91866 h -3.026172 v -3.27421 h 10.814844 v 3.27421 h -3.026172 v 11.91866 h 3.026172 z m 17.202048,0 H 73.792572 v -18.46708 h 4.7625 v 14.89521 h 8.557617 z m 20.315041,-9.21494 q 0,2.57969 -1.17822,4.62608 -1.17823,2.03398 -2.97657,3.12539 -1.35185,0.81855 -2.96416,1.14101 -1.612302,0.32246 -3.819919,0.32246 h -6.51123 v -18.46708 h 6.697265 q 2.257227,0 3.894334,0.38447 1.63711,0.37207 2.75332,1.0666 1.90996,1.16582 3.00137,3.15019 1.10381,1.97198 1.10381,4.65088 z m -4.92373,-0.0372 q 0,-1.82315 -0.66973,-3.11299 -0.65732,-1.30225 -2.095995,-2.03399 -0.731738,-0.35966 -1.500684,-0.48369 -0.756543,-0.13642 -2.294433,-0.13642 h -1.203027 v 11.55898 h 1.203027 q 1.699121,0 2.492871,-0.14883 0.79375,-0.16123 1.550293,-0.57051 1.302248,-0.74414 1.909958,-1.98437 0.60772,-1.25264 0.60772,-3.08818 z"
+         id="text41-8"
+         aria-label="WILD" /><path
+         style="font-weight:bold;font-size:25.4px;-inkscape-font-specification:'sans-serif Bold';fill:#333333;stroke-width:0.265"
+         d="M 126.60929,159.03119 H 113.25197 V 140.5641 h 13.35732 v 3.57187 h -8.61963 v 3.18741 h 7.99952 v 3.57187 h -7.99952 v 4.56406 h 8.61963 z m 21.44365,-9.21494 q 0,2.57969 -1.17822,4.62607 -1.17822,2.03399 -2.97656,3.12539 -1.35186,0.81856 -2.96416,1.14102 -1.61231,0.32246 -3.81992,0.32246 h -6.51123 V 140.5641 h 6.69726 q 2.25723,0 3.89434,0.38447 1.63711,0.37207 2.75332,1.0666 1.90996,1.16582 3.00136,3.1502 1.10381,1.97197 1.10381,4.65088 z m -4.92373,-0.0372 q 0,-1.82314 -0.66972,-3.11299 -0.65733,-1.30224 -2.096,-2.03398 -0.73174,-0.35967 -1.50068,-0.48369 -0.75655,-0.13643 -2.29444,-0.13643 h -1.20302 v 11.55899 h 1.20302 q 1.69912,0 2.49287,-0.14883 0.79375,-0.16123 1.5503,-0.57051 1.30224,-0.74414 1.90996,-1.98438 0.60771,-1.25263 0.60771,-3.08818 z m 24.89151,8.19795 q -1.24024,0.48369 -3.28663,0.96738 -2.04638,0.47129 -4.08037,0.47129 -4.71289,0 -7.37939,-2.55488 -2.66651,-2.56729 -2.66651,-7.08174 0,-4.30361 2.69131,-6.93291 2.69131,-2.6417 7.50342,-2.6417 1.82315,0 3.47266,0.33486 1.64951,0.32247 3.67109,1.30225 v 4.32842 h -0.5333 q -0.34727,-0.26045 -1.01699,-0.73174 -0.66973,-0.48369 -1.28985,-0.81855 -0.71933,-0.39688 -1.68671,-0.68213 -0.95498,-0.28526 -2.03399,-0.28526 -1.26504,0 -2.29443,0.37207 -1.0294,0.37207 -1.84795,1.14102 -0.78135,0.74414 -1.24024,1.89756 -0.44648,1.14101 -0.44648,2.6417 0,3.06338 1.62471,4.68808 1.6247,1.62471 4.7997,1.62471 0.27286,0 0.59532,-0.0124 0.33486,-0.0124 0.60771,-0.0372 v -3.62148 h -3.68349 v -3.48506 h 8.52041 z m 17.62373,1.0542 h -13.35733 v -18.4671 h 13.35733 v 3.57187 h -8.61963 v 3.18741 h 7.99951 v 3.57187 h -7.99951 v 4.56406 h 8.61963 z"
+         id="text43-2"
+         aria-label="EDGE" /></g></g></svg>
+<text x="700.0" y="156.0" font-size="24" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="4">Architecture</text>
+<rect x="48.0" y="180.0" width="1304.0" height="230.0" rx="14" fill="#eef4f9"/>
+<text x="186.0" y="291.0" font-size="21" font-weight="700" fill="#024079" text-anchor="middle" letter-spacing="0">SDKs</text>
+<text x="186.0" y="313.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">zero third-party dependencies, stable</text>
+<text x="186.0" y="329.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">memory and cpu footprint</text>
+<rect x="336.0" y="210.0" width="178.8" height="82.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="425.4" y="232.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Python</text>
+<text x="425.4" y="251.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">Linux · Windows ·</text>
+<text x="425.4" y="266.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">macOS · embedded</text>
+<text x="425.4" y="281.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">boards</text>
+<rect x="538.8" y="210.0" width="178.8" height="82.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="628.2" y="248.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Swift</text>
+<text x="628.2" y="267.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">iOS · macOS</text>
+<rect x="741.6" y="210.0" width="178.8" height="82.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="831.0" y="248.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Kotlin</text>
+<text x="831.0" y="267.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">Android</text>
+<rect x="944.4" y="210.0" width="178.8" height="82.0" rx="10" fill="#f5f8fb" stroke="#dde7f0" stroke-width="1.5"/>
+<text x="1033.8" y="240.5" font-size="16" font-weight="600" fill="#8ba5bb" text-anchor="middle" letter-spacing="0">TypeScript</text>
+<text x="1033.8" y="259.5" font-size="12.5" font-weight="400" fill="#8ba5bb" text-anchor="middle" letter-spacing="0">Node and JS runtimes</text>
+<text x="1033.8" y="274.5" font-size="11.5" font-weight="400" fill="#8ba5bb" text-anchor="middle" letter-spacing="0.6">not released yet</text>
+<rect x="1147.2" y="210.0" width="178.8" height="82.0" rx="10" fill="#f5f8fb" stroke="#dde7f0" stroke-width="1.5"/>
+<text x="1236.6" y="232.5" font-size="16" font-weight="600" fill="#8ba5bb" text-anchor="middle" letter-spacing="0">C++ / ROS 2</text>
+<text x="1236.6" y="251.5" font-size="12.5" font-weight="400" fill="#8ba5bb" text-anchor="middle" letter-spacing="0">robotics and real-time</text>
+<text x="1236.6" y="266.5" font-size="12.5" font-weight="400" fill="#8ba5bb" text-anchor="middle" letter-spacing="0">runtimes</text>
+<text x="1236.6" y="281.5" font-size="11.5" font-weight="400" fill="#8ba5bb" text-anchor="middle" letter-spacing="0.6">planned</text>
+<rect x="336.0" y="310.0" width="229.5" height="70.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="450.8" y="334.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Device types</text>
+<text x="450.8" y="353.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">android · ios · linux ·</text>
+<text x="450.8" y="368.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">windows · macos · embedded</text>
+<rect x="589.5" y="310.0" width="229.5" height="70.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="704.2" y="334.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Accelerators</text>
+<text x="704.2" y="353.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">cpu · gpu · npu · tpu · ane ·</text>
+<text x="704.2" y="368.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">mps · vulkan</text>
+<rect x="843.0" y="310.0" width="229.5" height="70.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="957.8" y="334.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Model location</text>
+<text x="957.8" y="353.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">on-device · self-hosted</text>
+<text x="957.8" y="368.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">runtime · remote API</text>
+<rect x="1096.5" y="310.0" width="229.5" height="70.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1211.2" y="334.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Modalities</text>
+<text x="1211.2" y="353.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">image · audio · text ·</text>
+<text x="1211.2" y="368.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">multimodal · structured</text>
+<rect x="48.0" y="432.0" width="1304.0" height="208.0" rx="14" fill="#eef4f9"/>
+<text x="186.0" y="532.0" font-size="21" font-weight="700" fill="#024079" text-anchor="middle" letter-spacing="0">Ingestion</text>
+<text x="186.0" y="554.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">its own process; the request</text>
+<text x="186.0" y="570.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">returns after one durable append</text>
+<rect x="336.0" y="462.0" width="314.0" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="493.0" y="497.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Validation</text>
+<text x="493.0" y="516.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">typed batch envelope · protocol version</text>
+<rect x="674.0" y="462.0" width="314.0" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="831.0" y="497.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Admission Control</text>
+<text x="831.0" y="516.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">per-project write limits</text>
+<rect x="1012.0" y="462.0" width="314.0" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1169.0" y="497.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Server-side Enrichment</text>
+<text x="1169.0" y="516.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">fields the device cannot assert</text>
+<rect x="336.0" y="556.0" width="990.0" height="54.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="831.0" y="588.5" font-size="15.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Durable Event Log   ·   idempotent, replicated appends   ·   per-project ordering   ·   replayable</text>
+<rect x="48.0" y="662.0" width="1304.0" height="310.0" rx="14" fill="#eef4f9"/>
+<text x="186.0" y="813.0" font-size="21" font-weight="700" fill="#024079" text-anchor="middle" letter-spacing="0">Analytics Store</text>
+<text x="186.0" y="835.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">open format, customer-readable, no</text>
+<text x="186.0" y="851.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">separate warehouse</text>
+<rect x="336.0" y="692.0" width="990.0" height="54.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="831.0" y="724.5" font-size="15.0" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Open table format on object storage   ·   Snapshot isolation   ·   Time travel   ·   In-process query engine</text>
+<rect x="336.0" y="764.0" width="229.5" height="178.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="450.8" y="794.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Write Path</text>
+<rect x="348.0" y="833.0" width="205.5" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="450.8" y="854.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Drains The Event Log</text>
+<rect x="348.0" y="873.0" width="205.5" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="450.8" y="894.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Partitioned Columnar Files</text>
+<rect x="589.5" y="764.0" width="229.5" height="178.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="704.2" y="794.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Query Path</text>
+<rect x="601.5" y="833.0" width="205.5" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="704.2" y="854.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">File And Row-Group Pruning</text>
+<rect x="601.5" y="873.0" width="205.5" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="704.2" y="894.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Predicate Pushdown</text>
+<rect x="843.0" y="764.0" width="229.5" height="178.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="957.8" y="794.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Maintenance</text>
+<rect x="855.0" y="813.0" width="205.5" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="957.8" y="834.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">File Compaction</text>
+<rect x="855.0" y="853.0" width="205.5" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="957.8" y="874.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Retention Pruning</text>
+<rect x="855.0" y="893.0" width="205.5" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="957.8" y="914.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Snapshot Rollback</text>
+<rect x="1096.5" y="764.0" width="229.5" height="178.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1211.2" y="794.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Data Ownership</text>
+<rect x="1108.5" y="813.0" width="205.5" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="1211.2" y="834.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Project-Level Separation</text>
+<rect x="1108.5" y="853.0" width="205.5" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="1211.2" y="874.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Readable By Any Engine</text>
+<rect x="1108.5" y="893.0" width="205.5" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="1211.2" y="914.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Replication-Ready</text>
+<rect x="48.0" y="994.0" width="1304.0" height="350.0" rx="14" fill="#eef4f9"/>
+<text x="186.0" y="1165.0" font-size="21" font-weight="700" fill="#024079" text-anchor="middle" letter-spacing="0">Analytics</text>
+<text x="186.0" y="1187.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">read-only observation over the</text>
+<text x="186.0" y="1203.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">event store</text>
+<rect x="336.0" y="1024.0" width="178.8" height="218.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="425.4" y="1054.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Model Health</text>
+<rect x="348.0" y="1093.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="425.4" y="1114.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Confidence Drift</text>
+<rect x="348.0" y="1133.0" width="154.8" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="425.4" y="1154.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Error &amp; Latency</text>
+<rect x="348.0" y="1173.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="425.4" y="1194.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Version Comparison</text>
+<rect x="538.8" y="1024.0" width="178.8" height="218.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="628.2" y="1054.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">LLM Performance</text>
+<rect x="550.8" y="1093.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="628.2" y="1114.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Time To First Token</text>
+<rect x="550.8" y="1133.0" width="154.8" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="628.2" y="1154.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Throughput</text>
+<rect x="550.8" y="1173.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="628.2" y="1194.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Token Cost</text>
+<rect x="741.6" y="1024.0" width="178.8" height="218.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="831.0" y="1054.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Fleet &amp; Hardware</text>
+<rect x="753.6" y="1073.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="831.0" y="1094.0" font-size="11.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Device Model Breakdown</text>
+<rect x="753.6" y="1113.0" width="154.8" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="831.0" y="1134.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Thermal State</text>
+<rect x="753.6" y="1153.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="831.0" y="1174.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">CPU Throttling</text>
+<rect x="753.6" y="1193.0" width="154.8" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="831.0" y="1214.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Battery &amp; Memory</text>
+<rect x="944.4" y="1024.0" width="178.8" height="218.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1033.8" y="1054.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Hybrid Pipelines</text>
+<rect x="956.4" y="1093.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="1033.8" y="1114.0" font-size="13.0" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Edge → Cloud Handoff</text>
+<rect x="956.4" y="1133.0" width="154.8" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="1033.8" y="1154.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Router &amp; Guardrails</text>
+<rect x="956.4" y="1173.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="1033.8" y="1194.0" font-size="13.0" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Accelerator Fallback</text>
+<rect x="1147.2" y="1024.0" width="178.8" height="218.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1236.6" y="1054.0" font-size="16.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Traces &amp; Events</text>
+<rect x="1159.2" y="1093.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="1236.6" y="1114.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Run Traces</text>
+<rect x="1159.2" y="1133.0" width="154.8" height="32.0" rx="7" fill="#edf4fa"/>
+<text x="1236.6" y="1154.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Session Timelines</text>
+<rect x="1159.2" y="1173.0" width="154.8" height="32.0" rx="7" fill="#dcebf7"/>
+<text x="1236.6" y="1194.0" font-size="13.5" font-weight="400" fill="#024079" text-anchor="middle" letter-spacing="0">Event Histograms</text>
+<rect x="336.0" y="1260.0" width="990.0" height="54.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="831.0" y="1292.5" font-size="15.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Scheduled jobs  ·  Background workers  ·  Plan quotas  ·  Project-scoped permissions</text>
+<rect x="48.0" y="1366.0" width="1304.0" height="136.0" rx="14" fill="#eef4f9"/>
+<text x="186.0" y="1430.0" font-size="21" font-weight="700" fill="#024079" text-anchor="middle" letter-spacing="0">Curation</text>
+<text x="186.0" y="1452.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">the loop back into training</text>
+<rect x="336.0" y="1396.0" width="314.0" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="493.0" y="1431.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Event Selection</text>
+<text x="493.0" y="1450.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">filter to a slice, add events by hand</text>
+<rect x="674.0" y="1396.0" width="314.0" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="831.0" y="1431.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Label Overrides</text>
+<text x="831.0" y="1450.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">correct what the model got wrong</text>
+<rect x="1012.0" y="1396.0" width="314.0" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1169.0" y="1431.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Dataset Manifests</text>
+<text x="1169.0" y="1450.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">hand the slice to training</text>
+<rect x="48.0" y="1524.0" width="1304.0" height="216.0" rx="14" fill="#eef4f9"/>
+<text x="186.0" y="1628.0" font-size="21" font-weight="700" fill="#024079" text-anchor="middle" letter-spacing="0">Access</text>
+<text x="186.0" y="1650.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">who consumes it, and how</text>
+<rect x="336.0" y="1554.0" width="229.5" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="450.8" y="1589.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Web Dashboard</text>
+<text x="450.8" y="1608.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">charts, filters, saved panels</text>
+<rect x="589.5" y="1554.0" width="229.5" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="704.2" y="1581.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">REST API</text>
+<text x="704.2" y="1600.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">same surface the dashboard</text>
+<text x="704.2" y="1615.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">uses</text>
+<rect x="843.0" y="1554.0" width="229.5" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="957.8" y="1589.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Agent Tool Server</text>
+<text x="957.8" y="1608.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">MCP · scoped tokens · audited</text>
+<rect x="1096.5" y="1554.0" width="229.5" height="76.0" rx="10" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1211.2" y="1589.5" font-size="16" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Sandboxed SQL</text>
+<text x="1211.2" y="1608.5" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">read-only ad-hoc exploration</text>
+<rect x="336.0" y="1648.0" width="235.5" height="56.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="453.8" y="1672.0" font-size="14.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">People</text>
+<text x="453.8" y="1690.0" font-size="12" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">dashboard and ad-hoc SQL</text>
+<rect x="587.5" y="1648.0" width="235.5" height="56.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="705.2" y="1672.0" font-size="14.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Coding Agents</text>
+<text x="705.2" y="1690.0" font-size="12" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">tool calls over MCP</text>
+<rect x="839.0" y="1648.0" width="235.5" height="56.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="956.8" y="1672.0" font-size="14.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Scripts &amp; CI</text>
+<text x="956.8" y="1690.0" font-size="12" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">REST API</text>
+<rect x="1090.5" y="1648.0" width="235.5" height="56.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="1208.2" y="1672.0" font-size="14.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">External Engines</text>
+<text x="1208.2" y="1690.0" font-size="12" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">read the store directly</text>
+<rect x="48.0" y="1762.0" width="1304.0" height="116.0" rx="14" fill="#eef4f9"/>
+<text x="186.0" y="1816.0" font-size="21" font-weight="700" fill="#024079" text-anchor="middle" letter-spacing="0">Backing Services</text>
+<text x="186.0" y="1838.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">everything the platform needs, all</text>
+<text x="186.0" y="1854.0" font-size="12.5" font-weight="400" fill="#5b7f9e" text-anchor="middle" letter-spacing="0">self-hostable</text>
+<rect x="336.0" y="1796.0" width="235.5" height="48.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="453.8" y="1817.0" font-size="13.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">S3-compatible object</text>
+<text x="453.8" y="1833.0" font-size="13.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">storage</text>
+<rect x="587.5" y="1796.0" width="235.5" height="48.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="705.2" y="1825.0" font-size="13.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Kafka-compatible broker</text>
+<rect x="839.0" y="1796.0" width="235.5" height="48.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="956.8" y="1825.0" font-size="13.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">PostgreSQL</text>
+<rect x="1090.5" y="1796.0" width="235.5" height="48.0" rx="9" fill="#ffffff" stroke="#cfdfec" stroke-width="1.5"/>
+<text x="1208.2" y="1825.0" font-size="13.5" font-weight="600" fill="#024079" text-anchor="middle" letter-spacing="0">Redis</text>
+</svg>

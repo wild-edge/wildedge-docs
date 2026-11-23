@@ -384,3 +384,23 @@
   font-size: 13px;
   line-height: 1.5;
 }
+
+.vp-doc h1 .we-demo-button {
+  display: inline-block;
+  margin-inline-start: 0.5rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 0.45rem;
+  vertical-align: middle;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.vp-doc h1 .we-demo-button:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-default-soft);
+}

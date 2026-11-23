@@ -3,9 +3,9 @@ title: Query
 description: Explore inference traffic with the visual Builder or write SQL for custom analysis.
 ---
 
-# Query
+# Query <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/analytics?hours=168" aria-label="Open Builder in the demo">See Demo</a>
 
-Use Query in Analytics to answer questions across many events. Here, a stacked chart shows how many inferences ran each day and how much each model contributed.
+Use Query in Analytics to filter, group, and visualize events. Start in Builder for common aggregations, or switch to SQL for custom calculations.
 
 ## Build a query visually
 
@@ -15,8 +15,6 @@ Set the time range to **7d**. Choose **Event count**, group by **Time**, split b
   <a href="/images/workflows/query-builder.jpg"><img src="/images/workflows/query-builder.jpg" alt="Query Builder with an inference filter and seven stacked bars in violet, pink, and teal, one series per model." width="1280" height="720"><span class="workflow-shot-open">Open full-size screenshot</span></a>
   <figcaption>In this demo dataset, inference traffic peaks on September 25 across all three models.</figcaption>
 </figure>
-
-[Open Builder in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/analytics?hours=168)
 
 ## Write or generate SQL
 

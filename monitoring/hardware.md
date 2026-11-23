@@ -3,11 +3,9 @@ title: Hardware
 description: Compare thermal state, accelerator use, and inference latency across devices.
 ---
 
-# Hardware
+# Hardware <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/hardware?hours=168" aria-label="Open Hardware in the demo">See Demo</a>
 
 Use Hardware to investigate whether slow on-device inference is concentrated on a particular device model or under specific operating conditions.
-
-[Open Hardware in the demo](https://wildedge.dev/demo/wildedge-demolabs/car-classifier/hardware?hours=168)
 
 <figure class="workflow-shot">
   <a href="/images/workflows/hardware-overview.jpg"><img src="/images/workflows/hardware-overview.jpg" alt="Hardware overview showing four summary metrics, charts for thermal state, accelerator usage, latency and charging state, and a three-row device fleet." width="1280" height="1100"><span class="workflow-shot-open">Open full-size screenshot</span></a>
