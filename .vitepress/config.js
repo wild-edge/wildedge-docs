@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import llmstxt from 'vitepress-plugin-llms'
 
+const docsOrigin = 'https://docs.wildedge.dev'
+const shareImage = `${docsOrigin}/images/docs-share.png`
+
 const onboardingIcons = {
   rocket: '<path d="M8 14 5 13l3-5 4-.5M10 16l1 3 5-3 .5-4M8 14c2-6 6-9 13-11-1 7-4 11-11 13zM7 17c-2 0-3 2-4 4 2-1 4-2 4-4z"/><circle cx="15.5" cy="8.5" r="1.5"/>',
   robot: '<rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4m-2 0h4M2 13v3m20-3v3M9 13v1m6-1v1"/>',
@@ -19,7 +22,8 @@ function sidebarItem(text, link, icon, items) {
 export default withMermaid(
   defineConfig({
     head: [
-      ['link', { rel: 'icon', type: 'image/png', href: '/wildedge-logo-text.png' }],
+      ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' }],
+      ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
       ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
       ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
       [
@@ -30,6 +34,24 @@ export default withMermaid(
         },
       ],
     ],
+
+    transformHead({ pageData, siteConfig }) {
+      const title = pageData.title || siteConfig.site.title
+      const description = pageData.description || siteConfig.site.description
+      const path = pageData.relativePath.replace(/\.md$/, '.html').replace(/(^|\/)index\.html$/, '$1')
+      return [
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:site_name', content: 'WildEdge Docs' }],
+        ['meta', { property: 'og:title', content: title }],
+        ['meta', { property: 'og:description', content: description }],
+        ['meta', { property: 'og:url', content: new URL(path, docsOrigin).href }],
+        ['meta', { property: 'og:image', content: shareImage }],
+        ['meta', { property: 'og:image:width', content: '1200' }],
+        ['meta', { property: 'og:image:height', content: '630' }],
+        ['meta', { property: 'og:image:alt', content: 'WildEdge logo beside a diagram of telemetry flowing from apps and gateways into events, traces, charts, and datasets.' }],
+        ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ]
+    },
 
     base: '/',
 
@@ -123,7 +145,7 @@ export default withMermaid(
       plugins: [
         // Serves /llms.txt, /llms-full.txt, and a Markdown copy of each page (/page.md) for AI agents.
         llmstxt({
-          domain: 'https://docs.wildedge.dev',
+          domain: docsOrigin,
           title: 'WildEdge',
           description:
             'Inference observability for on-device and cloud AI. Collect telemetry from your app (Python, iOS / macOS, Android SDKs) or LLM gateway (LiteLLM, OpenRouter, Bifrost), then investigate it in WildEdge or with your AI agent over MCP.',
