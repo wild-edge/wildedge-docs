@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>WildEdge walkthroughs have moved</title>
+  <script>
+    const guides = {
+      "find-the-slow-step-in-a-run": "/monitoring/runs.html#find-the-slow-step-in-a-run",
+      "verify-your-first-event": "/monitoring/events.html#find-an-event",
+      "inspect-a-captured-input": "/datasets-and-training/capture.html#find-and-review-a-capture",
+      "compare-on-device-performance": "/monitoring/hardware.html#compare-operating-conditions",
+      "investigate-gateway-failures-and-spend": "/monitoring/gateways.html#inspect-a-failed-request",
+      "query-inference-latency": "/monitoring/query.html#query-inference-latency",
+      "compare-model-results-in-a-dashboard": "/monitoring/dashboards.html#compare-model-labels",
+      "review-examples-in-a-dataset": "/datasets-and-training/datasets.html#review-individual-rows",
+      "verify-a-training-export": "/datasets-and-training/training.html#verify-the-export",
+      "investigate-with-your-ai-agent": "/connect-agent.html#try-your-first-investigation"
+    };
+    const anchor = window.location.hash.slice(1);
+    window.location.replace(Object.hasOwn(guides, anchor) ? guides[anchor] : '/');
+  </script>
+</head>
+<body>
+  <h1>WildEdge walkthroughs have moved</h1>
+  <p><a href="/">Explore the WildEdge docs</a>.</p>
+</body>
+</html>

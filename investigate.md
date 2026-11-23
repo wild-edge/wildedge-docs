@@ -10,6 +10,8 @@ New to events, runs, and spans? See [How WildEdge works](/concepts).
 
 Use [Troubleshooting guide](/what-we-collect) to choose fields for the problem you are investigating.
 
+[Follow the 16-second car scan in the demo](/monitoring/runs#find-the-slow-step-in-a-run) for an example with screenshots.
+
 ## 1. Find recent events
 
 Open **Events** in your [WildEdge project](https://app.wildedge.dev/), or [connect your AI agent](/connect-agent) and ask:

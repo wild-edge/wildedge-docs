@@ -7,57 +7,15 @@ description: The building blocks of WildEdge, from projects, keys, events, runs,
 
 Your app or LLM gateway sends **events** to a **project**. You investigate them as events and runs, query them with **SQL**, chart them on **dashboards**, and turn the useful ones into **datasets** you can export for training.
 
-<div class="we-map-fit">
-<div class="we-map" role="figure" aria-label="WildEdge data flow: your app SDK or LLM gateway sends events to your project with a project key. You use events as runs and traces, SQL charts and dashboards, and datasets you export for training. Your AI agent works across all of it over MCP.">
-<div class="we-step"><span>01</span> Collect</div>
-<div class="we-row we-row-2">
-<a class="we-node" href="/setup/sdk"><strong>App SDK</strong><span>Python, Swift, Kotlin. Cloud / on-device model calls, with device context.</span></a>
-<a class="we-node" href="/llm-gateways"><strong>LLM gateway</strong><span>LiteLLM, OpenRouter, Bifrost over OTLP. Cloud calls only, no app changes.</span></a>
-</div>
-<div></div>
-<div class="we-merge" aria-hidden="true"><i></i><i></i><span>project key</span></div>
-<div class="we-step"><span>02</span> Store</div>
-<a class="we-node we-node-core" href="#events"><strong>Events in your project</strong><span class="we-chips"><code>inference</code><code>model_load</code><code>error</code><code>feedback</code><code>span</code></span></a>
-<div></div>
-<div class="we-fan" aria-hidden="true"><i></i><i></i><i></i></div>
-<div class="we-step"><span>03</span> Use</div>
-<div class="we-row we-row-3">
-<div class="we-lane">
-<a class="we-node" href="#runs-traces-and-spans"><strong>Runs and traces</strong><span>One execution's spans and model calls, from SDK tracing.</span></a>
-</div>
-<div class="we-lane">
-<a class="we-node" href="#sql-and-charts"><strong>SQL and charts</strong><span>Sandboxed read-only SQL on the <code>events</code> table. Save results as charts.</span></a>
-<div class="we-down" aria-hidden="true"></div>
-<a class="we-node" href="#dashboards"><strong>Dashboards</strong><span>Related charts in one time window.</span></a>
-</div>
-<div class="we-lane">
-<a class="we-node" href="#datasets"><strong>Datasets</strong><span>Curated events with their captured inputs and outputs.</span></a>
-<div class="we-down" aria-hidden="true"></div>
-<a class="we-node we-node-out" href="#training-export"><strong>Training export</strong><span>Training vendor of choice</span></a>
-</div>
-</div>
-<div></div>
-<a class="we-agent" href="/connect-agent"><span class="we-agent-tag">MCP</span><span><strong>Your AI agent</strong> works across your project: reads events, follows runs, writes SQL, builds dashboards.</span></a>
-</div>
-</div>
+<!--@include: ./parts/product-map.md-->
 
 ## Companies and projects
 
-A **company** is your organization in WildEdge. It holds your team and billing.
-
-A **project** holds the telemetry for one application or environment, for example `ios-app` or `support-bot-staging`. Events, runs, datasets, charts, dashboards, and training integrations all belong to a project. Most teams use one project per application and environment.
+A **company** holds your team and billing. A **project** holds telemetry and settings for an application or environment. See [Companies & projects](/administration/projects) for setup.
 
 ## Keys and tokens
 
-Three kinds of credential do three different jobs. None of them can do another's job.
-
-| Credential | What it does | Where you get it |
-| --- | --- | --- |
-| **DSN** (project key) | Sends telemetry into one project. Cannot read data. | Project **API Keys**, then **Reveal DSN** |
-| **MCP token** or **OAuth sign-in** | Lets your AI agent read data, and with write access create projects, charts, and dashboards | Your profile, or the agent's sign-in flow. See [Connect your AI agent](/connect-agent). |
-| **Training provider API key** | Lets WildEdge upload datasets to an external training service | The provider, for example Edge Impulse |
-
-A DSN looks like `https://<secret>@ingest.wildedge.dev/<key>`. Treat it as a secret. Create a separate project key for each integration you may need to revoke on its own.
+A project key sends telemetry, an MCP token or OAuth sign-in gives an agent access through your account, and a training provider API key lets WildEdge export datasets to a training service. See [Keys & tokens](/administration/keys) or [Training](/datasets-and-training/training) for setup.
 
 ## Events
 
@@ -75,6 +33,8 @@ Events come from two sources. The **SDK** runs in your app and records local and
 
 The [telemetry reference](/telemetry) lists every field.
 
+**[Find and verify an event →](/monitoring/events#find-an-event)**
+
 ## Runs, traces, and spans
 
 A **run** is one execution of a workflow or agent, for example one car scan or one support conversation turn. Its events and spans share a `run_id`.
@@ -87,11 +47,15 @@ If you know OpenTelemetry: a run is a trace, a span is a span, and an inference 
 
 Runs and spans come from `wildedge.trace()` and `wildedge.span()` in the SDK, or the Swift and Kotlin equivalents.
 
+**[Find the slow step in a run →](/monitoring/runs#find-the-slow-step-in-a-run)**
+
 ## Attachments
 
 By default WildEdge records measurements, not content. An **attachment** is an input or output file, such as an image, an audio clip, or text, that you choose to upload with an inference event. Each attachment has a role: `input` or `output`.
 
 Attachment capture is off until you enable it in **Project Settings** and in your SDK. Upload size, count, and retention depend on your plan. See [Captured content](/what-we-collect#captured-content).
+
+**[Inspect a captured input →](/datasets-and-training/capture#find-and-review-a-capture)**
 
 ## SQL and charts
 
@@ -111,11 +75,15 @@ ORDER BY p95_ms DESC
 
 Your agent can do the same through MCP: `sql_schema` lists columns and `sql_query` runs a query.
 
+**[Query inference latency →](/monitoring/query#query-inference-latency)**
+
 ## Dashboards
 
 A **dashboard** is a page of **panels**. Each panel shows one saved chart, and the whole dashboard follows one time window. The same chart can appear on several dashboards. Editing the chart updates it everywhere.
 
 Build dashboards in **Dashboards**, or ask your agent: `create_chart` saves a SQL chart and `add_dashboard_panel` places it.
+
+**[Compare model results in a dashboard →](/monitoring/dashboards#compare-model-labels)**
 
 ## Datasets
 
@@ -128,6 +96,8 @@ Each row carries the event's predicted label. You can override the label for a r
 
 Datasets need attachment capture. Without it, there is nothing to train on. See [Build evaluation datasets](/what-we-collect#model-behavior).
 
+**[Review examples in a dataset →](/datasets-and-training/datasets#review-individual-rows)**
+
 ## Training export
 
 A **training integration** connects a project to an external training service. **Edge Impulse** is supported today.
@@ -137,6 +107,8 @@ A **training integration** connects a project to an external training service. *
 3. Follow the job's progress and result in **Training**.
 
 Training integrations may need to be enabled for your project. Contact us if **Training** is not available.
+
+**[Verify a training export →](/datasets-and-training/training#verify-the-export)**
 
 ## Glossary
 

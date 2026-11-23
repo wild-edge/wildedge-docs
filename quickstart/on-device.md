@@ -85,6 +85,8 @@ No events? Check that `WILDEDGE_DSN` is set in the same shell. Without a DSN the
 
 ## Next steps
 
+[Explore the product map](/concepts) or [follow an example event through a run](/monitoring/runs#find-the-slow-step-in-a-run).
+
 - **Learn the building blocks.** [How WildEdge works](/concepts) explains projects, events, runs, SQL charts, dashboards, and datasets.
 - **Instrument your own app.** Call `wildedge.init(integrations=[...])` before you create models or API clients. Pick keys from the [integration list](https://github.com/wild-edge/wildedge-python#supported-integrations), for example `openai`, `anthropic`, `llama_cpp`, or `mlx`.
 - **Skip code changes.** Start an existing app with `wildedge run --integrations llama_cpp -- python app.py`. See the [deployment guide](https://github.com/wild-edge/wildedge-python/blob/main/docs/deployment.md).

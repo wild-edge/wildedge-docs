@@ -4,34 +4,43 @@ description: Connect Codex, Claude Code, Gemini CLI, ChatGPT, or Claude to WildE
 ---
 # Connect your AI agent
 
-Connect your agent to WildEdge through the remote MCP server to inspect events, follow traces, and investigate failures. Choose the client you use.
+Connect your agent to WildEdge to inspect events, follow traces, and investigate failures.
 
-## Choose your agent
+## Choose your client {#choose-your-agent}
 
-| Agent | Connection | Setup |
-| --- | --- | --- |
-| Codex CLI, Claude Code, Gemini CLI | Personal MCP token | [Connect with a token](/mcp) |
-| ChatGPT, Claude, or another OAuth-capable web agent | Browser sign-in with OAuth | [Connect with OAuth](/mcp_web) |
+### Terminal
 
-Both use the remote endpoint below. No local MCP server is required.
+[Create a personal MCP token](/mcp#create-an-mcp-token), then open the instructions for your client.
 
-```text
-https://app.wildedge.dev/mcp
-```
+<!-- Client marks sourced from https://github.com/lobehub/lobe-icons. -->
+<div class="agent-client-links">
+  <a href="/mcp.html#codex-cli"><img class="agent-client-monochrome" src="/icons/agents/codex.svg" alt="" width="22" height="22">Codex CLI</a>
+  <a href="/mcp.html#claude-code"><img src="/icons/agents/claudecode-color.svg" alt="" width="22" height="22">Claude Code</a>
+  <a href="/mcp.html#gemini-cli"><img src="/icons/agents/geminicli-color.svg" alt="" width="22" height="22">Gemini CLI</a>
+</div>
 
-Start with **Read** access for investigation. Use **Read + Write** when you want your agent to create projects or perform other write actions.
+### Web
+
+Follow the setup guide for your client and sign in to WildEdge when prompted.
+
+<div class="agent-client-links">
+  <a href="/mcp_web.html#connect-chatgpt"><img class="agent-client-monochrome" src="/icons/agents/openai.svg" alt="" width="22" height="22">ChatGPT</a>
+  <a href="/mcp_web.html#connect-claude"><img src="/icons/agents/claude-color.svg" alt="" width="22" height="22">Claude on the web</a>
+</div>
+
+[Use another OAuth-compatible client](/mcp_web).
 
 ## Try your first investigation
 
-After connecting, ask:
+After connecting, replace the placeholders with your project, company, and provider, then paste the prompt into your agent.
 
-> List the WildEdge companies and projects available to me. Do not make any changes.
+<div class="agent-prompt-terminal">
 
-Then use the returned company and project names:
+```text
+For <PROJECT> in company <COMPANY>, use WildEdge to report input and output token totals by model for the last seven days. Identify the model handling most of the traffic, estimate what the same workload would cost on more cost efficient models from <PROVIDER>.
+```
 
-> For project `PROJECT` in company `COMPANY`, inspect up to 25 events from the last 24 hours. Summarize failures, slow calls, and the telemetry available to explain them. Do not make any changes.
-
-[Continue to investigate events and traces →](/investigate)
+</div>
 
 ## Give your agent these docs
 
