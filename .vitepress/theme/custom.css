@@ -144,6 +144,23 @@
   --we-accent: #00d4a2;
 }
 
+.we-sign-in {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.VPNav a:hover .we-sign-in {
+  background: var(--vp-button-brand-hover-bg);
+  color: var(--vp-button-brand-hover-text);
+}
+
 .eyebrow, .card-number { color: var(--we-accent); }
 .vp-doc a.setup-card:hover { border-color: var(--we-accent-border); }
 .next-step { border-left: 3px solid var(--we-accent-border); }
@@ -189,7 +206,6 @@
 .we-merge::before { content: ""; position: absolute; left: 25%; right: 25%; top: 13px; height: 2px; background: var(--we-line); }
 .we-merge::after, .we-fan::before { content: ""; position: absolute; left: 50%; width: 2px; margin-left: -1px; background: var(--we-line); }
 .we-merge::after { top: 13px; bottom: 6px; }
-.we-merge span { position: absolute; left: 50%; top: 20px; transform: translate(10px, -50%); font-family: var(--vp-font-family-mono); font-size: 10.5px; font-weight: 600; color: var(--vp-c-text-3); }
 /* fan: one stem into a bar, three drops down to arrows */
 .we-fan::before { top: 0; height: 15px; }
 .we-fan::after { content: ""; position: absolute; left: calc((100% - 20px) / 6); right: calc((100% - 20px) / 6); top: 13px; height: 2px; background: var(--we-line); }
@@ -208,4 +224,183 @@
 .we-map-fit { container-type: inline-size; overflow-x: auto; }
 @container (max-width: 599px) {
   .we-map { width: 600px; box-sizing: border-box; zoom: tan(atan2(100cqw, 600px)); }
+}
+
+/* Top bar: a wide search pill centered between the logo and the nav links */
+@media (min-width: 768px) {
+  .VPNavBarSearch.search { flex-grow: 1; justify-content: center; padding-left: 24px; padding-right: 24px; }
+  .VPNavBarSearch #local-search { width: 100%; max-width: 360px; }
+  .VPNavBarSearch .DocSearch-Button {
+    width: 100%; max-width: 360px; height: 36px; padding: 0 10px 0 12px;
+    border: 1px solid var(--vp-c-divider); border-radius: 999px;
+    background: var(--vp-c-bg-alt); justify-content: space-between;
+  }
+  .VPNavBarSearch .DocSearch-Button:hover { border-color: var(--vp-c-brand-1); }
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Placeholder { display: inline-block; font-size: 13px; color: var(--vp-c-text-2); }
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Keys { display: flex; }
+}
+
+/* Thin, quiet sidebar scrollbar. Chrome and Safari use the ::-webkit-scrollbar rules
+   (they ignore them once scrollbar-width is set), Firefox uses scrollbar-width. */
+.VPSidebar::-webkit-scrollbar { width: 6px; }
+.VPSidebar::-webkit-scrollbar-track { background: transparent; }
+.VPSidebar::-webkit-scrollbar-thumb { background: transparent; border-radius: 3px; }
+.VPSidebar:hover::-webkit-scrollbar-thumb { background: var(--vp-c-divider); }
+@supports not selector(::-webkit-scrollbar) {
+  .VPSidebar { scrollbar-width: thin; scrollbar-color: var(--vp-c-divider) transparent; }
+}
+
+.vp-doc .workflow-shot {
+  margin: 20px 0 28px;
+}
+
+.vp-doc .workflow-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+.vp-doc .workflow-shot figcaption {
+  margin-top: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.agent-client-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 24px;
+}
+
+.vp-doc .agent-client-links > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 9px 13px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.vp-doc .agent-client-links > a:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+}
+
+.agent-client-links > a:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.agent-client-links img {
+  flex: none;
+}
+
+.dark .agent-client-monochrome {
+  filter: invert(1);
+}
+
+.agent-prompt-terminal div[class*='language-'] > .lang {
+  display: none;
+}
+
+.agent-prompt-terminal pre::before {
+  position: absolute;
+  left: 16px;
+  color: var(--vp-c-brand-1);
+  content: '›' / '';
+}
+
+.vp-doc .agent-prompt-terminal div[class*='language-'] pre {
+  padding: 16px 48px 16px 34px;
+}
+
+.vp-doc .agent-prompt-terminal div[class*='language-'] code {
+  padding: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* PrimeIcons 7.0.0, matching the glyphs used in the WildEdge panel. */
+@font-face {
+  font-family: 'PrimeIcons';
+  src: url('/icons/primeicons/primeicons.woff2') format('woff2');
+  font-display: block;
+}
+
+.VPSidebar .text:has(> .panel-nav-icon) {
+  display: flex;
+  align-items: baseline;
+}
+
+.VPSidebar .panel-nav-icon {
+  display: inline-flex;
+  width: 16px;
+  flex: none;
+  justify-content: center;
+  margin-inline-end: 8px;
+  font: 400 14px/1 'PrimeIcons';
+}
+
+.panel-nav-icon-bolt::before { content: '\e9db'; }
+.panel-nav-icon-sitemap::before { content: '\e96e'; }
+.panel-nav-icon-chart-line::before { content: '\e98b'; }
+.panel-nav-icon-objects-column::before { content: '\ea12'; }
+.panel-nav-icon-microchip::before { content: '\ea18'; }
+.panel-nav-icon-server::before { content: '\e9e4'; }
+.panel-nav-icon-arrow-right-arrow-left::before { content: '\e9fc'; }
+.panel-nav-icon-bell::before { content: '\e97c'; }
+.panel-nav-icon-paperclip::before { content: '\e97b'; }
+.panel-nav-icon-folder::before { content: '\e963'; }
+.panel-nav-icon-send::before { content: '\e9ca'; }
+.panel-nav-icon-code::before { content: '\e9e7'; }
+.panel-nav-icon-share-alt::before { content: '\e97a'; }
+.panel-nav-icon-sparkles::before { content: '\ea31'; }
+.panel-nav-icon-building::before { content: '\e9cf'; }
+.panel-nav-icon-users::before { content: '\e941'; }
+.panel-nav-icon-user::before { content: '\e939'; }
+.panel-nav-icon-credit-card::before { content: '\e9bf'; }
+.panel-nav-icon-key::before { content: '\e981'; }
+.panel-nav-icon-compass::before { content: '\e9ab'; }
+.panel-nav-icon-map::before { content: '\e9c2'; }
+.panel-nav-icon-list::before { content: '\e967'; }
+.panel-nav-icon-table::before { content: '\e969'; }
+.panel-nav-icon-database::before { content: '\e9e3'; }
+.panel-nav-icon-wrench::before { content: '\e9ff'; }
+.panel-nav-icon-book::before { content: '\e9ba'; }
+.panel-nav-icon-history::before { content: '\e9da'; }
+.panel-nav-icon-play-circle::before { content: '\ea14'; }
+.panel-nav-icon-link::before { content: '\e9c1'; }
+
+.vp-doc .workflow-shot-open {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.vp-doc h1 .we-demo-button {
+  display: inline-block;
+  margin-inline-start: 0.5rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 0.45rem;
+  vertical-align: middle;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.vp-doc h1 .we-demo-button:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-default-soft);
 }

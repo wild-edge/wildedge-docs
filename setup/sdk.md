@@ -36,6 +36,16 @@ See [Captured content](/what-we-collect#captured-content) for the ways content c
 
 Run one inference through an integration enabled in your SDK. Open **Events** in your WildEdge project and find the new event. Check the model, timing, and available telemetry. Captured inputs and outputs are available only when capture is enabled and supported by the integration.
 
+## Run an example
+
+| What you are building | Examples |
+| --- | --- |
+| Local LLM on a desktop or server | [llama.cpp](https://github.com/wild-edge/wildedge-python/blob/main/examples/gguf_example.py), [MLX](https://github.com/wild-edge/wildedge-python/blob/main/examples/mlx_example.py), [Transformers](https://github.com/wild-edge/wildedge-python/blob/main/examples/transformers_example.py) |
+| On-device inference on iOS / macOS | [Core ML car scanner](https://github.com/wild-edge/wildedge-swift/tree/main/Examples/CarScannerExample), [ONNX Runtime](https://github.com/wild-edge/wildedge-swift/tree/main/Examples/OnnxExample), [ExecuTorch](https://github.com/wild-edge/wildedge-swift/tree/main/Examples/execuTorchExample) |
+| On-device inference on Android | [Image classification](https://github.com/wild-edge/wildedge-android/tree/main/samples/image-classification), [local LLM](https://github.com/wild-edge/wildedge-android/tree/main/samples/local-llm) |
+| Remote model calls from Python | [OpenAI](https://github.com/wild-edge/wildedge-python/blob/main/examples/openai_example.py), [Anthropic](https://github.com/wild-edge/wildedge-python/blob/main/examples/anthropic_example.py), [other HTTP APIs](https://github.com/wild-edge/wildedge-python/blob/main/examples/llm_api_example.py) |
+| Local and remote models in one pipeline | [Python demo app](https://github.com/wild-edge/python-demo-app) |
+
 ## Next: investigate
 
 [Connect your AI agent](/connect-agent), or [investigate events and traces](/investigate) in your project.
