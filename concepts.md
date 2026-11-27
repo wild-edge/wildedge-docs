@@ -87,16 +87,16 @@ Build dashboards in **Dashboards**, or ask your agent: `create_chart` saves a SQ
 
 ## Datasets
 
-A **dataset** is a curated set of events with their attachments, for evaluation or fine-tuning. You can fill one in two ways:
+A **dataset** is a curated set of events with their inputs and outputs, for evaluation or fine-tuning. It works for any model output: image, audio, video, PDF, text, chat and sensor data. You can fill one in two ways:
 
-- **Build from filters.** Select events by time range, model, version, device, prediction label, confidence range, or error code, preview the result, then build.
-- **Add events by hand** from the **Events** list, one or many at a time, or from an event's page.
+- **Add filtered events** from the **Events** list with **Add all to dataset**.
+- **Add events by hand**, one at a time from an event's details.
 
-Each row carries the event's predicted label. You can override the label for a row inside a dataset without changing the original event. A dataset shows how many rows have an input and an output attachment.
+Each item carries the event's predicted label. You can set a different label inside the dataset, one item at a time from the keyboard or in bulk, without changing the original event. Each item keeps a saved copy of its event, so the dataset outlives the project's retention.
 
-Datasets need attachment capture. Without it, there is nothing to train on. See [Build evaluation datasets](/what-we-collect#model-behavior).
+Files need attachment capture. Input and output summaries work without it. See [Build evaluation datasets](/what-we-collect#model-behavior).
 
-**[Review examples in a dataset →](/datasets-and-training/datasets#review-individual-rows)**
+**[Review examples in a dataset →](/datasets-and-training/datasets#review-items-one-at-a-time)**
 
 ## Training export
 
