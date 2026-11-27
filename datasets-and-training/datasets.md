@@ -5,9 +5,17 @@ description: Collect production inferences with their inputs and outputs, review
 
 # Datasets <a class="we-demo-button" href="https://wildedge.dev/demo/wildedge-demolabs/car-classifier/datasets/car-review-sample?hours=168" aria-label="Open Car review sample in the demo">See Demo</a>
 
-A dataset is a set of inference events you picked out of production, kept together with the inputs and outputs your app captured. Use one to review where a model goes wrong, build an evaluation set, or collect training data.
+Monitoring tells you that a model is wrong more often than it should be. A dataset shows you the cases where it was wrong.
 
-Every item keeps a saved copy of its event, so a dataset stays complete after the project's retention deletes the original events.
+A dataset is a list of real inferences from your app. Each item holds the input your app gave the model (a photo, a recording, a document, a prompt), what the model answered, and any feedback the user left. You choose which inferences go in, for example every low-confidence prediction from last week, or every answer a user rated thumbs down.
+
+Use a dataset to:
+
+- **See why a model fails.** Look at the inputs behind low confidence or bad feedback, instead of guessing from a chart.
+- **Build an evaluation set.** Correct the wrong answers, then test the next model version on the inputs your users actually send.
+- **Collect training data.** Export the labelled items to retrain or fine-tune the model.
+
+Items keep their own copy of the event, so a dataset stays complete after the original events expire.
 
 <figure class="workflow-shot">
   <a href="/images/workflows/dataset-detail.jpg"><img src="/images/workflows/dataset-detail.jpg" alt="A car photo dataset shows its row counts, modality, model and device breakdown, three analysis charts and the item table with image thumbnails." width="1536" height="1067"><span class="workflow-shot-open">Open full-size screenshot</span></a>
