@@ -19,7 +19,6 @@ Items keep their own copy of the event, so a dataset stays complete after the or
 
 <figure class="workflow-shot">
   <a href="/images/workflows/dataset-detail.jpg"><img src="/images/workflows/dataset-detail.jpg" alt="A car photo dataset shows its row counts, modality, model and device breakdown, three analysis charts and the item table with image thumbnails." width="1536" height="1067"><span class="workflow-shot-open">Open full-size screenshot</span></a>
-  <figcaption>The header shows what the dataset was built from. The charts show where the model was unsure, and the table lists each item with its input, output and label.</figcaption>
 </figure>
 
 ## What a dataset can hold
@@ -40,7 +39,6 @@ An item can have several input and output files, for example a photo with a ques
 
 <figure class="workflow-shot">
   <a href="/images/workflows/dataset-modalities.jpg"><img src="/images/workflows/dataset-modalities.jpg" alt="Four dataset items: a car photo with a spoken question and its answer, an invoice PDF with the extracted fields, an accelerometer window and a support chat." width="1536" height="1841" loading="lazy"><span class="workflow-shot-open">Open full-size screenshot</span></a>
-  <figcaption>The same item panel shows a photo with a spoken question, an invoice with its extracted fields, a sensor window and a support chat.</figcaption>
 </figure>
 
 Files need [attachment capture](/datasets-and-training/capture#capture-content-in-your-app). Without it, items show only the event and its summaries.
@@ -57,7 +55,6 @@ Large batches are added in the background. The dataset shows **Adding** while th
 
 <figure class="workflow-shot">
   <a href="/images/workflows/datasets-list.jpg"><img src="/images/workflows/datasets-list.jpg" alt="The dataset list shows cards with item counts, how many items were reviewed, what each dataset was built from and when it changed." width="1536" height="960" loading="lazy"><span class="workflow-shot-open">Open full-size screenshot</span></a>
-  <figcaption>Each card shows the item count, how many items a person has reviewed, and the filters the dataset was built from.</figcaption>
 </figure>
 
 ## Find the items to review
@@ -99,7 +96,6 @@ Select rows with their checkboxes, or use **Select all matching** to select ever
 
 <figure class="workflow-shot">
   <a href="/images/workflows/dataset-bulk-actions.jpg"><img src="/images/workflows/dataset-bulk-actions.jpg" alt="25 selected items with Select all 64 matching, Set label, Clear label and Remove above the table." width="1536" height="648" loading="lazy"><span class="workflow-shot-open">Open full-size screenshot</span></a>
-  <figcaption>Filter to the items you want, select all matching, then label or remove them together.</figcaption>
 </figure>
 
 ## Download or export
