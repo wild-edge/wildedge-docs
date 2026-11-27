@@ -7,6 +7,16 @@ description: What has changed recently
 
 ## November 2026
 
+**Datasets**
+
+- [Datasets](/datasets-and-training/datasets) now work for every kind of model output. Items show images, audio, video, PDFs, text and JSON files, chat conversations and input and output summaries.
+- Review items one at a time in a side panel, with the input and output side by side. Label with a number key, remove with <kbd>X</kbd>, and move with <kbd>J</kbd> and <kbd>K</kbd>.
+- Select items, or every item matching your filters, and set a label, clear it or remove them together. Every change can be undone.
+- Filter items by prediction, feedback, confidence, model, device, input modality, event type or who added them. Search by text, label or event ID, and sort by confidence to review the least certain items first.
+- Each item keeps a saved copy of its event, so a dataset stays complete after the source events expire.
+- Dataset cards show what each dataset was built from and how many items a person has reviewed.
+- The ZIP download shows progress and the file types it includes, and reports any files it could not download.
+
 **Platform**
 
 - Added beta [Bifrost](/gateways/bifrost) gateway support over OpenTelemetry, with token use, latency, failures, retries, fallbacks, and estimated cost.
